@@ -6,6 +6,7 @@ from typing import Any
 
 import structlog
 from fastapi import APIRouter, HTTPException
+from sqlalchemy import text as sa_text
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from app.core.config import settings
@@ -21,7 +22,7 @@ async def check_database() -> dict[str, Any]:
     try:
         async for db in get_db():
             # Test database connection
-            result = await db.execute("SELECT 1")
+            result = await db.execute(sa_text("SELECT 1"))
             await result.fetchone()
             return {"status": "healthy", "message": "Database connection successful"}
     except Exception as e:
@@ -49,7 +50,7 @@ async def check_tmdb() -> dict[str, Any]:
     try:
         import httpx
         
-        if not settings.tmdb_api_key:
+        if not settings.tmdb_api_key or settings.tmdb_api_key == "your-tmdb-api-key-here":
             return {"status": "warning", "message": "TMDB API key not configured"}
         
         async with httpx.AsyncClient() as client:
@@ -63,7 +64,7 @@ async def check_tmdb() -> dict[str, Any]:
         return {"status": "healthy", "message": "TMDB API connection successful"}
     except Exception as e:
         logger.error("TMDB health check failed", error=str(e))
-        return {"status": "unhealthy", "message": f"TMDB API connection failed: {str(e)}"}
+        return {"status": "warning", "message": f"TMDB API connection failed: {str(e)}"}
 
 
 @router.get("/")
@@ -134,7 +135,7 @@ async def readiness_check():
     try:
         # Check if database is ready
         async for db in get_db():
-            await db.execute("SELECT 1")
+            await db.execute(sa_text("SELECT 1"))
             break
         
         return {"status": "ready", "message": "Application is ready to serve requests"}

@@ -46,34 +46,12 @@ class Settings(BaseSettings):
     # Development
     debug: bool = Field(default=False, description="Debug mode")
     reload: bool = Field(default=False, description="Auto-reload on changes")
-    gitpus
+    
     class Config:
         env_file = ".env"
         env_file_encoding = "utf-8"
         case_sensitive = False
         
-        # Environment variable mapping
-        fields = {
-            "app_name": {"env": "APP_NAME"},
-            "app_version": {"env": "APP_VERSION"},
-            "app_env": {"env": "APP_ENV"},
-            "app_host": {"env": "APP_HOST"},
-            "app_port": {"env": "APP_PORT"},
-            "secret_key": {"env": "SECRET_KEY"},
-            "access_token_expire_minutes": {"env": "ACCESS_TOKEN_EXPIRE_MINUTES"},
-            "algorithm": {"env": "ALGORITHM"},
-            "database_url": {"env": "DATABASE_URL"},
-            "redis_url": {"env": "REDIS_URL"},
-            "tmdb_api_key": {"env": "TMDB_API_KEY"},
-            "tmdb_base_url": {"env": "TMDB_BASE_URL"},
-            "tmdb_image_base_url": {"env": "TMDB_IMAGE_BASE_URL"},
-            "media_dir": {"env": "MEDIA_DIR"},
-            "max_file_size": {"env": "MAX_FILE_SIZE"},
-            "cors_origins": {"env": "CORS_ORIGINS"},
-            "log_level": {"env": "LOG_LEVEL"},
-            "debug": {"env": "DEBUG"},
-            "reload": {"env": "RELOAD"},
-        }
     
     @property
     def is_production(self) -> bool:
