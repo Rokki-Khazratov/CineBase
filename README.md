@@ -57,36 +57,17 @@ curl -X GET "http://localhost:8000/api/v1/movies?limit=10&sort=year" \
   -H "Authorization: Bearer YOUR_JWT_TOKEN"
 ```
 
-## 🛠️ Development
-
-```bash
-make up                    # Start all services
-make down                  # Stop all services
-make migrate               # Run database migrations
-make fmt                   # Format code
-make lint                  # Lint code
-make test                  # Run tests
-```
 
 ## 📚 Documentation
-
 - [Architecture](docs/architecture.md) - System architecture and design
 - [API Reference](http://localhost:8000/docs) - Interactive API documentation
 - [Development Guide](docs/development.md) - Development setup and workflow
 - [Deployment Guide](docs/deployment.md) - Production deployment
 
-## 🤝 Contributing
 
-1. Fork the repository
-2. Create feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit changes (`git commit -m 'Add amazing feature'`)
-4. Push to branch (`git push origin feature/amazing-feature`)
-5. Open Pull Request
 
 ## 📄 License
-
 MIT License - see [LICENSE](LICENSE) file.
 
 ## 👨‍💻 Author
-
 **Rokki Khazratov** - [@Rokki-Khazratov](https://github.com/Rokki-Khazratov)
