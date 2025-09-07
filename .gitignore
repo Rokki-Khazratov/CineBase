@@ -209,3 +209,37 @@ __marimo__/
 
 #my
 architecture.md
+
+# Media files
+media/
+uploads/
+static/media/
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.mp4
+*.mov
+*.avi
+
+# Cache and temporary files
+.cache/
+*.tmp
+*.temp
+tmdb_cache/
+redis_dump.rdb
+
+# Secrets and sensitive data
+.secrets.baseline
+secrets.json
+api_keys.json
+
+# TMDB data
+tmdb_snapshots/
+movie_posters/
+trailers/
+
+# Development databases
+*.db
+*.sqlite
+*.sqlite3
