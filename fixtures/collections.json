@@ -1,0 +1,63 @@
+[
+  {
+    "slug": "told-twice",
+    "title": "Told twice",
+    "description": "Originals side by side with the remakes they inspired. Same title, different decade, different director.",
+    "movies": [
+      "suspiria-1977",
+      "suspiria-2018",
+      "solaris-1972",
+      "solaris-2002",
+      "nosferatu-1922",
+      "nosferatu-the-vampyre-1979",
+      "nosferatu-2024",
+      "the-thing-1982",
+      "the-thing-2011",
+      "infernal-affairs-2002",
+      "the-departed-2006",
+      "seven-samurai-1954",
+      "the-magnificent-seven-1960",
+      "let-the-right-one-in-2008",
+      "let-me-in-2010",
+      "true-grit-1969",
+      "true-grit-2010",
+      "oceans-11-1960",
+      "oceans-eleven-2001"
+    ]
+  },
+  {
+    "slug": "beyond-english",
+    "title": "Beyond English",
+    "description": "Films first released in another language. Search works with their original and romanized titles too.",
+    "movies": [
+      "spirited-away-2001",
+      "parasite-2019",
+      "in-the-mood-for-love-2000",
+      "amelie-2001",
+      "pans-labyrinth-2006",
+      "tokyo-story-1953",
+      "8-and-a-half-1963",
+      "portrait-of-a-lady-on-fire-2019",
+      "stalker-1979",
+      "chungking-express-1994",
+      "the-seventh-seal-1957",
+      "y-tu-mama-tambien-2001",
+      "celine-and-julie-go-boating-1974"
+    ]
+  },
+  {
+    "slug": "under-100-minutes",
+    "title": "Under 100 minutes",
+    "description": "Complete, confident films that finish before the evening does.",
+    "movies": [
+      "lady-bird-2017",
+      "dr-strangelove-1964",
+      "12-angry-men-1957",
+      "the-seventh-seal-1957",
+      "nosferatu-1922",
+      "suspiria-1977",
+      "in-the-mood-for-love-2000",
+      "solaris-2002"
+    ]
+  }
+]

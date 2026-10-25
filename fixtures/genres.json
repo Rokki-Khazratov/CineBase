@@ -1,0 +1,58 @@
+[
+  {
+    "slug": "action",
+    "name": "Action"
+  },
+  {
+    "slug": "adventure",
+    "name": "Adventure"
+  },
+  {
+    "slug": "animation",
+    "name": "Animation"
+  },
+  {
+    "slug": "comedy",
+    "name": "Comedy"
+  },
+  {
+    "slug": "crime",
+    "name": "Crime"
+  },
+  {
+    "slug": "drama",
+    "name": "Drama"
+  },
+  {
+    "slug": "fantasy",
+    "name": "Fantasy"
+  },
+  {
+    "slug": "horror",
+    "name": "Horror"
+  },
+  {
+    "slug": "mystery",
+    "name": "Mystery"
+  },
+  {
+    "slug": "romance",
+    "name": "Romance"
+  },
+  {
+    "slug": "science-fiction",
+    "name": "Science Fiction"
+  },
+  {
+    "slug": "thriller",
+    "name": "Thriller"
+  },
+  {
+    "slug": "war",
+    "name": "War"
+  },
+  {
+    "slug": "western",
+    "name": "Western"
+  }
+]

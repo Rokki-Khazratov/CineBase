@@ -39,3 +39,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# fixture art is copied from /fixtures/art at dev/build time
+/public/fixture-art/

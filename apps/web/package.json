@@ -3,15 +3,16 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
+    "dev": "node scripts/sync-fixture-art.mjs && next dev",
+    "build": "node scripts/sync-fixture-art.mjs && next build",
     "start": "next start",
     "lint": "eslint",
     "typecheck": "next typegen && tsc --noEmit",
     "test": "vitest run",
     "test:watch": "vitest",
     "test:e2e": "playwright test",
-    "fixtures:validate": "vitest run src/catalog/fixtures.test.ts"
+    "fixtures:validate": "vitest run src/catalog/fixtures.test.ts",
+    "art:sync": "node scripts/sync-fixture-art.mjs"
   },
   "dependencies": {
     "next": "16.4.3",

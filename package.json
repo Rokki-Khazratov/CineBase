@@ -13,6 +13,8 @@
     "typecheck": "pnpm --filter web typecheck",
     "test": "pnpm --filter web test",
     "test:e2e": "pnpm --filter web test:e2e",
-    "fixtures:validate": "pnpm --filter web fixtures:validate"
+    "fixtures:validate": "pnpm --filter web fixtures:validate",
+    "posters": "node scripts/generate-posters.mjs",
+    "posters:check": "node scripts/generate-posters.mjs --check"
   }
 }

@@ -1,0 +1,3824 @@
+[
+  {
+    "id": "9aa27ed6-e747-55ef-a18e-71dc1508eb52",
+    "slug": "suspiria-1977",
+    "title": "Suspiria",
+    "original_title": null,
+    "original_language": "it",
+    "status": "released",
+    "release_date": "1977-02-01",
+    "release_country": "IT",
+    "release_year": 1977,
+    "runtime_minutes": 98,
+    "genres": [
+      "horror"
+    ],
+    "synopsis": "An American dancer arrives at a prestigious ballet academy in Freiburg on a night of torrential rain. As students vanish and the staff close ranks, she begins to suspect the school is run by something far older than its faculty.",
+    "alternate_titles": [],
+    "external_ids": [
+      {
+        "provider": "cinebase-fixture",
+        "external_id": "cbf-0001"
+      }
+    ],
+    "poster": {
+      "file": "posters/suspiria-1977.svg",
+      "style": "ink"
+    },
+    "credits": [
+      {
+        "person": "jessica-harper",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Suzy Bannion",
+        "order": 0
+      },
+      {
+        "person": "stefania-casini",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Sara",
+        "order": 1
+      },
+      {
+        "person": "flavio-bucci",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Daniel",
+        "order": 2
+      },
+      {
+        "person": "alida-valli",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Miss Tanner",
+        "order": 3
+      },
+      {
+        "person": "joan-bennett",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Madame Blanc",
+        "order": 4
+      },
+      {
+        "person": "dario-argento",
+        "department": "Directing",
+        "job": "Director",
+        "character": null,
+        "order": 0
+      },
+      {
+        "person": "dario-argento",
+        "department": "Writing",
+        "job": "Screenplay",
+        "character": null,
+        "order": 1
+      },
+      {
+        "person": "daria-nicolodi",
+        "department": "Writing",
+        "job": "Screenplay",
+        "character": null,
+        "order": 2
+      },
+      {
+        "person": "luciano-tovoli",
+        "department": "Camera",
+        "job": "Director of Photography",
+        "character": null,
+        "order": 3
+      }
+    ]
+  },
+  {
+    "id": "84b39864-d01a-50c8-ab9a-b304775b1f24",
+    "slug": "suspiria-2018",
+    "title": "Suspiria",
+    "original_title": null,
+    "original_language": "en",
+    "status": "released",
+    "release_date": "2018-10-26",
+    "release_country": "US",
+    "release_year": 2018,
+    "runtime_minutes": 152,
+    "genres": [
+      "horror",
+      "mystery"
+    ],
+    "synopsis": "In divided 1977 Berlin, a young American joins a renowned dance company just as one of its members disappears. A grieving psychotherapist follows the missing dancer's trail toward the company's matriarchs and the ritual hidden inside their choreography.",
+    "alternate_titles": [],
+    "external_ids": [
+      {
+        "provider": "cinebase-fixture",
+        "external_id": "cbf-0002"
+      }
+    ],
+    "poster": {
+      "file": "posters/suspiria-2018.svg",
+      "style": "auto"
+    },
+    "credits": [
+      {
+        "person": "dakota-johnson",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Susie Bannion",
+        "order": 0
+      },
+      {
+        "person": "tilda-swinton",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Madame Blanc / Dr. Josef Klemperer / Mother Markos",
+        "order": 1
+      },
+      {
+        "person": "mia-goth",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Sara Simms",
+        "order": 2
+      },
+      {
+        "person": "chloe-grace-moretz",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Patricia Hingle",
+        "order": 3
+      },
+      {
+        "person": "jessica-harper",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Anke Meier",
+        "order": 4
+      },
+      {
+        "person": "luca-guadagnino",
+        "department": "Directing",
+        "job": "Director",
+        "character": null,
+        "order": 0
+      },
+      {
+        "person": "david-kajganich",
+        "department": "Writing",
+        "job": "Screenplay",
+        "character": null,
+        "order": 1
+      },
+      {
+        "person": "sayombhu-mukdeeprom",
+        "department": "Camera",
+        "job": "Director of Photography",
+        "character": null,
+        "order": 2
+      },
+      {
+        "person": "thom-yorke",
+        "department": "Sound",
+        "job": "Original Music",
+        "character": null,
+        "order": 3
+      }
+    ]
+  },
+  {
+    "id": "dc0896fd-8d64-51a4-8569-2a92fefb5863",
+    "slug": "solaris-1972",
+    "title": "Solaris",
+    "original_title": "Солярис",
+    "original_language": "ru",
+    "status": "released",
+    "release_date": null,
+    "release_country": "SU",
+    "release_year": 1972,
+    "runtime_minutes": 167,
+    "genres": [
+      "science-fiction",
+      "drama"
+    ],
+    "synopsis": "A psychologist is sent to a space station orbiting an ocean planet to decide whether its research should continue. The crew he finds there is exhausted and evasive, and the planet soon confronts him with a visitor he thought he had lost forever.",
+    "alternate_titles": [
+      {
+        "title": "Solyaris",
+        "locale": "ru-Latn"
+      }
+    ],
+    "external_ids": [
+      {
+        "provider": "cinebase-fixture",
+        "external_id": "cbf-0003"
+      }
+    ],
+    "poster": {
+      "file": "posters/solaris-1972.svg",
+      "style": "auto"
+    },
+    "credits": [
+      {
+        "person": "donatas-banionis",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Kris Kelvin",
+        "order": 0
+      },
+      {
+        "person": "natalya-bondarchuk",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Hari",
+        "order": 1
+      },
+      {
+        "person": "juri-jarvet",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Dr. Snaut",
+        "order": 2
+      },
+      {
+        "person": "anatoly-solonitsyn",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Dr. Sartorius",
+        "order": 3
+      },
+      {
+        "person": "nikolai-grinko",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Kelvin's father",
+        "order": 4
+      },
+      {
+        "person": "andrei-tarkovsky",
+        "department": "Directing",
+        "job": "Director",
+        "character": null,
+        "order": 0
+      },
+      {
+        "person": "andrei-tarkovsky",
+        "department": "Writing",
+        "job": "Screenplay",
+        "character": null,
+        "order": 1
+      },
+      {
+        "person": "fridrikh-gorenshtein",
+        "department": "Writing",
+        "job": "Screenplay",
+        "character": null,
+        "order": 2
+      },
+      {
+        "person": "stanislaw-lem",
+        "department": "Writing",
+        "job": "Novel",
+        "character": null,
+        "order": 3
+      },
+      {
+        "person": "vadim-yusov",
+        "department": "Camera",
+        "job": "Director of Photography",
+        "character": null,
+        "order": 4
+      },
+      {
+        "person": "eduard-artemyev",
+        "department": "Sound",
+        "job": "Original Music",
+        "character": null,
+        "order": 5
+      }
+    ]
+  },
+  {
+    "id": "2e676399-7777-5693-81e7-c969ee028553",
+    "slug": "solaris-2002",
+    "title": "Solaris",
+    "original_title": null,
+    "original_language": "en",
+    "status": "released",
+    "release_date": "2002-11-27",
+    "release_country": "US",
+    "release_year": 2002,
+    "runtime_minutes": 99,
+    "genres": [
+      "science-fiction",
+      "drama",
+      "romance"
+    ],
+    "synopsis": "A widowed psychiatrist travels to a research station above a mysterious planet after a distress message from an old friend. On board he meets someone who cannot possibly be there, and must decide what he owes to a memory that seems to love him back.",
+    "alternate_titles": [],
+    "external_ids": [
+      {
+        "provider": "cinebase-fixture",
+        "external_id": "cbf-0004"
+      }
+    ],
+    "poster": {
+      "file": "posters/solaris-2002.svg",
+      "style": "auto"
+    },
+    "credits": [
+      {
+        "person": "george-clooney",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Chris Kelvin",
+        "order": 0
+      },
+      {
+        "person": "natascha-mcelhone",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Rheya",
+        "order": 1
+      },
+      {
+        "person": "jeremy-davies",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Snow",
+        "order": 2
+      },
+      {
+        "person": "viola-davis",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Gordon",
+        "order": 3
+      },
+      {
+        "person": "steven-soderbergh",
+        "department": "Directing",
+        "job": "Director",
+        "character": null,
+        "order": 0
+      },
+      {
+        "person": "steven-soderbergh",
+        "department": "Writing",
+        "job": "Screenplay",
+        "character": null,
+        "order": 1
+      },
+      {
+        "person": "steven-soderbergh",
+        "department": "Camera",
+        "job": "Director of Photography",
+        "character": null,
+        "order": 2
+      },
+      {
+        "person": "steven-soderbergh",
+        "department": "Editing",
+        "job": "Editor",
+        "character": null,
+        "order": 3
+      },
+      {
+        "person": "stanislaw-lem",
+        "department": "Writing",
+        "job": "Novel",
+        "character": null,
+        "order": 4
+      },
+      {
+        "person": "cliff-martinez",
+        "department": "Sound",
+        "job": "Original Music",
+        "character": null,
+        "order": 5
+      }
+    ]
+  },
+  {
+    "id": "175733e5-fa4e-53e5-b141-a19b99ed1415",
+    "slug": "nosferatu-1922",
+    "title": "Nosferatu",
+    "original_title": "Nosferatu, eine Symphonie des Grauens",
+    "original_language": "de",
+    "status": "released",
+    "release_date": "1922-03-04",
+    "release_country": "DE",
+    "release_year": 1922,
+    "runtime_minutes": 94,
+    "genres": [
+      "horror",
+      "fantasy"
+    ],
+    "synopsis": "An estate agent's clerk travels to the Carpathian mountains to sell a house to the reclusive Count Orlok. His client follows him home by ship, bringing plague and a terrible hunger to a quiet port town.",
+    "alternate_titles": [
+      {
+        "title": "Nosferatu: A Symphony of Horror",
+        "locale": "en"
+      }
+    ],
+    "external_ids": [
+      {
+        "provider": "cinebase-fixture",
+        "external_id": "cbf-0005"
+      }
+    ],
+    "poster": {
+      "file": "posters/nosferatu-1922.svg",
+      "style": "ink"
+    },
+    "credits": [
+      {
+        "person": "max-schreck",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Count Orlok",
+        "order": 0
+      },
+      {
+        "person": "gustav-von-wangenheim",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Thomas Hutter",
+        "order": 1
+      },
+      {
+        "person": "greta-schroder",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Ellen Hutter",
+        "order": 2
+      },
+      {
+        "person": "alexander-granach",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Knock",
+        "order": 3
+      },
+      {
+        "person": "f-w-murnau",
+        "department": "Directing",
+        "job": "Director",
+        "character": null,
+        "order": 0
+      },
+      {
+        "person": "henrik-galeen",
+        "department": "Writing",
+        "job": "Screenplay",
+        "character": null,
+        "order": 1
+      },
+      {
+        "person": "fritz-arno-wagner",
+        "department": "Camera",
+        "job": "Director of Photography",
+        "character": null,
+        "order": 2
+      }
+    ]
+  },
+  {
+    "id": "6adb6f20-5cb9-5d54-a640-070657cf8587",
+    "slug": "nosferatu-the-vampyre-1979",
+    "title": "Nosferatu the Vampyre",
+    "original_title": "Nosferatu: Phantom der Nacht",
+    "original_language": "de",
+    "status": "released",
+    "release_date": null,
+    "release_country": "DE",
+    "release_year": 1979,
+    "runtime_minutes": 107,
+    "genres": [
+      "horror",
+      "drama"
+    ],
+    "synopsis": "Jonathan Harker leaves his wife in a Dutch canal town to close a property sale with Count Dracula. The count is lonely, ancient and unwell, and his arrival in the town with a cargo of rats turns its streets into a slow, dreamlike procession of death.",
+    "alternate_titles": [
+      {
+        "title": "Nosferatu",
+        "locale": "en"
+      }
+    ],
+    "external_ids": [
+      {
+        "provider": "cinebase-fixture",
+        "external_id": "cbf-0006"
+      }
+    ],
+    "poster": {
+      "file": "posters/nosferatu-the-vampyre-1979.svg",
+      "style": "auto"
+    },
+    "credits": [
+      {
+        "person": "klaus-kinski",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Count Dracula",
+        "order": 0
+      },
+      {
+        "person": "isabelle-adjani",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Lucy Harker",
+        "order": 1
+      },
+      {
+        "person": "bruno-ganz",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Jonathan Harker",
+        "order": 2
+      },
+      {
+        "person": "roland-topor",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Renfield",
+        "order": 3
+      },
+      {
+        "person": "werner-herzog",
+        "department": "Directing",
+        "job": "Director",
+        "character": null,
+        "order": 0
+      },
+      {
+        "person": "werner-herzog",
+        "department": "Writing",
+        "job": "Screenplay",
+        "character": null,
+        "order": 1
+      },
+      {
+        "person": "werner-herzog",
+        "department": "Production",
+        "job": "Producer",
+        "character": null,
+        "order": 2
+      },
+      {
+        "person": "jorg-schmidt-reitwein",
+        "department": "Camera",
+        "job": "Director of Photography",
+        "character": null,
+        "order": 3
+      }
+    ]
+  },
+  {
+    "id": "580b1f15-65aa-559a-9667-2b30f6c53646",
+    "slug": "nosferatu-2024",
+    "title": "Nosferatu",
+    "original_title": null,
+    "original_language": "en",
+    "status": "released",
+    "release_date": "2024-12-25",
+    "release_country": "US",
+    "release_year": 2024,
+    "runtime_minutes": 132,
+    "genres": [
+      "horror",
+      "fantasy"
+    ],
+    "synopsis": "In 1838 a newly married young woman is haunted by visions while her husband travels east on business. The nobleman he visits has been waiting for her for years, and nothing in her town's science or faith seems able to keep him away.",
+    "alternate_titles": [],
+    "external_ids": [
+      {
+        "provider": "cinebase-fixture",
+        "external_id": "cbf-0007"
+      }
+    ],
+    "poster": {
+      "file": "posters/nosferatu-2024.svg",
+      "style": "auto"
+    },
+    "credits": [
+      {
+        "person": "lily-rose-depp",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Ellen Hutter",
+        "order": 0
+      },
+      {
+        "person": "bill-skarsgard",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Count Orlok",
+        "order": 1
+      },
+      {
+        "person": "nicholas-hoult",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Thomas Hutter",
+        "order": 2
+      },
+      {
+        "person": "aaron-taylor-johnson",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Friedrich Harding",
+        "order": 3
+      },
+      {
+        "person": "willem-dafoe",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Prof. Albin Eberhart von Franz",
+        "order": 4
+      },
+      {
+        "person": "robert-eggers",
+        "department": "Directing",
+        "job": "Director",
+        "character": null,
+        "order": 0
+      },
+      {
+        "person": "robert-eggers",
+        "department": "Writing",
+        "job": "Screenplay",
+        "character": null,
+        "order": 1
+      },
+      {
+        "person": "jarin-blaschke",
+        "department": "Camera",
+        "job": "Director of Photography",
+        "character": null,
+        "order": 2
+      },
+      {
+        "person": "robin-carolan",
+        "department": "Sound",
+        "job": "Original Music",
+        "character": null,
+        "order": 3
+      }
+    ]
+  },
+  {
+    "id": "aa5f1e2a-d7cd-53a1-bfca-95052df27347",
+    "slug": "the-thing-1982",
+    "title": "The Thing",
+    "original_title": null,
+    "original_language": "en",
+    "status": "released",
+    "release_date": "1982-06-25",
+    "release_country": "US",
+    "release_year": 1982,
+    "runtime_minutes": 109,
+    "genres": [
+      "horror",
+      "science-fiction",
+      "mystery"
+    ],
+    "synopsis": "A research team in Antarctica takes in a sled dog fleeing from a destroyed Norwegian camp. What the dog carries can imitate any living thing, and soon no one at the station can be sure the person beside them is still human.",
+    "alternate_titles": [],
+    "external_ids": [
+      {
+        "provider": "cinebase-fixture",
+        "external_id": "cbf-0008"
+      }
+    ],
+    "poster": {
+      "file": "posters/the-thing-1982.svg",
+      "style": "ice"
+    },
+    "credits": [
+      {
+        "person": "kurt-russell",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "R.J. MacReady",
+        "order": 0
+      },
+      {
+        "person": "wilford-brimley",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Blair",
+        "order": 1
+      },
+      {
+        "person": "keith-david",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Childs",
+        "order": 2
+      },
+      {
+        "person": "t-k-carter",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Nauls",
+        "order": 3
+      },
+      {
+        "person": "john-carpenter",
+        "department": "Directing",
+        "job": "Director",
+        "character": null,
+        "order": 0
+      },
+      {
+        "person": "bill-lancaster",
+        "department": "Writing",
+        "job": "Screenplay",
+        "character": null,
+        "order": 1
+      },
+      {
+        "person": "dean-cundey",
+        "department": "Camera",
+        "job": "Director of Photography",
+        "character": null,
+        "order": 2
+      },
+      {
+        "person": "ennio-morricone",
+        "department": "Sound",
+        "job": "Original Music",
+        "character": null,
+        "order": 3
+      }
+    ]
+  },
+  {
+    "id": "d245ed63-d426-57f3-a0e6-f0f9e4b25439",
+    "slug": "the-thing-2011",
+    "title": "The Thing",
+    "original_title": null,
+    "original_language": "en",
+    "status": "released",
+    "release_date": "2011-10-14",
+    "release_country": "US",
+    "release_year": 2011,
+    "runtime_minutes": 103,
+    "genres": [
+      "horror",
+      "science-fiction"
+    ],
+    "synopsis": "A paleontologist joins a Norwegian expedition that has found a craft and its frozen pilot buried in the Antarctic ice. When the specimen thaws, the camp learns too late that it was never dead.",
+    "alternate_titles": [],
+    "external_ids": [
+      {
+        "provider": "cinebase-fixture",
+        "external_id": "cbf-0009"
+      }
+    ],
+    "poster": null,
+    "credits": [
+      {
+        "person": "mary-elizabeth-winstead",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Kate Lloyd",
+        "order": 0
+      },
+      {
+        "person": "joel-edgerton",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Sam Carter",
+        "order": 1
+      },
+      {
+        "person": "ulrich-thomsen",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Dr. Sander Halvorson",
+        "order": 2
+      },
+      {
+        "person": "matthijs-van-heijningen-jr",
+        "department": "Directing",
+        "job": "Director",
+        "character": null,
+        "order": 0
+      },
+      {
+        "person": "eric-heisserer",
+        "department": "Writing",
+        "job": "Screenplay",
+        "character": null,
+        "order": 1
+      },
+      {
+        "person": "marco-beltrami",
+        "department": "Sound",
+        "job": "Original Music",
+        "character": null,
+        "order": 2
+      }
+    ]
+  },
+  {
+    "id": "968dfbce-9466-531c-9452-9b2b37ffbe18",
+    "slug": "dune-1984",
+    "title": "Dune",
+    "original_title": null,
+    "original_language": "en",
+    "status": "released",
+    "release_date": "1984-12-14",
+    "release_country": "US",
+    "release_year": 1984,
+    "runtime_minutes": 137,
+    "genres": [
+      "science-fiction",
+      "adventure"
+    ],
+    "synopsis": "The heir of a noble house is sent with his family to the desert planet Arrakis, the only source of a spice that makes space travel possible. Betrayed by a rival dynasty, he flees into the deep desert and finds a people who have been waiting for him.",
+    "alternate_titles": [],
+    "external_ids": [
+      {
+        "provider": "cinebase-fixture",
+        "external_id": "cbf-0010"
+      }
+    ],
+    "poster": {
+      "file": "posters/dune-1984.svg",
+      "style": "sand"
+    },
+    "credits": [
+      {
+        "person": "kyle-maclachlan",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Paul Atreides",
+        "order": 0
+      },
+      {
+        "person": "francesca-annis",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Lady Jessica",
+        "order": 1
+      },
+      {
+        "person": "kenneth-mcmillan",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Baron Vladimir Harkonnen",
+        "order": 2
+      },
+      {
+        "person": "sting",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Feyd-Rautha",
+        "order": 3
+      },
+      {
+        "person": "sean-young",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Chani",
+        "order": 4
+      },
+      {
+        "person": "max-von-sydow",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Dr. Kynes",
+        "order": 5
+      },
+      {
+        "person": "david-lynch",
+        "department": "Directing",
+        "job": "Director",
+        "character": null,
+        "order": 0
+      },
+      {
+        "person": "david-lynch",
+        "department": "Writing",
+        "job": "Screenplay",
+        "character": null,
+        "order": 1
+      },
+      {
+        "person": "frank-herbert",
+        "department": "Writing",
+        "job": "Novel",
+        "character": null,
+        "order": 2
+      },
+      {
+        "person": "freddie-francis",
+        "department": "Camera",
+        "job": "Director of Photography",
+        "character": null,
+        "order": 3
+      }
+    ]
+  },
+  {
+    "id": "c730facf-2923-59ec-8297-f3166c0eb5a8",
+    "slug": "dune-2021",
+    "title": "Dune",
+    "original_title": null,
+    "original_language": "en",
+    "status": "released",
+    "release_date": "2021-10-22",
+    "release_country": "US",
+    "release_year": 2021,
+    "runtime_minutes": 155,
+    "genres": [
+      "science-fiction",
+      "adventure"
+    ],
+    "synopsis": "House Atreides accepts stewardship of Arrakis, a hostile desert world and the universe's only source of spice. Paul, the duke's son, is troubled by dreams of the planet's people as the family walks into a trap prepared long before they arrived.",
+    "alternate_titles": [
+      {
+        "title": "Dune: Part One",
+        "locale": "en"
+      }
+    ],
+    "external_ids": [
+      {
+        "provider": "cinebase-fixture",
+        "external_id": "cbf-0011"
+      }
+    ],
+    "poster": {
+      "file": "posters/dune-2021.svg",
+      "style": "sand"
+    },
+    "credits": [
+      {
+        "person": "timothee-chalamet",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Paul Atreides",
+        "order": 0
+      },
+      {
+        "person": "rebecca-ferguson",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Lady Jessica",
+        "order": 1
+      },
+      {
+        "person": "oscar-isaac",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Duke Leto Atreides",
+        "order": 2
+      },
+      {
+        "person": "zendaya",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Chani",
+        "order": 3
+      },
+      {
+        "person": "stellan-skarsgard",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Baron Vladimir Harkonnen",
+        "order": 4
+      },
+      {
+        "person": "denis-villeneuve",
+        "department": "Directing",
+        "job": "Director",
+        "character": null,
+        "order": 0
+      },
+      {
+        "person": "denis-villeneuve",
+        "department": "Writing",
+        "job": "Screenplay",
+        "character": null,
+        "order": 1
+      },
+      {
+        "person": "jon-spaihts",
+        "department": "Writing",
+        "job": "Screenplay",
+        "character": null,
+        "order": 2
+      },
+      {
+        "person": "eric-roth",
+        "department": "Writing",
+        "job": "Screenplay",
+        "character": null,
+        "order": 3
+      },
+      {
+        "person": "frank-herbert",
+        "department": "Writing",
+        "job": "Novel",
+        "character": null,
+        "order": 4
+      },
+      {
+        "person": "greig-fraser",
+        "department": "Camera",
+        "job": "Director of Photography",
+        "character": null,
+        "order": 5
+      },
+      {
+        "person": "hans-zimmer",
+        "department": "Sound",
+        "job": "Original Music",
+        "character": null,
+        "order": 6
+      }
+    ]
+  },
+  {
+    "id": "2e121894-3b03-5e7d-8dd3-a8b40cde337c",
+    "slug": "dune-part-two-2024",
+    "title": "Dune: Part Two",
+    "original_title": null,
+    "original_language": "en",
+    "status": "released",
+    "release_date": "2024-03-01",
+    "release_country": "US",
+    "release_year": 2024,
+    "runtime_minutes": 166,
+    "genres": [
+      "science-fiction",
+      "adventure"
+    ],
+    "synopsis": "Hiding among the Fremen, Paul Atreides learns the ways of the desert and grows close to Chani while a prophecy gathers around him. Revenge against the Harkonnens would be easy to take, but the future he keeps foreseeing is far worse than defeat.",
+    "alternate_titles": [],
+    "external_ids": [
+      {
+        "provider": "cinebase-fixture",
+        "external_id": "cbf-0012"
+      }
+    ],
+    "poster": {
+      "file": "posters/dune-part-two-2024.svg",
+      "style": "sand"
+    },
+    "credits": [
+      {
+        "person": "timothee-chalamet",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Paul Atreides",
+        "order": 0
+      },
+      {
+        "person": "zendaya",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Chani",
+        "order": 1
+      },
+      {
+        "person": "rebecca-ferguson",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Lady Jessica",
+        "order": 2
+      },
+      {
+        "person": "austin-butler",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Feyd-Rautha Harkonnen",
+        "order": 3
+      },
+      {
+        "person": "florence-pugh",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Princess Irulan",
+        "order": 4
+      },
+      {
+        "person": "denis-villeneuve",
+        "department": "Directing",
+        "job": "Director",
+        "character": null,
+        "order": 0
+      },
+      {
+        "person": "denis-villeneuve",
+        "department": "Writing",
+        "job": "Screenplay",
+        "character": null,
+        "order": 1
+      },
+      {
+        "person": "jon-spaihts",
+        "department": "Writing",
+        "job": "Screenplay",
+        "character": null,
+        "order": 2
+      },
+      {
+        "person": "frank-herbert",
+        "department": "Writing",
+        "job": "Novel",
+        "character": null,
+        "order": 3
+      },
+      {
+        "person": "greig-fraser",
+        "department": "Camera",
+        "job": "Director of Photography",
+        "character": null,
+        "order": 4
+      },
+      {
+        "person": "hans-zimmer",
+        "department": "Sound",
+        "job": "Original Music",
+        "character": null,
+        "order": 5
+      }
+    ]
+  },
+  {
+    "id": "a17dec17-00f9-5cd0-b1bc-2a1d50c1b05f",
+    "slug": "dune-part-three-2026",
+    "title": "Dune: Part Three",
+    "original_title": null,
+    "original_language": "en",
+    "status": "announced",
+    "release_date": "2026-12-18",
+    "release_country": "US",
+    "release_year": 2026,
+    "runtime_minutes": null,
+    "genres": [
+      "science-fiction"
+    ],
+    "synopsis": "Announced continuation of Denis Villeneuve's Dune films, adapted from Frank Herbert's Dune Messiah. Runtime and full credits have not been published; details here may change before release.",
+    "alternate_titles": [
+      {
+        "title": "Dune Messiah",
+        "locale": "en"
+      }
+    ],
+    "external_ids": [
+      {
+        "provider": "cinebase-fixture",
+        "external_id": "cbf-0013"
+      }
+    ],
+    "poster": null,
+    "credits": [
+      {
+        "person": "timothee-chalamet",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Paul Atreides",
+        "order": 0
+      },
+      {
+        "person": "zendaya",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Chani",
+        "order": 1
+      },
+      {
+        "person": "denis-villeneuve",
+        "department": "Directing",
+        "job": "Director",
+        "character": null,
+        "order": 0
+      },
+      {
+        "person": "frank-herbert",
+        "department": "Writing",
+        "job": "Novel",
+        "character": null,
+        "order": 1
+      }
+    ]
+  },
+  {
+    "id": "6a945be9-95c0-50b5-a61e-a2166ac85061",
+    "slug": "oceans-11-1960",
+    "title": "Ocean's 11",
+    "original_title": null,
+    "original_language": "en",
+    "status": "released",
+    "release_date": "1960-08-10",
+    "release_country": "US",
+    "release_year": 1960,
+    "runtime_minutes": 127,
+    "genres": [
+      "crime",
+      "comedy"
+    ],
+    "synopsis": "Danny Ocean gathers the men from his old army unit for one job: robbing five Las Vegas casinos at the stroke of midnight on New Year's Eve. The plan is elegant, the crew is charming, and almost nothing goes the way anyone expects.",
+    "alternate_titles": [
+      {
+        "title": "Ocean's Eleven",
+        "locale": "en"
+      }
+    ],
+    "external_ids": [
+      {
+        "provider": "cinebase-fixture",
+        "external_id": "cbf-0014"
+      }
+    ],
+    "poster": {
+      "file": "posters/oceans-11-1960.svg",
+      "style": "auto"
+    },
+    "credits": [
+      {
+        "person": "frank-sinatra",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Danny Ocean",
+        "order": 0
+      },
+      {
+        "person": "dean-martin",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Sam Harmon",
+        "order": 1
+      },
+      {
+        "person": "sammy-davis-jr",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Josh Howard",
+        "order": 2
+      },
+      {
+        "person": "peter-lawford",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Jimmy Foster",
+        "order": 3
+      },
+      {
+        "person": "angie-dickinson",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Beatrice Ocean",
+        "order": 4
+      },
+      {
+        "person": "lewis-milestone",
+        "department": "Directing",
+        "job": "Director",
+        "character": null,
+        "order": 0
+      },
+      {
+        "person": "harry-brown",
+        "department": "Writing",
+        "job": "Screenplay",
+        "character": null,
+        "order": 1
+      },
+      {
+        "person": "charles-lederer",
+        "department": "Writing",
+        "job": "Screenplay",
+        "character": null,
+        "order": 2
+      }
+    ]
+  },
+  {
+    "id": "2235f366-08e4-5291-9686-1b3152e538a6",
+    "slug": "oceans-eleven-2001",
+    "title": "Ocean's Eleven",
+    "original_title": null,
+    "original_language": "en",
+    "status": "released",
+    "release_date": "2001-12-07",
+    "release_country": "US",
+    "release_year": 2001,
+    "runtime_minutes": 116,
+    "genres": [
+      "crime",
+      "thriller",
+      "comedy"
+    ],
+    "synopsis": "Hours out of prison, Danny Ocean recruits ten specialists to empty the vault beneath three Las Vegas casinos in a single night. The owner is meticulous and dangerous, and he also happens to be with Danny's ex-wife.",
+    "alternate_titles": [],
+    "external_ids": [
+      {
+        "provider": "cinebase-fixture",
+        "external_id": "cbf-0015"
+      }
+    ],
+    "poster": {
+      "file": "posters/oceans-eleven-2001.svg",
+      "style": "neon"
+    },
+    "credits": [
+      {
+        "person": "george-clooney",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Danny Ocean",
+        "order": 0
+      },
+      {
+        "person": "brad-pitt",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Rusty Ryan",
+        "order": 1
+      },
+      {
+        "person": "matt-damon",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Linus Caldwell",
+        "order": 2
+      },
+      {
+        "person": "julia-roberts",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Tess Ocean",
+        "order": 3
+      },
+      {
+        "person": "andy-garcia",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Terry Benedict",
+        "order": 4
+      },
+      {
+        "person": "steven-soderbergh",
+        "department": "Directing",
+        "job": "Director",
+        "character": null,
+        "order": 0
+      },
+      {
+        "person": "steven-soderbergh",
+        "department": "Camera",
+        "job": "Director of Photography",
+        "character": null,
+        "order": 1
+      },
+      {
+        "person": "ted-griffin",
+        "department": "Writing",
+        "job": "Screenplay",
+        "character": null,
+        "order": 2
+      },
+      {
+        "person": "david-holmes",
+        "department": "Sound",
+        "job": "Original Music",
+        "character": null,
+        "order": 3
+      }
+    ]
+  },
+  {
+    "id": "9bf72d76-47b9-5155-9a5d-11e39f193e41",
+    "slug": "true-grit-1969",
+    "title": "True Grit",
+    "original_title": null,
+    "original_language": "en",
+    "status": "released",
+    "release_date": null,
+    "release_country": "US",
+    "release_year": 1969,
+    "runtime_minutes": 128,
+    "genres": [
+      "western",
+      "adventure"
+    ],
+    "synopsis": "A determined fourteen-year-old hires a hard-drinking U.S. marshal to track down the man who killed her father. A Texas Ranger with his own claim on the outlaw rides along, and the three argue their way into Indian Territory.",
+    "alternate_titles": [],
+    "external_ids": [
+      {
+        "provider": "cinebase-fixture",
+        "external_id": "cbf-0016"
+      }
+    ],
+    "poster": null,
+    "credits": [
+      {
+        "person": "john-wayne",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Rooster Cogburn",
+        "order": 0
+      },
+      {
+        "person": "kim-darby",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Mattie Ross",
+        "order": 1
+      },
+      {
+        "person": "glen-campbell",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "La Boeuf",
+        "order": 2
+      },
+      {
+        "person": "henry-hathaway",
+        "department": "Directing",
+        "job": "Director",
+        "character": null,
+        "order": 0
+      },
+      {
+        "person": "marguerite-roberts",
+        "department": "Writing",
+        "job": "Screenplay",
+        "character": null,
+        "order": 1
+      },
+      {
+        "person": "charles-portis",
+        "department": "Writing",
+        "job": "Novel",
+        "character": null,
+        "order": 2
+      }
+    ]
+  },
+  {
+    "id": "fd5a7a4f-cda2-546e-98ef-9b1de615a2b4",
+    "slug": "true-grit-2010",
+    "title": "True Grit",
+    "original_title": null,
+    "original_language": "en",
+    "status": "released",
+    "release_date": "2010-12-22",
+    "release_country": "US",
+    "release_year": 2010,
+    "runtime_minutes": 110,
+    "genres": [
+      "western",
+      "drama"
+    ],
+    "synopsis": "Mattie Ross, fourteen and unshakeable, pays a one-eyed marshal to pursue her father's killer into lawless country. Their journey is funny, brutal and quietly tender, and its cost follows Mattie for the rest of her life.",
+    "alternate_titles": [],
+    "external_ids": [
+      {
+        "provider": "cinebase-fixture",
+        "external_id": "cbf-0017"
+      }
+    ],
+    "poster": {
+      "file": "posters/true-grit-2010.svg",
+      "style": "sand"
+    },
+    "credits": [
+      {
+        "person": "jeff-bridges",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Rooster Cogburn",
+        "order": 0
+      },
+      {
+        "person": "hailee-steinfeld",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Mattie Ross",
+        "order": 1
+      },
+      {
+        "person": "matt-damon",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "LaBoeuf",
+        "order": 2
+      },
+      {
+        "person": "josh-brolin",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Tom Chaney",
+        "order": 3
+      },
+      {
+        "person": "joel-coen",
+        "department": "Directing",
+        "job": "Director",
+        "character": null,
+        "order": 0
+      },
+      {
+        "person": "ethan-coen",
+        "department": "Directing",
+        "job": "Director",
+        "character": null,
+        "order": 1
+      },
+      {
+        "person": "joel-coen",
+        "department": "Writing",
+        "job": "Screenplay",
+        "character": null,
+        "order": 2
+      },
+      {
+        "person": "ethan-coen",
+        "department": "Writing",
+        "job": "Screenplay",
+        "character": null,
+        "order": 3
+      },
+      {
+        "person": "charles-portis",
+        "department": "Writing",
+        "job": "Novel",
+        "character": null,
+        "order": 4
+      },
+      {
+        "person": "roger-deakins",
+        "department": "Camera",
+        "job": "Director of Photography",
+        "character": null,
+        "order": 5
+      },
+      {
+        "person": "carter-burwell",
+        "department": "Sound",
+        "job": "Original Music",
+        "character": null,
+        "order": 6
+      }
+    ]
+  },
+  {
+    "id": "9281ff9d-a944-5b75-be6a-8fd19f0adeed",
+    "slug": "infernal-affairs-2002",
+    "title": "Infernal Affairs",
+    "original_title": "無間道",
+    "original_language": "yue",
+    "status": "released",
+    "release_date": "2002-12-12",
+    "release_country": "HK",
+    "release_year": 2002,
+    "runtime_minutes": 101,
+    "genres": [
+      "crime",
+      "thriller"
+    ],
+    "synopsis": "A police officer has spent years undercover inside a Hong Kong triad, while a triad loyalist has risen through the ranks of the police. Each side learns it has a mole, and both men are ordered to find the other.",
+    "alternate_titles": [
+      {
+        "title": "Mou gaan dou",
+        "locale": "yue-Latn"
+      }
+    ],
+    "external_ids": [
+      {
+        "provider": "cinebase-fixture",
+        "external_id": "cbf-0018"
+      }
+    ],
+    "poster": {
+      "file": "posters/infernal-affairs-2002.svg",
+      "style": "neon"
+    },
+    "credits": [
+      {
+        "person": "andy-lau",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Lau Kin-ming",
+        "order": 0
+      },
+      {
+        "person": "tony-leung-chiu-wai",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Chan Wing-yan",
+        "order": 1
+      },
+      {
+        "person": "anthony-wong",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Superintendent Wong Chi-shing",
+        "order": 2
+      },
+      {
+        "person": "eric-tsang",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Hon Sam",
+        "order": 3
+      },
+      {
+        "person": "andrew-lau",
+        "department": "Directing",
+        "job": "Director",
+        "character": null,
+        "order": 0
+      },
+      {
+        "person": "alan-mak",
+        "department": "Directing",
+        "job": "Director",
+        "character": null,
+        "order": 1
+      },
+      {
+        "person": "alan-mak",
+        "department": "Writing",
+        "job": "Screenplay",
+        "character": null,
+        "order": 2
+      },
+      {
+        "person": "felix-chong",
+        "department": "Writing",
+        "job": "Screenplay",
+        "character": null,
+        "order": 3
+      },
+      {
+        "person": "andrew-lau",
+        "department": "Camera",
+        "job": "Director of Photography",
+        "character": null,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "id": "09a50792-9743-5889-b605-21d31b7a3224",
+    "slug": "the-departed-2006",
+    "title": "The Departed",
+    "original_title": null,
+    "original_language": "en",
+    "status": "released",
+    "release_date": "2006-10-06",
+    "release_country": "US",
+    "release_year": 2006,
+    "runtime_minutes": 151,
+    "genres": [
+      "crime",
+      "thriller",
+      "drama"
+    ],
+    "synopsis": "In Boston, a state police recruit goes deep undercover in an Irish mob, while the mob boss's protégé becomes a rising detective in the unit hunting him. As both moles close in, each is running out of people he can trust.",
+    "alternate_titles": [],
+    "external_ids": [
+      {
+        "provider": "cinebase-fixture",
+        "external_id": "cbf-0019"
+      }
+    ],
+    "poster": {
+      "file": "posters/the-departed-2006.svg",
+      "style": "auto"
+    },
+    "credits": [
+      {
+        "person": "leonardo-dicaprio",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Billy Costigan",
+        "order": 0
+      },
+      {
+        "person": "matt-damon",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Colin Sullivan",
+        "order": 1
+      },
+      {
+        "person": "jack-nicholson",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Frank Costello",
+        "order": 2
+      },
+      {
+        "person": "mark-wahlberg",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Staff Sgt. Sean Dignam",
+        "order": 3
+      },
+      {
+        "person": "martin-sheen",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Capt. Oliver Queenan",
+        "order": 4
+      },
+      {
+        "person": "martin-scorsese",
+        "department": "Directing",
+        "job": "Director",
+        "character": null,
+        "order": 0
+      },
+      {
+        "person": "william-monahan",
+        "department": "Writing",
+        "job": "Screenplay",
+        "character": null,
+        "order": 1
+      },
+      {
+        "person": "michael-ballhaus",
+        "department": "Camera",
+        "job": "Director of Photography",
+        "character": null,
+        "order": 2
+      },
+      {
+        "person": "thelma-schoonmaker",
+        "department": "Editing",
+        "job": "Editor",
+        "character": null,
+        "order": 3
+      }
+    ]
+  },
+  {
+    "id": "73297f7a-757f-5766-a8c7-c4498504df06",
+    "slug": "seven-samurai-1954",
+    "title": "Seven Samurai",
+    "original_title": "七人の侍",
+    "original_language": "ja",
+    "status": "released",
+    "release_date": "1954-04-26",
+    "release_country": "JP",
+    "release_year": 1954,
+    "runtime_minutes": 207,
+    "genres": [
+      "action",
+      "drama",
+      "adventure"
+    ],
+    "synopsis": "Farmers who expect bandits to raid their village after the harvest go looking for samurai willing to fight for rice. An aging ronin gathers six more, and together they turn the village into a fortress.",
+    "alternate_titles": [
+      {
+        "title": "Shichinin no samurai",
+        "locale": "ja-Latn"
+      }
+    ],
+    "external_ids": [
+      {
+        "provider": "cinebase-fixture",
+        "external_id": "cbf-0020"
+      }
+    ],
+    "poster": {
+      "file": "posters/seven-samurai-1954.svg",
+      "style": "ink"
+    },
+    "credits": [
+      {
+        "person": "takashi-shimura",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Kambei Shimada",
+        "order": 0
+      },
+      {
+        "person": "toshiro-mifune",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Kikuchiyo",
+        "order": 1
+      },
+      {
+        "person": "akira-kurosawa",
+        "department": "Directing",
+        "job": "Director",
+        "character": null,
+        "order": 0
+      },
+      {
+        "person": "akira-kurosawa",
+        "department": "Writing",
+        "job": "Screenplay",
+        "character": null,
+        "order": 1
+      },
+      {
+        "person": "akira-kurosawa",
+        "department": "Editing",
+        "job": "Editor",
+        "character": null,
+        "order": 2
+      },
+      {
+        "person": "shinobu-hashimoto",
+        "department": "Writing",
+        "job": "Screenplay",
+        "character": null,
+        "order": 3
+      },
+      {
+        "person": "hideo-oguni",
+        "department": "Writing",
+        "job": "Screenplay",
+        "character": null,
+        "order": 4
+      },
+      {
+        "person": "fumio-hayasaka",
+        "department": "Sound",
+        "job": "Original Music",
+        "character": null,
+        "order": 5
+      }
+    ]
+  },
+  {
+    "id": "ef174e3a-4dd9-5714-bfa2-f00f71fa74bb",
+    "slug": "the-magnificent-seven-1960",
+    "title": "The Magnificent Seven",
+    "original_title": null,
+    "original_language": "en",
+    "status": "released",
+    "release_date": "1960-10-23",
+    "release_country": "US",
+    "release_year": 1960,
+    "runtime_minutes": 128,
+    "genres": [
+      "western",
+      "action"
+    ],
+    "synopsis": "A Mexican village worn down by a bandit's yearly raids sends three men north to buy guns. They come back with seven gunfighters instead, each with his own reason for taking a job that pays almost nothing.",
+    "alternate_titles": [],
+    "external_ids": [
+      {
+        "provider": "cinebase-fixture",
+        "external_id": "cbf-0021"
+      }
+    ],
+    "poster": {
+      "file": "posters/the-magnificent-seven-1960.svg",
+      "style": "auto"
+    },
+    "credits": [
+      {
+        "person": "yul-brynner",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Chris Adams",
+        "order": 0
+      },
+      {
+        "person": "steve-mcqueen",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Vin Tanner",
+        "order": 1
+      },
+      {
+        "person": "eli-wallach",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Calvera",
+        "order": 2
+      },
+      {
+        "person": "charles-bronson",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Bernardo O'Reilly",
+        "order": 3
+      },
+      {
+        "person": "john-sturges",
+        "department": "Directing",
+        "job": "Director",
+        "character": null,
+        "order": 0
+      },
+      {
+        "person": "john-sturges",
+        "department": "Production",
+        "job": "Producer",
+        "character": null,
+        "order": 1
+      },
+      {
+        "person": "william-roberts",
+        "department": "Writing",
+        "job": "Screenplay",
+        "character": null,
+        "order": 2
+      },
+      {
+        "person": "elmer-bernstein",
+        "department": "Sound",
+        "job": "Original Music",
+        "character": null,
+        "order": 3
+      }
+    ]
+  },
+  {
+    "id": "cdd0a3da-de3a-5d08-8f41-7179e4c24dff",
+    "slug": "let-the-right-one-in-2008",
+    "title": "Let the Right One In",
+    "original_title": "Låt den rätte komma in",
+    "original_language": "sv",
+    "status": "released",
+    "release_date": "2008-10-24",
+    "release_country": "SE",
+    "release_year": 2008,
+    "runtime_minutes": 115,
+    "genres": [
+      "horror",
+      "drama",
+      "romance"
+    ],
+    "synopsis": "A bullied twelve-year-old in a snowbound Stockholm suburb befriends the strange girl who has just moved in next door. She only comes out at night, and a series of killings begins around the time she arrived.",
+    "alternate_titles": [],
+    "external_ids": [
+      {
+        "provider": "cinebase-fixture",
+        "external_id": "cbf-0022"
+      }
+    ],
+    "poster": {
+      "file": "posters/let-the-right-one-in-2008.svg",
+      "style": "ice"
+    },
+    "credits": [
+      {
+        "person": "kare-hedebrant",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Oskar",
+        "order": 0
+      },
+      {
+        "person": "lina-leandersson",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Eli",
+        "order": 1
+      },
+      {
+        "person": "tomas-alfredson",
+        "department": "Directing",
+        "job": "Director",
+        "character": null,
+        "order": 0
+      },
+      {
+        "person": "john-ajvide-lindqvist",
+        "department": "Writing",
+        "job": "Screenplay",
+        "character": null,
+        "order": 1
+      },
+      {
+        "person": "hoyte-van-hoytema",
+        "department": "Camera",
+        "job": "Director of Photography",
+        "character": null,
+        "order": 2
+      }
+    ]
+  },
+  {
+    "id": "e6a27f12-7614-5942-8088-3e117e49a895",
+    "slug": "let-me-in-2010",
+    "title": "Let Me In",
+    "original_title": null,
+    "original_language": "en",
+    "status": "released",
+    "release_date": "2010-10-01",
+    "release_country": "US",
+    "release_year": 2010,
+    "runtime_minutes": 116,
+    "genres": [
+      "horror",
+      "drama"
+    ],
+    "synopsis": "In a New Mexico town in 1983, a lonely boy forms a bond with the barefoot girl who moves into his apartment complex. She is not what she seems, and the man who lives with her is willing to do anything to keep her fed.",
+    "alternate_titles": [],
+    "external_ids": [
+      {
+        "provider": "cinebase-fixture",
+        "external_id": "cbf-0023"
+      }
+    ],
+    "poster": {
+      "file": "posters/let-me-in-2010.svg",
+      "style": "auto"
+    },
+    "credits": [
+      {
+        "person": "kodi-smit-mcphee",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Owen",
+        "order": 0
+      },
+      {
+        "person": "chloe-grace-moretz",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Abby",
+        "order": 1
+      },
+      {
+        "person": "richard-jenkins",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "The Father",
+        "order": 2
+      },
+      {
+        "person": "matt-reeves",
+        "department": "Directing",
+        "job": "Director",
+        "character": null,
+        "order": 0
+      },
+      {
+        "person": "matt-reeves",
+        "department": "Writing",
+        "job": "Screenplay",
+        "character": null,
+        "order": 1
+      },
+      {
+        "person": "john-ajvide-lindqvist",
+        "department": "Writing",
+        "job": "Novel",
+        "character": null,
+        "order": 2
+      },
+      {
+        "person": "greig-fraser",
+        "department": "Camera",
+        "job": "Director of Photography",
+        "character": null,
+        "order": 3
+      },
+      {
+        "person": "michael-giacchino",
+        "department": "Sound",
+        "job": "Original Music",
+        "character": null,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "id": "99af9890-2db6-5d1c-8977-57bc62aa2256",
+    "slug": "spirited-away-2001",
+    "title": "Spirited Away",
+    "original_title": "千と千尋の神隠し",
+    "original_language": "ja",
+    "status": "released",
+    "release_date": "2001-07-20",
+    "release_country": "JP",
+    "release_year": 2001,
+    "runtime_minutes": 125,
+    "genres": [
+      "animation",
+      "fantasy",
+      "adventure"
+    ],
+    "synopsis": "On the way to a new home, ten-year-old Chihiro wanders into a town of spirits where her parents are turned into pigs. To save them she takes a job in a bathhouse run by a witch, and has to remember who she is.",
+    "alternate_titles": [
+      {
+        "title": "Sen to Chihiro no Kamikakushi",
+        "locale": "ja-Latn"
+      }
+    ],
+    "external_ids": [
+      {
+        "provider": "cinebase-fixture",
+        "external_id": "cbf-0024"
+      }
+    ],
+    "poster": {
+      "file": "posters/spirited-away-2001.svg",
+      "style": "dusk"
+    },
+    "credits": [
+      {
+        "person": "rumi-hiiragi",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Chihiro / Sen (voice)",
+        "order": 0
+      },
+      {
+        "person": "miyu-irino",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Haku (voice)",
+        "order": 1
+      },
+      {
+        "person": "mari-natsuki",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Yubaba / Zeniba (voice)",
+        "order": 2
+      },
+      {
+        "person": "hayao-miyazaki",
+        "department": "Directing",
+        "job": "Director",
+        "character": null,
+        "order": 0
+      },
+      {
+        "person": "hayao-miyazaki",
+        "department": "Writing",
+        "job": "Screenplay",
+        "character": null,
+        "order": 1
+      },
+      {
+        "person": "joe-hisaishi",
+        "department": "Sound",
+        "job": "Original Music",
+        "character": null,
+        "order": 2
+      },
+      {
+        "person": "toshio-suzuki",
+        "department": "Production",
+        "job": "Producer",
+        "character": null,
+        "order": 3
+      }
+    ]
+  },
+  {
+    "id": "31b84739-ace4-5938-bb77-fd0cae2d4217",
+    "slug": "amelie-2001",
+    "title": "Amélie",
+    "original_title": "Le Fabuleux Destin d'Amélie Poulain",
+    "original_language": "fr",
+    "status": "released",
+    "release_date": "2001-04-25",
+    "release_country": "FR",
+    "release_year": 2001,
+    "runtime_minutes": 122,
+    "genres": [
+      "comedy",
+      "romance"
+    ],
+    "synopsis": "A shy waitress in Montmartre finds a box of childhood treasures hidden in her apartment and decides to return it to its owner in secret. The success sends her on a campaign of small, anonymous kindnesses, everywhere except in her own life.",
+    "alternate_titles": [
+      {
+        "title": "The Fabulous Destiny of Amélie Poulain",
+        "locale": "en"
+      }
+    ],
+    "external_ids": [
+      {
+        "provider": "cinebase-fixture",
+        "external_id": "cbf-0025"
+      }
+    ],
+    "poster": {
+      "file": "posters/amelie-2001.svg",
+      "style": "dusk"
+    },
+    "credits": [
+      {
+        "person": "audrey-tautou",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Amélie Poulain",
+        "order": 0
+      },
+      {
+        "person": "mathieu-kassovitz",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Nino Quincampoix",
+        "order": 1
+      },
+      {
+        "person": "jean-pierre-jeunet",
+        "department": "Directing",
+        "job": "Director",
+        "character": null,
+        "order": 0
+      },
+      {
+        "person": "jean-pierre-jeunet",
+        "department": "Writing",
+        "job": "Screenplay",
+        "character": null,
+        "order": 1
+      },
+      {
+        "person": "guillaume-laurant",
+        "department": "Writing",
+        "job": "Screenplay",
+        "character": null,
+        "order": 2
+      },
+      {
+        "person": "bruno-delbonnel",
+        "department": "Camera",
+        "job": "Director of Photography",
+        "character": null,
+        "order": 3
+      },
+      {
+        "person": "yann-tiersen",
+        "department": "Sound",
+        "job": "Original Music",
+        "character": null,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "id": "01d2efb4-12da-5224-8185-35e488468d4a",
+    "slug": "pans-labyrinth-2006",
+    "title": "Pan's Labyrinth",
+    "original_title": "El laberinto del fauno",
+    "original_language": "es",
+    "status": "released",
+    "release_date": "2006-10-11",
+    "release_country": "ES",
+    "release_year": 2006,
+    "runtime_minutes": 118,
+    "genres": [
+      "fantasy",
+      "drama",
+      "war"
+    ],
+    "synopsis": "In rural Spain in 1944, a girl moves with her pregnant mother into the outpost of her new stepfather, a ruthless army captain. In an overgrown labyrinth nearby, a faun tells her she is a lost princess and sets her three dangerous tasks.",
+    "alternate_titles": [],
+    "external_ids": [
+      {
+        "provider": "cinebase-fixture",
+        "external_id": "cbf-0026"
+      }
+    ],
+    "poster": {
+      "file": "posters/pans-labyrinth-2006.svg",
+      "style": "forest"
+    },
+    "credits": [
+      {
+        "person": "ivana-baquero",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Ofelia",
+        "order": 0
+      },
+      {
+        "person": "sergi-lopez",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Captain Vidal",
+        "order": 1
+      },
+      {
+        "person": "maribel-verdu",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Mercedes",
+        "order": 2
+      },
+      {
+        "person": "doug-jones",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "The Faun / The Pale Man",
+        "order": 3
+      },
+      {
+        "person": "guillermo-del-toro",
+        "department": "Directing",
+        "job": "Director",
+        "character": null,
+        "order": 0
+      },
+      {
+        "person": "guillermo-del-toro",
+        "department": "Writing",
+        "job": "Screenplay",
+        "character": null,
+        "order": 1
+      },
+      {
+        "person": "guillermo-navarro",
+        "department": "Camera",
+        "job": "Director of Photography",
+        "character": null,
+        "order": 2
+      },
+      {
+        "person": "javier-navarrete",
+        "department": "Sound",
+        "job": "Original Music",
+        "character": null,
+        "order": 3
+      }
+    ]
+  },
+  {
+    "id": "3a43154a-91dc-585c-b433-00047d682b77",
+    "slug": "2001-a-space-odyssey-1968",
+    "title": "2001: A Space Odyssey",
+    "original_title": null,
+    "original_language": "en",
+    "status": "released",
+    "release_date": null,
+    "release_country": "US",
+    "release_year": 1968,
+    "runtime_minutes": 149,
+    "genres": [
+      "science-fiction",
+      "adventure"
+    ],
+    "synopsis": "A black monolith appears at the dawn of humanity, and millions of years later another is found buried on the Moon. A crewed mission to Jupiter follows its signal, accompanied by a calm, attentive computer named HAL.",
+    "alternate_titles": [],
+    "external_ids": [
+      {
+        "provider": "cinebase-fixture",
+        "external_id": "cbf-0027"
+      }
+    ],
+    "poster": {
+      "file": "posters/2001-a-space-odyssey-1968.svg",
+      "style": "void"
+    },
+    "credits": [
+      {
+        "person": "keir-dullea",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Dr. David Bowman",
+        "order": 0
+      },
+      {
+        "person": "gary-lockwood",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Dr. Frank Poole",
+        "order": 1
+      },
+      {
+        "person": "douglas-rain",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "HAL 9000 (voice)",
+        "order": 2
+      },
+      {
+        "person": "stanley-kubrick",
+        "department": "Directing",
+        "job": "Director",
+        "character": null,
+        "order": 0
+      },
+      {
+        "person": "stanley-kubrick",
+        "department": "Writing",
+        "job": "Screenplay",
+        "character": null,
+        "order": 1
+      },
+      {
+        "person": "stanley-kubrick",
+        "department": "Production",
+        "job": "Producer",
+        "character": null,
+        "order": 2
+      },
+      {
+        "person": "arthur-c-clarke",
+        "department": "Writing",
+        "job": "Screenplay",
+        "character": null,
+        "order": 3
+      },
+      {
+        "person": "geoffrey-unsworth",
+        "department": "Camera",
+        "job": "Director of Photography",
+        "character": null,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "id": "78569b45-caa5-50e4-a080-b112a70a35ad",
+    "slug": "12-angry-men-1957",
+    "title": "12 Angry Men",
+    "original_title": null,
+    "original_language": "en",
+    "status": "released",
+    "release_date": null,
+    "release_country": "US",
+    "release_year": 1957,
+    "runtime_minutes": 96,
+    "genres": [
+      "drama",
+      "crime"
+    ],
+    "synopsis": "On a sweltering afternoon, twelve jurors retire to decide a murder case that looks open and shut. One of them votes not guilty, and in a locked room with a broken fan, he asks the others to look at the evidence again.",
+    "alternate_titles": [
+      {
+        "title": "Twelve Angry Men",
+        "locale": "en"
+      }
+    ],
+    "external_ids": [
+      {
+        "provider": "cinebase-fixture",
+        "external_id": "cbf-0028"
+      }
+    ],
+    "poster": {
+      "file": "posters/12-angry-men-1957.svg",
+      "style": "ink"
+    },
+    "credits": [
+      {
+        "person": "henry-fonda",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Juror 8",
+        "order": 0
+      },
+      {
+        "person": "lee-j-cobb",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Juror 3",
+        "order": 1
+      },
+      {
+        "person": "ed-begley",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Juror 10",
+        "order": 2
+      },
+      {
+        "person": "martin-balsam",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Juror 1",
+        "order": 3
+      },
+      {
+        "person": "sidney-lumet",
+        "department": "Directing",
+        "job": "Director",
+        "character": null,
+        "order": 0
+      },
+      {
+        "person": "reginald-rose",
+        "department": "Writing",
+        "job": "Screenplay",
+        "character": null,
+        "order": 1
+      },
+      {
+        "person": "reginald-rose",
+        "department": "Production",
+        "job": "Producer",
+        "character": null,
+        "order": 2
+      },
+      {
+        "person": "henry-fonda",
+        "department": "Production",
+        "job": "Producer",
+        "character": null,
+        "order": 3
+      },
+      {
+        "person": "boris-kaufman",
+        "department": "Camera",
+        "job": "Director of Photography",
+        "character": null,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "id": "041558d2-2cbe-54c2-a2e7-797e21c55081",
+    "slug": "8-and-a-half-1963",
+    "title": "8½",
+    "original_title": "Otto e mezzo",
+    "original_language": "it",
+    "status": "released",
+    "release_date": "1963-02-14",
+    "release_country": "IT",
+    "release_year": 1963,
+    "runtime_minutes": 138,
+    "genres": [
+      "drama",
+      "fantasy"
+    ],
+    "synopsis": "A celebrated film director retreats to a spa town to recover while preparations for his next production carry on without a script. Producers, lovers, critics and memories crowd in on him as he tries to remember what he wanted to say.",
+    "alternate_titles": [
+      {
+        "title": "8 1/2",
+        "locale": "en"
+      },
+      {
+        "title": "Eight and a Half",
+        "locale": "en"
+      }
+    ],
+    "external_ids": [
+      {
+        "provider": "cinebase-fixture",
+        "external_id": "cbf-0029"
+      }
+    ],
+    "poster": {
+      "file": "posters/8-and-a-half-1963.svg",
+      "style": "void"
+    },
+    "credits": [
+      {
+        "person": "marcello-mastroianni",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Guido Anselmi",
+        "order": 0
+      },
+      {
+        "person": "claudia-cardinale",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Claudia",
+        "order": 1
+      },
+      {
+        "person": "anouk-aimee",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Luisa Anselmi",
+        "order": 2
+      },
+      {
+        "person": "federico-fellini",
+        "department": "Directing",
+        "job": "Director",
+        "character": null,
+        "order": 0
+      },
+      {
+        "person": "federico-fellini",
+        "department": "Writing",
+        "job": "Screenplay",
+        "character": null,
+        "order": 1
+      },
+      {
+        "person": "gianni-di-venanzo",
+        "department": "Camera",
+        "job": "Director of Photography",
+        "character": null,
+        "order": 2
+      },
+      {
+        "person": "nino-rota",
+        "department": "Sound",
+        "job": "Original Music",
+        "character": null,
+        "order": 3
+      }
+    ]
+  },
+  {
+    "id": "270156a7-799a-5377-94a3-a55f673b4c3b",
+    "slug": "dr-strangelove-1964",
+    "title": "Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb",
+    "original_title": null,
+    "original_language": "en",
+    "status": "released",
+    "release_date": "1964-01-29",
+    "release_country": "US",
+    "release_year": 1964,
+    "runtime_minutes": 95,
+    "genres": [
+      "comedy",
+      "war"
+    ],
+    "synopsis": "An unhinged general orders his bomber wing to attack the Soviet Union, and the President gathers his advisers in the War Room to call the planes back. Every safeguard designed to prevent catastrophe turns out to make it more certain.",
+    "alternate_titles": [
+      {
+        "title": "Dr. Strangelove",
+        "locale": "en"
+      }
+    ],
+    "external_ids": [
+      {
+        "provider": "cinebase-fixture",
+        "external_id": "cbf-0030"
+      }
+    ],
+    "poster": {
+      "file": "posters/dr-strangelove-1964.svg",
+      "style": "void"
+    },
+    "credits": [
+      {
+        "person": "peter-sellers",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Group Capt. Lionel Mandrake / President Merkin Muffley / Dr. Strangelove",
+        "order": 0
+      },
+      {
+        "person": "george-c-scott",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Gen. Buck Turgidson",
+        "order": 1
+      },
+      {
+        "person": "sterling-hayden",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Gen. Jack D. Ripper",
+        "order": 2
+      },
+      {
+        "person": "slim-pickens",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Maj. T. J. \"King\" Kong",
+        "order": 3
+      },
+      {
+        "person": "stanley-kubrick",
+        "department": "Directing",
+        "job": "Director",
+        "character": null,
+        "order": 0
+      },
+      {
+        "person": "stanley-kubrick",
+        "department": "Writing",
+        "job": "Screenplay",
+        "character": null,
+        "order": 1
+      },
+      {
+        "person": "stanley-kubrick",
+        "department": "Production",
+        "job": "Producer",
+        "character": null,
+        "order": 2
+      },
+      {
+        "person": "terry-southern",
+        "department": "Writing",
+        "job": "Screenplay",
+        "character": null,
+        "order": 3
+      },
+      {
+        "person": "peter-george",
+        "department": "Writing",
+        "job": "Screenplay",
+        "character": null,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "id": "642b17ae-99c0-56eb-b832-ff00d72d8d74",
+    "slug": "parasite-2019",
+    "title": "Parasite",
+    "original_title": "기생충",
+    "original_language": "ko",
+    "status": "released",
+    "release_date": "2019-05-30",
+    "release_country": "KR",
+    "release_year": 2019,
+    "runtime_minutes": 132,
+    "genres": [
+      "thriller",
+      "drama",
+      "comedy"
+    ],
+    "synopsis": "The Kim family, folding pizza boxes in a semi-basement flat, sees an opening when their son is hired to tutor the daughter of the wealthy Park family. One by one, the Kims find their way into the Parks' house and lives.",
+    "alternate_titles": [
+      {
+        "title": "Gisaengchung",
+        "locale": "ko-Latn"
+      }
+    ],
+    "external_ids": [
+      {
+        "provider": "cinebase-fixture",
+        "external_id": "cbf-0031"
+      }
+    ],
+    "poster": {
+      "file": "posters/parasite-2019.svg",
+      "style": "forest"
+    },
+    "credits": [
+      {
+        "person": "song-kang-ho",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Kim Ki-taek",
+        "order": 0
+      },
+      {
+        "person": "lee-sun-kyun",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Park Dong-ik",
+        "order": 1
+      },
+      {
+        "person": "cho-yeo-jeong",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Choi Yeon-gyo",
+        "order": 2
+      },
+      {
+        "person": "choi-woo-shik",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Kim Ki-woo",
+        "order": 3
+      },
+      {
+        "person": "park-so-dam",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Kim Ki-jung",
+        "order": 4
+      },
+      {
+        "person": "bong-joon-ho",
+        "department": "Directing",
+        "job": "Director",
+        "character": null,
+        "order": 0
+      },
+      {
+        "person": "bong-joon-ho",
+        "department": "Writing",
+        "job": "Screenplay",
+        "character": null,
+        "order": 1
+      },
+      {
+        "person": "han-jin-won",
+        "department": "Writing",
+        "job": "Screenplay",
+        "character": null,
+        "order": 2
+      },
+      {
+        "person": "hong-kyung-pyo",
+        "department": "Camera",
+        "job": "Director of Photography",
+        "character": null,
+        "order": 3
+      },
+      {
+        "person": "jung-jae-il",
+        "department": "Sound",
+        "job": "Original Music",
+        "character": null,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "id": "7a0fb535-711e-5056-a7b5-d5491e608bb6",
+    "slug": "in-the-mood-for-love-2000",
+    "title": "In the Mood for Love",
+    "original_title": "花樣年華",
+    "original_language": "yue",
+    "status": "released",
+    "release_date": null,
+    "release_country": "HK",
+    "release_year": 2000,
+    "runtime_minutes": 98,
+    "genres": [
+      "romance",
+      "drama"
+    ],
+    "synopsis": "In 1962 Hong Kong, a journalist and a secretary move into neighboring rooms on the same day. When they realize their spouses are having an affair with each other, they begin meeting to understand how it happened, and are careful never to do the same.",
+    "alternate_titles": [
+      {
+        "title": "Fa yeung nin wa",
+        "locale": "yue-Latn"
+      }
+    ],
+    "external_ids": [
+      {
+        "provider": "cinebase-fixture",
+        "external_id": "cbf-0032"
+      }
+    ],
+    "poster": {
+      "file": "posters/in-the-mood-for-love-2000.svg",
+      "style": "neon"
+    },
+    "credits": [
+      {
+        "person": "tony-leung-chiu-wai",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Chow Mo-wan",
+        "order": 0
+      },
+      {
+        "person": "maggie-cheung",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Su Li-zhen",
+        "order": 1
+      },
+      {
+        "person": "wong-kar-wai",
+        "department": "Directing",
+        "job": "Director",
+        "character": null,
+        "order": 0
+      },
+      {
+        "person": "wong-kar-wai",
+        "department": "Writing",
+        "job": "Screenplay",
+        "character": null,
+        "order": 1
+      },
+      {
+        "person": "christopher-doyle",
+        "department": "Camera",
+        "job": "Director of Photography",
+        "character": null,
+        "order": 2
+      },
+      {
+        "person": "mark-lee-ping-bin",
+        "department": "Camera",
+        "job": "Director of Photography",
+        "character": null,
+        "order": 3
+      }
+    ]
+  },
+  {
+    "id": "3d042351-ecf1-5672-b1d2-66aae553b08a",
+    "slug": "chungking-express-1994",
+    "title": "Chungking Express",
+    "original_title": "重慶森林",
+    "original_language": "yue",
+    "status": "released",
+    "release_date": null,
+    "release_country": "HK",
+    "release_year": 1994,
+    "runtime_minutes": 102,
+    "genres": [
+      "romance",
+      "comedy",
+      "crime"
+    ],
+    "synopsis": "Two lovesick Hong Kong policemen drift through the city's night markets and snack bars. One makes a deadline for his heartbreak and falls for a woman in a blonde wig; the other doesn't notice that the girl at the food stall is redecorating his flat.",
+    "alternate_titles": [
+      {
+        "title": "Chung Hing sam lam",
+        "locale": "yue-Latn"
+      }
+    ],
+    "external_ids": [
+      {
+        "provider": "cinebase-fixture",
+        "external_id": "cbf-0033"
+      }
+    ],
+    "poster": {
+      "file": "posters/chungking-express-1994.svg",
+      "style": "neon"
+    },
+    "credits": [
+      {
+        "person": "brigitte-lin",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Woman in blonde wig",
+        "order": 0
+      },
+      {
+        "person": "takeshi-kaneshiro",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "He Qiwu, Cop 223",
+        "order": 1
+      },
+      {
+        "person": "tony-leung-chiu-wai",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Cop 663",
+        "order": 2
+      },
+      {
+        "person": "faye-wong",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Faye",
+        "order": 3
+      },
+      {
+        "person": "wong-kar-wai",
+        "department": "Directing",
+        "job": "Director",
+        "character": null,
+        "order": 0
+      },
+      {
+        "person": "wong-kar-wai",
+        "department": "Writing",
+        "job": "Screenplay",
+        "character": null,
+        "order": 1
+      },
+      {
+        "person": "christopher-doyle",
+        "department": "Camera",
+        "job": "Director of Photography",
+        "character": null,
+        "order": 2
+      },
+      {
+        "person": "andrew-lau",
+        "department": "Camera",
+        "job": "Director of Photography",
+        "character": null,
+        "order": 3
+      }
+    ]
+  },
+  {
+    "id": "9ef4fa4b-1e02-534b-aec0-122ecfb4c3e0",
+    "slug": "portrait-of-a-lady-on-fire-2019",
+    "title": "Portrait of a Lady on Fire",
+    "original_title": "Portrait de la jeune fille en feu",
+    "original_language": "fr",
+    "status": "released",
+    "release_date": "2019-09-18",
+    "release_country": "FR",
+    "release_year": 2019,
+    "runtime_minutes": 122,
+    "genres": [
+      "drama",
+      "romance"
+    ],
+    "synopsis": "In 1770 a painter is hired to make a wedding portrait of a young woman who refuses to pose. Introduced as a walking companion, she studies her subject in secret on a remote Breton island, and the looking slowly becomes mutual.",
+    "alternate_titles": [],
+    "external_ids": [
+      {
+        "provider": "cinebase-fixture",
+        "external_id": "cbf-0034"
+      }
+    ],
+    "poster": {
+      "file": "posters/portrait-of-a-lady-on-fire-2019.svg",
+      "style": "dusk"
+    },
+    "credits": [
+      {
+        "person": "noemie-merlant",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Marianne",
+        "order": 0
+      },
+      {
+        "person": "adele-haenel",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Héloïse",
+        "order": 1
+      },
+      {
+        "person": "luana-bajrami",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Sophie",
+        "order": 2
+      },
+      {
+        "person": "valeria-golino",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "The Countess",
+        "order": 3
+      },
+      {
+        "person": "celine-sciamma",
+        "department": "Directing",
+        "job": "Director",
+        "character": null,
+        "order": 0
+      },
+      {
+        "person": "celine-sciamma",
+        "department": "Writing",
+        "job": "Screenplay",
+        "character": null,
+        "order": 1
+      },
+      {
+        "person": "claire-mathon",
+        "department": "Camera",
+        "job": "Director of Photography",
+        "character": null,
+        "order": 2
+      }
+    ]
+  },
+  {
+    "id": "809d0284-dba9-5518-845f-89c1390ef6cd",
+    "slug": "stalker-1979",
+    "title": "Stalker",
+    "original_title": "Сталкер",
+    "original_language": "ru",
+    "status": "released",
+    "release_date": null,
+    "release_country": "SU",
+    "release_year": 1979,
+    "runtime_minutes": null,
+    "genres": [
+      "science-fiction",
+      "drama"
+    ],
+    "synopsis": "A guide leads two clients, a writer and a scientist, into the Zone, a forbidden territory where a room is said to grant a person's deepest wish. The path is never direct, and the closer they get, the less sure they are of what they want.",
+    "alternate_titles": [],
+    "external_ids": [
+      {
+        "provider": "cinebase-fixture",
+        "external_id": "cbf-0035"
+      }
+    ],
+    "poster": {
+      "file": "posters/stalker-1979.svg",
+      "style": "forest"
+    },
+    "credits": [
+      {
+        "person": "alexander-kaidanovsky",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Stalker",
+        "order": 0
+      },
+      {
+        "person": "anatoly-solonitsyn",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Writer",
+        "order": 1
+      },
+      {
+        "person": "nikolai-grinko",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Professor",
+        "order": 2
+      },
+      {
+        "person": "andrei-tarkovsky",
+        "department": "Directing",
+        "job": "Director",
+        "character": null,
+        "order": 0
+      },
+      {
+        "person": "andrei-tarkovsky",
+        "department": "Production",
+        "job": "Production Design",
+        "character": null,
+        "order": 1
+      },
+      {
+        "person": "arkady-strugatsky",
+        "department": "Writing",
+        "job": "Screenplay",
+        "character": null,
+        "order": 2
+      },
+      {
+        "person": "boris-strugatsky",
+        "department": "Writing",
+        "job": "Screenplay",
+        "character": null,
+        "order": 3
+      },
+      {
+        "person": "eduard-artemyev",
+        "department": "Sound",
+        "job": "Original Music",
+        "character": null,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "id": "7b57e201-4f33-5ab7-add4-c1155cd1a93a",
+    "slug": "mulholland-drive-2001",
+    "title": "Mulholland Drive",
+    "original_title": null,
+    "original_language": "en",
+    "status": "released",
+    "release_date": null,
+    "release_country": "US",
+    "release_year": 2001,
+    "runtime_minutes": 147,
+    "genres": [
+      "mystery",
+      "thriller",
+      "drama"
+    ],
+    "synopsis": "An aspiring actress arrives in Los Angeles and finds a woman with amnesia hiding in her aunt's apartment after a car crash on Mulholland Drive. Their search for the stranger's identity leads somewhere neither of them is prepared to go.",
+    "alternate_titles": [
+      {
+        "title": "Mulholland Dr.",
+        "locale": "en"
+      }
+    ],
+    "external_ids": [
+      {
+        "provider": "cinebase-fixture",
+        "external_id": "cbf-0036"
+      }
+    ],
+    "poster": {
+      "file": "posters/mulholland-drive-2001.svg",
+      "style": "neon"
+    },
+    "credits": [
+      {
+        "person": "naomi-watts",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Betty Elms / Diane Selwyn",
+        "order": 0
+      },
+      {
+        "person": "laura-harring",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Rita / Camilla Rhodes",
+        "order": 1
+      },
+      {
+        "person": "justin-theroux",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Adam Kesher",
+        "order": 2
+      },
+      {
+        "person": "david-lynch",
+        "department": "Directing",
+        "job": "Director",
+        "character": null,
+        "order": 0
+      },
+      {
+        "person": "david-lynch",
+        "department": "Writing",
+        "job": "Screenplay",
+        "character": null,
+        "order": 1
+      },
+      {
+        "person": "peter-deming",
+        "department": "Camera",
+        "job": "Director of Photography",
+        "character": null,
+        "order": 2
+      },
+      {
+        "person": "angelo-badalamenti",
+        "department": "Sound",
+        "job": "Original Music",
+        "character": null,
+        "order": 3
+      }
+    ]
+  },
+  {
+    "id": "dff60dc8-a373-5eef-9d31-9c068c78277c",
+    "slug": "tokyo-story-1953",
+    "title": "Tokyo Story",
+    "original_title": "東京物語",
+    "original_language": "ja",
+    "status": "released",
+    "release_date": "1953-11-03",
+    "release_country": "JP",
+    "release_year": 1953,
+    "runtime_minutes": 136,
+    "genres": [
+      "drama"
+    ],
+    "synopsis": "An elderly couple travels from their seaside town to visit their grown children in Tokyo. The children are busy and politely impatient; only their widowed daughter-in-law makes real time for them.",
+    "alternate_titles": [
+      {
+        "title": "Tōkyō monogatari",
+        "locale": "ja-Latn"
+      }
+    ],
+    "external_ids": [
+      {
+        "provider": "cinebase-fixture",
+        "external_id": "cbf-0037"
+      }
+    ],
+    "poster": {
+      "file": "posters/tokyo-story-1953.svg",
+      "style": "ink"
+    },
+    "credits": [
+      {
+        "person": "chishu-ryu",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Shūkichi Hirayama",
+        "order": 0
+      },
+      {
+        "person": "chieko-higashiyama",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Tomi Hirayama",
+        "order": 1
+      },
+      {
+        "person": "setsuko-hara",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Noriko Hirayama",
+        "order": 2
+      },
+      {
+        "person": "yasujiro-ozu",
+        "department": "Directing",
+        "job": "Director",
+        "character": null,
+        "order": 0
+      },
+      {
+        "person": "yasujiro-ozu",
+        "department": "Writing",
+        "job": "Screenplay",
+        "character": null,
+        "order": 1
+      },
+      {
+        "person": "kogo-noda",
+        "department": "Writing",
+        "job": "Screenplay",
+        "character": null,
+        "order": 2
+      },
+      {
+        "person": "yuharu-atsuta",
+        "department": "Camera",
+        "job": "Director of Photography",
+        "character": null,
+        "order": 3
+      }
+    ]
+  },
+  {
+    "id": "870f21d7-bdd2-5f5b-b24a-7fa4ee15ff26",
+    "slug": "the-seventh-seal-1957",
+    "title": "The Seventh Seal",
+    "original_title": "Det sjunde inseglet",
+    "original_language": "sv",
+    "status": "released",
+    "release_date": "1957-02-16",
+    "release_country": "SE",
+    "release_year": 1957,
+    "runtime_minutes": 96,
+    "genres": [
+      "drama",
+      "fantasy"
+    ],
+    "synopsis": "A knight returning from the Crusades finds Death waiting for him on a Swedish beach and challenges him to a game of chess. While the game goes on, he travels through a plague-stricken country looking for one meaningful act.",
+    "alternate_titles": [],
+    "external_ids": [
+      {
+        "provider": "cinebase-fixture",
+        "external_id": "cbf-0038"
+      }
+    ],
+    "poster": {
+      "file": "posters/the-seventh-seal-1957.svg",
+      "style": "void"
+    },
+    "credits": [
+      {
+        "person": "max-von-sydow",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Antonius Block",
+        "order": 0
+      },
+      {
+        "person": "gunnar-bjornstrand",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Jöns",
+        "order": 1
+      },
+      {
+        "person": "bengt-ekerot",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Death",
+        "order": 2
+      },
+      {
+        "person": "ingmar-bergman",
+        "department": "Directing",
+        "job": "Director",
+        "character": null,
+        "order": 0
+      },
+      {
+        "person": "ingmar-bergman",
+        "department": "Writing",
+        "job": "Screenplay",
+        "character": null,
+        "order": 1
+      },
+      {
+        "person": "gunnar-fischer",
+        "department": "Camera",
+        "job": "Director of Photography",
+        "character": null,
+        "order": 2
+      }
+    ]
+  },
+  {
+    "id": "4f4f3bc0-dc40-5852-9da5-ad7751a61f9a",
+    "slug": "celine-and-julie-go-boating-1974",
+    "title": "Céline and Julie Go Boating",
+    "original_title": "Céline et Julie vont en bateau",
+    "original_language": "fr",
+    "status": "released",
+    "release_date": null,
+    "release_country": "FR",
+    "release_year": 1974,
+    "runtime_minutes": 193,
+    "genres": [
+      "comedy",
+      "fantasy",
+      "mystery"
+    ],
+    "synopsis": "A librarian and a stage magician meet by chance in Paris and become inseparable playmates. Through a boiled sweet and a mysterious house, they begin replaying a melodrama from the past, and decide to change its ending.",
+    "alternate_titles": [],
+    "external_ids": [
+      {
+        "provider": "cinebase-fixture",
+        "external_id": "cbf-0039"
+      }
+    ],
+    "poster": null,
+    "credits": [
+      {
+        "person": "juliet-berto",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Céline",
+        "order": 0
+      },
+      {
+        "person": "dominique-labourier",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Julie",
+        "order": 1
+      },
+      {
+        "person": "bulle-ogier",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Camille",
+        "order": 2
+      },
+      {
+        "person": "marie-france-pisier",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Sophie",
+        "order": 3
+      },
+      {
+        "person": "jacques-rivette",
+        "department": "Directing",
+        "job": "Director",
+        "character": null,
+        "order": 0
+      },
+      {
+        "person": "jacques-rivette",
+        "department": "Writing",
+        "job": "Screenplay",
+        "character": null,
+        "order": 1
+      }
+    ]
+  },
+  {
+    "id": "df71c092-f96d-5b63-811b-ec59299581d0",
+    "slug": "y-tu-mama-tambien-2001",
+    "title": "Y tu mamá también",
+    "original_title": null,
+    "original_language": "es",
+    "status": "released",
+    "release_date": "2001-06-08",
+    "release_country": "MX",
+    "release_year": 2001,
+    "runtime_minutes": 106,
+    "genres": [
+      "drama",
+      "comedy"
+    ],
+    "synopsis": "Two teenage friends in Mexico City invent a secret beach to impress an older woman, and are stunned when she agrees to come along. On the road trip their rivalries surface while the country passes by outside the car.",
+    "alternate_titles": [
+      {
+        "title": "And Your Mother Too",
+        "locale": "en"
+      }
+    ],
+    "external_ids": [
+      {
+        "provider": "cinebase-fixture",
+        "external_id": "cbf-0040"
+      }
+    ],
+    "poster": {
+      "file": "posters/y-tu-mama-tambien-2001.svg",
+      "style": "sand"
+    },
+    "credits": [
+      {
+        "person": "maribel-verdu",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Luisa Cortés",
+        "order": 0
+      },
+      {
+        "person": "gael-garcia-bernal",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Julio Zapata",
+        "order": 1
+      },
+      {
+        "person": "diego-luna",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Tenoch Iturbide",
+        "order": 2
+      },
+      {
+        "person": "alfonso-cuaron",
+        "department": "Directing",
+        "job": "Director",
+        "character": null,
+        "order": 0
+      },
+      {
+        "person": "alfonso-cuaron",
+        "department": "Writing",
+        "job": "Screenplay",
+        "character": null,
+        "order": 1
+      },
+      {
+        "person": "carlos-cuaron",
+        "department": "Writing",
+        "job": "Screenplay",
+        "character": null,
+        "order": 2
+      },
+      {
+        "person": "emmanuel-lubezki",
+        "department": "Camera",
+        "job": "Director of Photography",
+        "character": null,
+        "order": 3
+      }
+    ]
+  },
+  {
+    "id": "6a3b6956-675b-5e96-91cb-ef42624f8af7",
+    "slug": "paris-texas-1984",
+    "title": "Paris, Texas",
+    "original_title": null,
+    "original_language": "en",
+    "status": "released",
+    "release_date": null,
+    "release_country": "US",
+    "release_year": 1984,
+    "runtime_minutes": 145,
+    "genres": [
+      "drama"
+    ],
+    "synopsis": "A man who has been missing for four years walks out of the Texas desert, unable or unwilling to speak. His brother takes him back to Los Angeles, where the son he left behind is growing up, and the two set out to find the boy's mother.",
+    "alternate_titles": [],
+    "external_ids": [
+      {
+        "provider": "cinebase-fixture",
+        "external_id": "cbf-0041"
+      }
+    ],
+    "poster": {
+      "file": "posters/paris-texas-1984.svg",
+      "style": "sand"
+    },
+    "credits": [
+      {
+        "person": "harry-dean-stanton",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Travis Henderson",
+        "order": 0
+      },
+      {
+        "person": "nastassja-kinski",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Jane Henderson",
+        "order": 1
+      },
+      {
+        "person": "dean-stockwell",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Walt Henderson",
+        "order": 2
+      },
+      {
+        "person": "hunter-carson",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Hunter Henderson",
+        "order": 3
+      },
+      {
+        "person": "wim-wenders",
+        "department": "Directing",
+        "job": "Director",
+        "character": null,
+        "order": 0
+      },
+      {
+        "person": "sam-shepard",
+        "department": "Writing",
+        "job": "Screenplay",
+        "character": null,
+        "order": 1
+      },
+      {
+        "person": "robby-muller",
+        "department": "Camera",
+        "job": "Director of Photography",
+        "character": null,
+        "order": 2
+      },
+      {
+        "person": "ry-cooder",
+        "department": "Sound",
+        "job": "Original Music",
+        "character": null,
+        "order": 3
+      }
+    ]
+  },
+  {
+    "id": "33ebc70d-41d4-5851-91a6-3222e8565b41",
+    "slug": "everything-everywhere-all-at-once-2022",
+    "title": "Everything Everywhere All at Once",
+    "original_title": null,
+    "original_language": "en",
+    "status": "released",
+    "release_date": "2022-03-25",
+    "release_country": "US",
+    "release_year": 2022,
+    "runtime_minutes": 139,
+    "genres": [
+      "science-fiction",
+      "comedy",
+      "action"
+    ],
+    "synopsis": "A laundromat owner in the middle of a tax audit learns she is the one person who can save a multiverse under threat. To do it she must borrow skills from her other lives, and finally have an honest conversation with her daughter.",
+    "alternate_titles": [],
+    "external_ids": [
+      {
+        "provider": "cinebase-fixture",
+        "external_id": "cbf-0042"
+      }
+    ],
+    "poster": {
+      "file": "posters/everything-everywhere-all-at-once-2022.svg",
+      "style": "dusk"
+    },
+    "credits": [
+      {
+        "person": "michelle-yeoh",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Evelyn Wang",
+        "order": 0
+      },
+      {
+        "person": "ke-huy-quan",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Waymond Wang",
+        "order": 1
+      },
+      {
+        "person": "stephanie-hsu",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Joy Wang / Jobu Tupaki",
+        "order": 2
+      },
+      {
+        "person": "jamie-lee-curtis",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Deirdre Beaubeirdre",
+        "order": 3
+      },
+      {
+        "person": "james-hong",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Gong Gong",
+        "order": 4
+      },
+      {
+        "person": "daniel-kwan",
+        "department": "Directing",
+        "job": "Director",
+        "character": null,
+        "order": 0
+      },
+      {
+        "person": "daniel-scheinert",
+        "department": "Directing",
+        "job": "Director",
+        "character": null,
+        "order": 1
+      },
+      {
+        "person": "daniel-kwan",
+        "department": "Writing",
+        "job": "Screenplay",
+        "character": null,
+        "order": 2
+      },
+      {
+        "person": "daniel-scheinert",
+        "department": "Writing",
+        "job": "Screenplay",
+        "character": null,
+        "order": 3
+      },
+      {
+        "person": "larkin-seiple",
+        "department": "Camera",
+        "job": "Director of Photography",
+        "character": null,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "id": "718a3620-3f13-5baa-b65e-23e075fbaa93",
+    "slug": "lady-bird-2017",
+    "title": "Lady Bird",
+    "original_title": null,
+    "original_language": "en",
+    "status": "released",
+    "release_date": "2017-11-03",
+    "release_country": "US",
+    "release_year": 2017,
+    "runtime_minutes": 94,
+    "genres": [
+      "comedy",
+      "drama"
+    ],
+    "synopsis": "In Sacramento in 2002, a high-school senior who insists on being called Lady Bird spends her final year planning an escape to an East Coast college. Her mother, practical and exhausted, is the person she most resembles and least wants to hear.",
+    "alternate_titles": [],
+    "external_ids": [
+      {
+        "provider": "cinebase-fixture",
+        "external_id": "cbf-0043"
+      }
+    ],
+    "poster": {
+      "file": "posters/lady-bird-2017.svg",
+      "style": "dusk"
+    },
+    "credits": [
+      {
+        "person": "saoirse-ronan",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Christine \"Lady Bird\" McPherson",
+        "order": 0
+      },
+      {
+        "person": "laurie-metcalf",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Marion McPherson",
+        "order": 1
+      },
+      {
+        "person": "timothee-chalamet",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Kyle Scheible",
+        "order": 2
+      },
+      {
+        "person": "lucas-hedges",
+        "department": "Acting",
+        "job": "Actor",
+        "character": "Danny O'Neill",
+        "order": 3
+      },
+      {
+        "person": "greta-gerwig",
+        "department": "Directing",
+        "job": "Director",
+        "character": null,
+        "order": 0
+      },
+      {
+        "person": "greta-gerwig",
+        "department": "Writing",
+        "job": "Screenplay",
+        "character": null,
+        "order": 1
+      },
+      {
+        "person": "sam-levy",
+        "department": "Camera",
+        "job": "Director of Photography",
+        "character": null,
+        "order": 2
+      },
+      {
+        "person": "jon-brion",
+        "department": "Sound",
+        "job": "Original Music",
+        "character": null,
+        "order": 3
+      }
+    ]
+  }
+]
