@@ -5,6 +5,7 @@ A film catalog built around fast search, useful movie pages and a carefully desi
 **Status:** specification and clean restart. The web app and replacement API are planned; they are not implemented in this revision.
 
 - [Technical specification and phased tasks (RU)](docs/TECHNICAL_SPEC.md)
+- [UI and UX design direction (RU)](docs/UI_DESIGN_DIRECTION.md)
 - [Legacy audit and restart decision (RU)](docs/LEGACY_AUDIT.md)
 
 ## Product scope

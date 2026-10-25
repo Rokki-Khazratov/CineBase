@@ -141,6 +141,8 @@ MovieSummary содержит `id`, `title`, `original_title`, `year`, `runtime_
 
 ### Фаза 1 — UX-прототип веб-каталога
 
+Рабочие принципы интерфейса и правила будущей смены бренда описаны в [UI_DESIGN_DIRECTION.md](UI_DESIGN_DIRECTION.md).
+
 **Зависимость:** техническое задание фазы 0 доступно; merge не блокирует локальный прототип.
 
 **Результат:** интерактивные Home → Catalog/Search → Film Detail на fixtures.
