@@ -1,73 +1,27 @@
-# CineBase 🎬
+# CineBase
 
-[![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi)](https://fastapi.tiangolo.com/)
-[![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)](https://www.python.org/)
-[![PostgreSQL](https://img.shields.io/badge/postgresql-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white)](https://www.postgresql.org/)
-[![Redis](https://img.shields.io/badge/redis-%23DD0031.svg?style=for-the-badge&logo=redis&logoColor=white)](https://redis.io/)
+A film catalog built around fast search, useful movie pages and a carefully designed browsing experience. CineBase is the first standalone project in the Cinephily plan; its catalog API will later support the first mobile app.
 
-A production-ready FastAPI backend for movie management with JWT authentication, role-based access control, and Redis caching.
+**Status:** specification and clean restart. The web app and replacement API are planned; they are not implemented in this revision.
 
-## ✨ Features
+- [Technical specification and phased tasks (RU)](docs/TECHNICAL_SPEC.md)
+- [Legacy audit and restart decision (RU)](docs/LEGACY_AUDIT.md)
 
-- 🔐 JWT Authentication & Authorization
-- 👥 User Registration & Role Management (User/Admin)
-- 🎬 Movie CRUD Operations
-- 📄 Pagination, Filtering & Sorting
-- ⚡ Redis Caching
-- 🗄️ PostgreSQL with Async SQLAlchemy
-- 📚 Auto-generated OpenAPI Documentation
-- 🧪 Comprehensive Test Suite
-- 🐳 Docker & Docker Compose
+## Product scope
 
-## 🚀 Quick Start
+Public browsing, title search, filters, film pages, credits, curated collections and responsive web UX. The separate Cinephily Base project owns user accounts, comments, chats and other social features.
 
-```bash
-# Clone repository
-git clone https://github.com/Rokki-Khazratov/CineBase.git
-cd CineBase
+## Planned implementation
 
-# Setup environment
-cp .env.example .env
-# Edit .env with your settings
+- Web: React, TypeScript and Next.js App Router.
+- API: Python, FastAPI, Pydantic, SQLAlchemy and Alembic.
+- Database: PostgreSQL.
+- Data: deterministic fixtures for development plus a replaceable external catalog adapter.
 
-# Start services
-make up
-make migrate
+Exact supported versions, lockfiles and runnable commands are added during the foundation phase. The technical specification is the source of truth for phase scope and acceptance criteria.
 
-# Access API
-# API: http://localhost:8000
-# Docs: http://localhost:8000/docs
-```
+## Repository history
 
-## 📖 API Examples
+This project continues the existing `Rokki-Khazratov/CineBase` repository. The earlier backend experiment remains available in Git history at commit `1f3163141e14a8d0b4b980e23c9a32b5343271ff`. Its obsolete scaffold is removed in the restart revision; its capabilities are assessed in the audit.
 
-```bash
-# Register user
-curl -X POST "http://localhost:8000/api/v1/auth/register" \
-  -H "Content-Type: application/json" \
-  -d '{"email": "user@example.com", "password": "securepass123"}'
-
-# Login
-curl -X POST "http://localhost:8000/api/v1/auth/login" \
-  -H "Content-Type: application/json" \
-  -d '{"email": "user@example.com", "password": "securepass123"}'
-
-# Get movies
-curl -X GET "http://localhost:8000/api/v1/movies?limit=10&sort=year" \
-  -H "Authorization: Bearer YOUR_JWT_TOKEN"
-```
-
-
-## 📚 Documentation
-- [Architecture](docs/architecture.md) - System architecture and design
-- [API Reference](http://localhost:8000/docs) - Interactive API documentation
-- [Development Guide](docs/development.md) - Development setup and workflow
-- [Deployment Guide](docs/deployment.md) - Production deployment
-
-
-
-## 📄 License
-MIT License - see [LICENSE](LICENSE) file.
-
-## 👨‍💻 Author
-**Rokki Khazratov** - [@Rokki-Khazratov](https://github.com/Rokki-Khazratov)
+The MIT license covers this repository's code. Third-party catalog data and artwork retain their own terms.
