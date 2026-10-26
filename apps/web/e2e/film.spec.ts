@@ -16,6 +16,11 @@ test("an announced film says so instead of inventing a release", async ({ page }
   await expect(page.getByText(/Announced/).first()).toBeVisible();
 });
 
+test("a film without artwork shows a clear placeholder", async ({ page }) => {
+  await page.goto(`/movies/${FILMS.duneThree}`);
+  await expect(page.getByRole("img", { name: "No poster available for Dune: Part Three" })).toBeVisible();
+});
+
 test("an unknown film ID returns a real 404 page", async ({ page }) => {
   const response = await page.goto("/movies/not-a-film");
   expect(response?.status()).toBe(404);

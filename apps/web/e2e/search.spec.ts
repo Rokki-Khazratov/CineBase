@@ -51,6 +51,23 @@ test("filters and sort are written to the URL and survive a reload", async ({ pa
   await expect(page.getByRole("button", { name: "Science Fiction", exact: true })).toHaveAttribute("aria-pressed", "true");
 });
 
+test("quick successive filter changes all apply", async ({ page }) => {
+  await page.goto("/movies");
+  await waitForResults(page);
+  // Three changes in one task, before React has re-rendered from the first URL update.
+  await page.evaluate(() => {
+    const chips = [...document.querySelectorAll<HTMLButtonElement>("button[aria-pressed]")].filter((b) => b.checkVisibility());
+    chips.find((b) => b.textContent === "Drama")!.click();
+    chips.find((b) => b.textContent === "Horror")!.click();
+    const sort = [...document.querySelectorAll("label")].find((l) => l.textContent?.startsWith("Sort") && l.checkVisibility())!.querySelector("select")!;
+    sort.value = "title_asc";
+    sort.dispatchEvent(new Event("change", { bubbles: true }));
+  });
+  await expect(page).toHaveURL(/genre=drama&genre=horror&sort=title_asc$/);
+  await expect(page.getByRole("button", { name: "Drama", exact: true })).toHaveAttribute("aria-pressed", "true");
+  await expect(page.getByRole("button", { name: "Horror", exact: true })).toHaveAttribute("aria-pressed", "true");
+});
+
 test("a decade filter from the URL is reflected in the controls", async ({ page }) => {
   await page.goto("/movies?genre=horror&year_from=1970&year_to=1979");
   await waitForResults(page);

@@ -28,3 +28,12 @@ test("an example search link runs that search", async ({ page }) => {
   await waitForResults(page);
   await expect(cards(page).first()).toContainText("Stalker");
 });
+
+test("a film opens from a home collection (U1)", async ({ page }) => {
+  await page.goto("/");
+  const firstCard = page.locator("section[aria-labelledby] ul[aria-label] article").first();
+  const title = await firstCard.locator("h2, h3").first().innerText();
+  await firstCard.getByRole("link").click();
+  await expect(page).toHaveURL(/\/movies\/[0-9a-f-]{36}$/);
+  await expect(page.getByRole("heading", { level: 1, name: title })).toBeVisible();
+});
