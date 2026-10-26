@@ -31,3 +31,7 @@ test-results/
 *.sqlite*
 .local/
 data/private/
+
+# Screenshots and local capture scripts stay out of the repo
+docs/verification/screenshots/*/
+apps/web/.shots.mjs
