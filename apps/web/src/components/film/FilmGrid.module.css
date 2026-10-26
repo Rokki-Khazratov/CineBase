@@ -1,0 +1,33 @@
+.grid {
+  display: grid;
+  gap: var(--space-5) var(--space-4);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.comfortable {
+  grid-template-columns: repeat(auto-fill, minmax(min(150px, calc(50% - var(--space-4) / 2)), 1fr));
+}
+
+.compact {
+  --card-title-size: var(--text-sm);
+  --card-meta-size: var(--text-xs);
+  grid-template-columns: repeat(auto-fill, minmax(min(108px, calc(33.333% - var(--space-3))), 1fr));
+  gap: var(--space-4) var(--space-3);
+}
+
+@media (min-width: 900px) {
+  .comfortable {
+    grid-template-columns: repeat(auto-fill, minmax(176px, 1fr));
+    gap: var(--space-6) var(--space-5);
+  }
+
+  .compact {
+    grid-template-columns: repeat(auto-fill, minmax(124px, 1fr));
+  }
+}
+
+.item {
+  min-width: 0;
+}

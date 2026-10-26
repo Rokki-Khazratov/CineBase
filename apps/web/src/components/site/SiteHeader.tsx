@@ -1,5 +1,6 @@
 "use client";
 
+import Form from "next/form";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Logo } from "./Logo";
@@ -25,7 +26,7 @@ export function SiteHeader() {
           </Link>
         </nav>
         {showSearch ? (
-          <form action="/movies" role="search" className={styles.search}>
+          <Form action="/movies" role="search" className={styles.search}>
             <label htmlFor="header-search" className="visually-hidden">
               Search films
             </label>
@@ -34,7 +35,7 @@ export function SiteHeader() {
               <path d="m13 13 4.5 4.5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
             </svg>
             <input id="header-search" name="q" type="search" placeholder="Search films" maxLength={200} autoComplete="off" />
-          </form>
+          </Form>
         ) : null}
       </div>
     </header>
