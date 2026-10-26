@@ -13,6 +13,8 @@ export type ResultsSnapshot = {
   items: MovieSummary[];
   nextCursor: string | null;
   hasMore: boolean;
+  /** Matching films in the catalog, when the API reported it. */
+  total?: number | null;
   scrollY: number;
 };
 

@@ -1,4 +1,4 @@
-import type { MovieSummary, PersonRef } from "@/catalog";
+import type { MovieSummary, PersonRef, ReleaseStatus } from "@/catalog";
 
 export function directorNames(directors: PersonRef[]): string {
   if (directors.length === 0) return "Director unknown";
@@ -57,9 +57,17 @@ export function localeLabel(locale: string | null): string | null {
   return script === "Latn" ? `${language}, romanized` : language;
 }
 
-export function releaseLabel(release: { status: "released" | "announced"; date: string | null; country: string | null }, year: number | null): string {
+const counts = new Intl.NumberFormat("en-US");
+
+/** 431718 → "431,718". */
+export function formatCount(n: number): string {
+  return counts.format(n);
+}
+
+export function releaseLabel(release: { status: ReleaseStatus; date: string | null; country: string | null }, year: number | null): string {
   const country = countryName(release.country);
   const where = country ? ` (${country})` : "";
+  if (release.status === "unknown") return year ? `${year}` : "Unknown";
   if (release.status === "announced") {
     if (release.date) return `Announced for ${formatDate(release.date)}${where}`;
     return year ? `Announced for ${year}` : "Announced, date not set";

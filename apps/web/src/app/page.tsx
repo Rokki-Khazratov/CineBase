@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { catalog, catalogMeta } from "@/catalog";
+import { getDiscover, getGenres } from "@/catalog/server";
 import { CollectionRow, GenreLinks } from "@/components/home/CollectionRow";
 import { HeroSearch } from "@/components/home/HeroSearch";
 import styles from "@/components/home/Home.module.css";
@@ -7,7 +7,7 @@ import styles from "@/components/home/Home.module.css";
 const EXAMPLES = ["Nosferatu", "Сталкер", "Dune (2021)", "8½", "Fabuleux destin"];
 
 export default async function HomePage() {
-  const discover = await catalog.getDiscover();
+  const [discover, genres] = await Promise.all([getDiscover(), getGenres()]);
   return (
     <div className={styles.home}>
       <section className={styles.hero} aria-labelledby="home-title">
@@ -34,7 +34,7 @@ export default async function HomePage() {
       {discover.blocks.map((block) => (
         <CollectionRow key={block.slug} block={block} />
       ))}
-      <GenreLinks genres={catalogMeta.genres()} />
+      <GenreLinks genres={genres} />
     </div>
   );
 }

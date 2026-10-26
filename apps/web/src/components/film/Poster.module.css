@@ -30,7 +30,7 @@
   color: var(--color-text-muted);
   background:
     repeating-linear-gradient(135deg, transparent 0 14px, rgb(27 26 24 / 0.035) 14px 15px),
-    linear-gradient(180deg, var(--color-surface-sunken), #e6e3dc);
+    linear-gradient(180deg, hsl(var(--poster-hue, 40) 22% 93%), hsl(var(--poster-hue, 40) 18% 85%));
 }
 
 .placeholderIcon {

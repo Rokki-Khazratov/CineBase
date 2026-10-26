@@ -99,7 +99,7 @@ describe("search relevance", () => {
   });
 
   it("returns an empty page for punctuation-only queries", async () => {
-    expect(await list({ q: "?!" })).toEqual({ items: [], next_cursor: null, has_more: false });
+    expect(await list({ q: "?!" })).toEqual({ items: [], next_cursor: null, has_more: false, total: 0 });
   });
 });
 
@@ -147,6 +147,28 @@ describe("sorting", () => {
     expect(in1984).toEqual(["Dune", "Paris, Texas"]);
   });
 
+  it("release_asc and runtime_desc mirror their counterparts, unknown values still last", async () => {
+    const oldest = await listAll({ sort: "release_asc" });
+    expect(label(oldest[0])).toBe("Nosferatu (1922)");
+    const longest = await listAll({ sort: "runtime_desc" });
+    expect(longest.at(-1)?.title).toBe("Dune: Part Three");
+    const runtimes = longest.slice(0, -1).map((m) => m.runtime_minutes as number);
+    expect(runtimes).toEqual([...runtimes].sort((a, b) => b - a));
+  });
+
+  it("browsing defaults to best known, which ties on fixtures and falls back to newest year", async () => {
+    const items = await listAll({});
+    expect(items.map((m) => m.year ?? 0)).toEqual(items.map((m) => m.year ?? 0).sort((a, b) => b - a));
+  });
+
+  it("hides announced films on request and reports the total on the first page only", async () => {
+    const all = await list({ limit: 5 });
+    expect(all.total).toBe(engine.movieCount);
+    const released = await list({ exclude: ["unreleased"], limit: 5 });
+    expect(released.total).toBe(engine.movieCount - 1);
+    expect((await list({ exclude: ["unreleased"], limit: 5, cursor: released.next_cursor })).total).toBeNull();
+  });
+
   it("runtime_asc puts unknown runtimes last", async () => {
     const items = await listAll({ sort: "runtime_asc" });
     expect(items.at(-1)?.title).toBe("Dune: Part Three");
@@ -157,7 +179,7 @@ describe("sorting", () => {
 
 describe("pagination", () => {
   it("walks the whole catalog without duplicates or gaps", async () => {
-    for (const sort of ["title_asc", "release_desc", "runtime_asc"] as const) {
+    for (const sort of ["notable", "title_asc", "release_desc", "release_asc", "runtime_asc", "runtime_desc"] as const) {
       const pages: number[] = [];
       const seen: string[] = [];
       let cursor: string | null = null;
@@ -196,6 +218,7 @@ describe("parameter validation", () => {
     [{ sort: "relevance" }, "sort"],
     [{ limit: "49" }, "limit"],
     [{ limit: "0" }, "limit"],
+    [{ exclude: "musicals" }, "exclude"],
   ])("rejects %j with 422 on %s", (params, field) => {
     try {
       parseMovieQuery(params);
@@ -210,13 +233,16 @@ describe("parameter validation", () => {
   it("accepts 200 characters, trims q and defaults the sort", () => {
     expect(parseMovieQuery({ q: "x".repeat(200) }).q).toHaveLength(200);
     expect(parseMovieQuery({ q: "  dune " })).toMatchObject({ q: "dune", sort: "relevance", limit: 24 });
-    expect(parseMovieQuery({})).toMatchObject({ q: "", sort: "release_desc" });
+    expect(parseMovieQuery({})).toMatchObject({ q: "", sort: "notable", exclude: [] });
   });
 
   it("builds canonical URLs without defaults", () => {
     const query = parseMovieQuery(new URLSearchParams("q=dune&genre=war&genre=drama&sort=relevance&year_from=1980"));
     expect(toSearchParams(query).toString()).toBe("q=dune&genre=drama&genre=war&year_from=1980");
     expect(toSearchParams(buildMovieQuery({ sort: "title_asc" })).toString()).toBe("sort=title_asc");
+    const hidden = parseMovieQuery(new URLSearchParams("exclude=tv,short&exclude=short"));
+    expect(hidden.exclude).toEqual(["short", "tv"]);
+    expect(toSearchParams(hidden).toString()).toBe("exclude=short&exclude=tv");
   });
 
   it("validates queries passed to the client the same way", async () => {

@@ -16,6 +16,15 @@ export const FILMS = {
   duneThree: "a17dec17-00f9-5cd0-b1bc-2a1d50c1b05f",
 } as const;
 
+/** Opens a "Browse by" menu (Genre, Hide) and returns it. */
+export async function openMenu(page: Page, label: "Genre" | "Hide") {
+  const menu = page.locator("details:visible", { has: page.locator("summary", { hasText: label }) });
+  if (!(await menu.evaluate((d: HTMLDetailsElement) => d.open))) await menu.locator("summary").click();
+  return menu;
+}
+
+export const menuSummary = (page: Page, label: "Genre" | "Hide") => page.locator("summary:visible", { hasText: label });
+
 export async function waitForResults(page: Page) {
   await expect(cardTitles(page).first()).toBeVisible();
 }

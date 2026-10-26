@@ -2,14 +2,15 @@
 
 import { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState, type FormEvent } from "react";
 import { useSearchParams } from "next/navigation";
-import { catalog, CatalogError, DEFAULT_LIMIT, type GenreRef, type MovieQuery, type MovieSummary } from "@/catalog";
+import { catalog, CatalogError, DEFAULT_LIMIT, SIMULATED_LATENCY, type CatalogInfo, type GenreRef, type MovieQuery, type MovieSummary } from "@/catalog";
+import { formatCount } from "@/components/film/format";
 import { FilmCard } from "@/components/film/FilmCard";
 import { FilmGrid, FilmGridItem } from "@/components/film/FilmGrid";
 import { SkeletonGrid } from "@/components/states/SkeletonGrid";
 import { StatePanel } from "@/components/states/StatePanel";
 import buttons from "@/components/ui/Button.module.css";
 import { markLeftForFilm, saveSnapshot, takeReturnSnapshot } from "@/lib/results-snapshot";
-import { devOptionsFromUrl, hasActiveFilters, queryFromUrl, resultsHref, withChanges, withDevParams } from "@/lib/results-url";
+import { devOptionsFromUrl, hasActiveFilters, NO_FILTERS, queryFromUrl, resultsHref, withChanges, withDevParams } from "@/lib/results-url";
 import { DensityToggle, useDensity } from "./DensityToggle";
 import { FilterBar, type QueryChange } from "./FilterBar";
 import { ResultsHeader } from "./ResultsHeader";
@@ -17,10 +18,10 @@ import { SearchField } from "./SearchField";
 import styles from "./ResultsView.module.css";
 
 const DEBOUNCE_MS = 250;
-/** A small default delay so loading states are visible and behave like a real network round trip. */
-const DEFAULT_LATENCY_MS = 180;
+/** Fixture answers are instant; a small delay makes loading states behave like a real network round trip. */
+const DEFAULT_LATENCY_MS = SIMULATED_LATENCY ? 180 : undefined;
 
-type Loaded = { key: string; items: MovieSummary[]; nextCursor: string | null; hasMore: boolean };
+type Loaded = { key: string; items: MovieSummary[]; nextCursor: string | null; hasMore: boolean; total: number | null };
 type Failure = { key: string; attempt: number; error: CatalogError };
 
 function toCatalogError(err: unknown): CatalogError {
@@ -28,13 +29,21 @@ function toCatalogError(err: unknown): CatalogError {
   return new CatalogError(500, "unexpected_error", "Something went wrong while loading films.");
 }
 
-function countText(n: number, hasMore: boolean, q: string): string {
-  const films = `${n} ${n === 1 ? "film" : "films"}`;
-  if (hasMore) return `Showing the first ${films}${q ? ` for “${q}”` : ""}`;
-  return q ? `${films} found for “${q}”` : `${films}`;
+const films = (n: number) => `${formatCount(n)} ${n === 1 ? "film" : "films"}`;
+
+/** "There are 1,204 films matching your filters", or a count of what is shown when the total is unknown. */
+function countText(loaded: Loaded, q: string, filtered: boolean): string {
+  if (loaded.total !== null) {
+    if (q) return `${films(loaded.total)} found for “${q}”`;
+    const verb = loaded.total === 1 ? "There is" : "There are";
+    return `${verb} ${films(loaded.total)}${filtered ? " matching your filters" : ""}`;
+  }
+  const n = loaded.items.length;
+  if (loaded.hasMore) return `Showing the first ${films(n)}${q ? ` for “${q}”` : ""}`;
+  return q ? `${films(n)} found for “${q}”` : films(n);
 }
 
-export function ResultsView({ genres, movieCount }: { genres: GenreRef[]; movieCount: number }) {
+export function ResultsView({ genres, info }: { genres: GenreRef[]; info: CatalogInfo }) {
   const params = useSearchParams();
   const genreSlugs = useMemo(() => new Set(genres.map((g) => g.slug)), [genres]);
   const query = useMemo(() => queryFromUrl(new URLSearchParams(params.toString()), genreSlugs), [params, genreSlugs]);
@@ -57,14 +66,20 @@ export function ResultsView({ genres, movieCount }: { genres: GenreRef[]; movieC
     if (query.q !== writtenQ && input.trim() !== query.q) setInput(query.q);
   }
 
+  // The controls show a change at once, before useSearchParams catches up with the new URL; otherwise a
+  // checkbox would flip back for a frame. Any URL change (that one, or Back/Forward) ends the override.
+  const [optimistic, setOptimistic] = useState<{ fromKey: string; query: MovieQuery } | null>(null);
+  if (optimistic && optimistic.fromKey !== key) setOptimistic(null);
+
   const navigate = useCallback(
     (next: MovieQuery) => {
       const href = withDevParams(resultsHref(next), dev);
       setWrittenQ(next.q);
+      setOptimistic(resultsHref(next) === key ? null : { fromKey: key, query: next });
       // Shallow URL update: Next.js syncs useSearchParams without a server round trip.
       if (href !== window.location.pathname + window.location.search) window.history.replaceState(null, "", href);
     },
-    [dev],
+    [dev, key],
   );
 
   // The address bar changes at once while the rendered `query` catches up a moment later, so every change
@@ -120,9 +135,9 @@ export function ResultsView({ genres, movieCount }: { genres: GenreRef[]; movieC
       // The page was rebuilt (reload, evicted route): use the saved pages instead of refetching only page one.
       loadedKey.current = key;
       pendingScroll.current = returning.scrollY;
-      const { items, nextCursor, hasMore } = returning;
+      const { items, nextCursor, hasMore, total } = returning;
       queueMicrotask(() => {
-        if (id === seq.current) setLoaded({ key, items, nextCursor, hasMore });
+        if (id === seq.current) setLoaded({ key, items, nextCursor, hasMore, total: total ?? null });
       });
       return;
     }
@@ -133,7 +148,7 @@ export function ResultsView({ genres, movieCount }: { genres: GenreRef[]; movieC
       .then((page) => {
         if (id !== seq.current) return;
         loadedKey.current = key;
-        setLoaded({ key, items: page.items, nextCursor: page.next_cursor, hasMore: page.has_more });
+        setLoaded({ key, items: page.items, nextCursor: page.next_cursor, hasMore: page.has_more, total: page.total ?? null });
       })
       .catch((err: unknown) => {
         if (controller.signal.aborted || id !== seq.current) return;
@@ -202,11 +217,11 @@ export function ResultsView({ genres, movieCount }: { genres: GenreRef[]; movieC
 
   const openFilm = (movie: MovieSummary) => {
     if (!current) return;
-    saveSnapshot({ key, items: current.items, nextCursor: current.nextCursor, hasMore: current.hasMore, scrollY: window.scrollY });
+    saveSnapshot({ key, items: current.items, nextCursor: current.nextCursor, hasMore: current.hasMore, total: current.total, scrollY: window.scrollY });
     markLeftForFilm(movie.id, window.location.pathname + window.location.search);
   };
 
-  const clearFilters = () => commit({ genres: [], year_from: null, year_to: null, runtime_max: null });
+  const clearFilters = () => commit(NO_FILTERS);
   const filtersActive = hasActiveFilters(query);
   const typing = input.trim() !== query.q;
 
@@ -261,7 +276,7 @@ export function ResultsView({ genres, movieCount }: { genres: GenreRef[]; movieC
             <li>Check the spelling, or try fewer words.</li>
             <li>Try the original title or another known title, for example “Сталкер” or “Le Fabuleux Destin”.</li>
             {filtersActive ? <li>Filters are on. Clearing them may show more films.</li> : null}
-            <li>This prototype holds {movieCount} films, so many titles are not in it yet.</li>
+            <li>The catalog holds {formatCount(info.movie_count)} films, so some titles may not be in it yet.</li>
           </ul>
         ) : (
           <p>No film in the catalog has all of the selected filters. Remove one to widen the list.</p>
@@ -295,11 +310,12 @@ export function ResultsView({ genres, movieCount }: { genres: GenreRef[]; movieC
     );
   }
 
-  const status = current ? countText(current.items.length, current.hasMore, query.q) : error ? "Films couldn’t be loaded" : "Loading films…";
+  const shown = optimistic?.query ?? query;
+  const status = current ? countText(current, query.q, filtersActive) : error ? "Films couldn’t be loaded" : "Loading films…";
 
   return (
     <div className={styles.page}>
-      <ResultsHeader movieCount={movieCount} />
+      <ResultsHeader info={info} />
       <div className={styles.toolbar}>
         <form role="search" onSubmit={onSubmit} className={styles.searchForm}>
           <SearchField
@@ -314,7 +330,7 @@ export function ResultsView({ genres, movieCount }: { genres: GenreRef[]; movieC
             size="large"
           />
         </form>
-        <FilterBar query={typing ? withChanges(query, { q: input }) : query} genres={genres} onChange={commit} />
+        <FilterBar query={typing ? withChanges(shown, { q: input }) : shown} genres={genres} onChange={commit} />
       </div>
       <div className={styles.summary}>
         <p className={styles.count} aria-live="polite" aria-atomic="true">

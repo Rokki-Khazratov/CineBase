@@ -1,5 +1,5 @@
 /** `/movies` parameter parsing, canonical URLs and opaque cursors. */
-import { CatalogError, SORTS, type MovieQuery, type Sort } from "./types";
+import { CatalogError, EXCLUSIONS, SORTS, type Exclusion, type MovieQuery, type Sort } from "./types";
 
 export const MAX_QUERY_LENGTH = 200;
 export const DEFAULT_LIMIT = 24;
@@ -18,8 +18,9 @@ function first(source: ParamSource, key: string): string | undefined {
   return all(source, key)[0];
 }
 
+/** Searches rank by match; browsing starts with the films most widely covered (not a rating). */
 export function defaultSort(q: string): Sort {
-  return q ? "relevance" : "release_desc";
+  return q ? "relevance" : "notable";
 }
 
 function parseInteger(raw: string | undefined, field: string, errors: Record<string, string>): number | null {
@@ -50,6 +51,15 @@ export function parseMovieQuery(source: ParamSource): MovieQuery {
   const runtimeMax = parseInteger(first(source, "runtime_max"), "runtime_max", errors);
   if (runtimeMax !== null && runtimeMax <= 0) errors.runtime_max = "Must be a positive number of minutes.";
 
+  const exclude: Exclusion[] = [];
+  for (const raw of all(source, "exclude").flatMap((e) => e.split(","))) {
+    const value = raw.trim();
+    if (!value) continue;
+    if (!(EXCLUSIONS as readonly string[]).includes(value)) errors.exclude = `Must be any of: ${EXCLUSIONS.join(", ")}.`;
+    else if (!exclude.includes(value as Exclusion)) exclude.push(value as Exclusion);
+  }
+  exclude.sort();
+
   const rawSort = first(source, "sort");
   let sort: Sort = defaultSort(q);
   if (rawSort) {
@@ -70,6 +80,7 @@ export function parseMovieQuery(source: ParamSource): MovieQuery {
     year_from: yearFrom,
     year_to: yearTo,
     runtime_max: runtimeMax,
+    exclude,
     sort,
     limit,
     cursor: first(source, "cursor") || null,
@@ -84,6 +95,7 @@ export function buildMovieQuery(partial: Partial<MovieQuery> = {}): MovieQuery {
     year_from: partial.year_from ?? null,
     year_to: partial.year_to ?? null,
     runtime_max: partial.runtime_max ?? null,
+    exclude: [...new Set(partial.exclude ?? [])].sort(),
     sort: partial.sort ?? defaultSort(q),
     limit: partial.limit ?? DEFAULT_LIMIT,
     cursor: partial.cursor ?? null,
@@ -98,6 +110,7 @@ export function toSearchParams(query: MovieQuery): URLSearchParams {
   if (query.year_from !== null) params.set("year_from", String(query.year_from));
   if (query.year_to !== null) params.set("year_to", String(query.year_to));
   if (query.runtime_max !== null) params.set("runtime_max", String(query.runtime_max));
+  for (const e of [...query.exclude].sort()) params.append("exclude", e);
   if (query.sort !== defaultSort(query.q)) params.set("sort", query.sort);
   return params;
 }
