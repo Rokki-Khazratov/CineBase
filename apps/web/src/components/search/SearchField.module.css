@@ -1,0 +1,86 @@
+.field {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.icon {
+  position: absolute;
+  left: 1rem;
+  width: 1.15rem;
+  height: 1.15rem;
+  color: var(--color-text-muted);
+  pointer-events: none;
+}
+
+.input {
+  width: 100%;
+  min-height: 3rem;
+  padding: var(--space-2) 5.25rem var(--space-2) 2.85rem;
+  border: 1px solid var(--color-border-strong);
+  border-radius: var(--radius-pill);
+  background: var(--color-surface);
+  font-size: var(--text-md);
+  box-shadow: var(--shadow-card);
+  appearance: none;
+}
+
+.input::placeholder {
+  color: #8a857c;
+}
+
+.input::-webkit-search-cancel-button {
+  display: none;
+}
+
+.input:focus-visible {
+  border-color: var(--color-focus);
+  outline-offset: 1px;
+}
+
+.large .input {
+  min-height: 3.5rem;
+  font-size: var(--text-lg);
+}
+
+.clear {
+  position: absolute;
+  right: 0.4rem;
+  display: grid;
+  place-items: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  border: 0;
+  border-radius: var(--radius-pill);
+  background: transparent;
+  color: var(--color-text-muted);
+  cursor: pointer;
+}
+
+.clear:hover {
+  background: var(--color-surface-sunken);
+  color: var(--color-text);
+}
+
+.clear svg {
+  width: 1.1rem;
+  height: 1.1rem;
+}
+
+.spinner {
+  position: absolute;
+  right: 3.35rem;
+  width: 1.1rem;
+  height: 1.1rem;
+  border: 2px solid var(--color-border);
+  border-top-color: var(--color-accent);
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

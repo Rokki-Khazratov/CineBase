@@ -1,0 +1,1342 @@
+[
+  {
+    "id": "e7212b35-2c06-5f6d-9a3f-2a676ae46677",
+    "slug": "aaron-taylor-johnson",
+    "name": "Aaron Taylor-Johnson"
+  },
+  {
+    "id": "97d13eb6-9d48-51cb-a5d9-dd490b63140d",
+    "slug": "adele-haenel",
+    "name": "Adèle Haenel"
+  },
+  {
+    "id": "931622c6-b4fa-52a5-9f21-c994de105845",
+    "slug": "akira-kurosawa",
+    "name": "Akira Kurosawa"
+  },
+  {
+    "id": "a58416d5-26f1-5084-bda4-63a87007e8f1",
+    "slug": "alan-mak",
+    "name": "Alan Mak"
+  },
+  {
+    "id": "21db12dc-48e1-5c0c-a742-676b15fedca8",
+    "slug": "alexander-granach",
+    "name": "Alexander Granach"
+  },
+  {
+    "id": "7f6e0abe-c0b2-5c6a-9015-60ae6510b58f",
+    "slug": "alexander-kaidanovsky",
+    "name": "Alexander Kaidanovsky"
+  },
+  {
+    "id": "ea944916-1b19-547f-828f-7325fe5af637",
+    "slug": "alfonso-cuaron",
+    "name": "Alfonso Cuarón"
+  },
+  {
+    "id": "fd819c57-b49b-5339-b013-661e470ef6ca",
+    "slug": "alida-valli",
+    "name": "Alida Valli"
+  },
+  {
+    "id": "8e46e86a-4441-5606-98f4-acf2ec93e259",
+    "slug": "anatoly-solonitsyn",
+    "name": "Anatoly Solonitsyn"
+  },
+  {
+    "id": "9fa80de0-a513-5e87-8da5-75f33e80f385",
+    "slug": "andrei-tarkovsky",
+    "name": "Andrei Tarkovsky"
+  },
+  {
+    "id": "3d8f0121-dc14-5ea9-81b3-abc1e409c3cb",
+    "slug": "andrew-lau",
+    "name": "Andrew Lau"
+  },
+  {
+    "id": "1d821620-fe59-5334-b60b-cc3847df791b",
+    "slug": "andy-garcia",
+    "name": "Andy García"
+  },
+  {
+    "id": "68116e56-b607-5239-9e2f-2a1625e0b65a",
+    "slug": "andy-lau",
+    "name": "Andy Lau"
+  },
+  {
+    "id": "b7901b74-8e2c-5e0b-b297-6ac03d718b32",
+    "slug": "angelo-badalamenti",
+    "name": "Angelo Badalamenti"
+  },
+  {
+    "id": "44bc0d79-2473-597d-b92f-934dc5159140",
+    "slug": "angie-dickinson",
+    "name": "Angie Dickinson"
+  },
+  {
+    "id": "2f8501e9-05e5-5114-ae88-4568a478b8c8",
+    "slug": "anouk-aimee",
+    "name": "Anouk Aimée"
+  },
+  {
+    "id": "eec114ec-0cf5-5dc7-8d32-db684a2c3531",
+    "slug": "anthony-wong",
+    "name": "Anthony Wong"
+  },
+  {
+    "id": "5b383b14-a977-512c-8940-22a441bd8205",
+    "slug": "arkady-strugatsky",
+    "name": "Arkady Strugatsky"
+  },
+  {
+    "id": "32f4e40b-6c50-5895-a4b3-470fdca48149",
+    "slug": "arthur-c-clarke",
+    "name": "Arthur C. Clarke"
+  },
+  {
+    "id": "941802ac-0e92-5c14-b960-9938a23c4844",
+    "slug": "audrey-tautou",
+    "name": "Audrey Tautou"
+  },
+  {
+    "id": "98353d3a-baab-5488-8da5-e8e32e94381e",
+    "slug": "austin-butler",
+    "name": "Austin Butler"
+  },
+  {
+    "id": "55d80825-3db0-521f-85cd-6f21854f99d2",
+    "slug": "bengt-ekerot",
+    "name": "Bengt Ekerot"
+  },
+  {
+    "id": "1bbce5d8-1683-522b-9882-881bb7c4bb92",
+    "slug": "bill-lancaster",
+    "name": "Bill Lancaster"
+  },
+  {
+    "id": "5d6292b4-1d8f-5a9e-b735-e25745a174fc",
+    "slug": "bill-skarsgard",
+    "name": "Bill Skarsgård"
+  },
+  {
+    "id": "5465b252-af7a-5dd8-8a6b-46b5db9786db",
+    "slug": "bong-joon-ho",
+    "name": "Bong Joon-ho"
+  },
+  {
+    "id": "3817bb58-d59c-5510-a805-79758cb16130",
+    "slug": "boris-kaufman",
+    "name": "Boris Kaufman"
+  },
+  {
+    "id": "a12b466d-4018-5db6-bafe-1b05457025ea",
+    "slug": "boris-strugatsky",
+    "name": "Boris Strugatsky"
+  },
+  {
+    "id": "544b3273-72a1-51e4-a856-e29c65633416",
+    "slug": "brad-pitt",
+    "name": "Brad Pitt"
+  },
+  {
+    "id": "bf70fd7e-91b8-5cf4-939d-91b7ee2102c7",
+    "slug": "brigitte-lin",
+    "name": "Brigitte Lin"
+  },
+  {
+    "id": "b17cd4a9-e3cf-5a5f-83ed-ad63476795ae",
+    "slug": "bruno-delbonnel",
+    "name": "Bruno Delbonnel"
+  },
+  {
+    "id": "0bc2644a-a25a-568d-9e33-e7ede2524dbc",
+    "slug": "bruno-ganz",
+    "name": "Bruno Ganz"
+  },
+  {
+    "id": "43f9e963-d476-571d-acb0-1edd24639e2f",
+    "slug": "bulle-ogier",
+    "name": "Bulle Ogier"
+  },
+  {
+    "id": "dac49db0-de96-5c8b-9fa6-aa1e47e79e32",
+    "slug": "carlos-cuaron",
+    "name": "Carlos Cuarón"
+  },
+  {
+    "id": "87281b50-5e81-5aaf-91e4-f517876ca9fe",
+    "slug": "carter-burwell",
+    "name": "Carter Burwell"
+  },
+  {
+    "id": "840d7efe-58c8-5623-b217-313fccd2833b",
+    "slug": "celine-sciamma",
+    "name": "Céline Sciamma"
+  },
+  {
+    "id": "9e58a2a7-f73b-5569-97c4-c4ccf427ddad",
+    "slug": "charles-bronson",
+    "name": "Charles Bronson"
+  },
+  {
+    "id": "f4f5d1de-9651-5fe4-a7a7-cf77aec5c9c8",
+    "slug": "charles-lederer",
+    "name": "Charles Lederer"
+  },
+  {
+    "id": "3445fff7-5419-5cb0-aa6f-7acc8bd832cf",
+    "slug": "charles-portis",
+    "name": "Charles Portis"
+  },
+  {
+    "id": "01489b10-1cfc-53f3-8d68-7c19d6aad762",
+    "slug": "chieko-higashiyama",
+    "name": "Chieko Higashiyama"
+  },
+  {
+    "id": "625e5c04-2344-5f45-8352-9fdc7b74c529",
+    "slug": "chishu-ryu",
+    "name": "Chishū Ryū"
+  },
+  {
+    "id": "b37eba6f-e66a-58dd-a3ff-902d7c871e20",
+    "slug": "chloe-grace-moretz",
+    "name": "Chloë Grace Moretz"
+  },
+  {
+    "id": "68bd60f7-79f4-562d-a00d-9983c2c8f4ce",
+    "slug": "cho-yeo-jeong",
+    "name": "Cho Yeo-jeong"
+  },
+  {
+    "id": "07108425-0867-5b6f-8c0c-816cadf2ba17",
+    "slug": "choi-woo-shik",
+    "name": "Choi Woo-shik"
+  },
+  {
+    "id": "7333dbc2-a95e-5f39-8e01-6248d365e7b3",
+    "slug": "christopher-doyle",
+    "name": "Christopher Doyle"
+  },
+  {
+    "id": "ebc04b47-b3a2-595d-b8bc-4804a72df78b",
+    "slug": "claire-mathon",
+    "name": "Claire Mathon"
+  },
+  {
+    "id": "1c0203bf-6453-5b40-b6c5-3dcc6d98c78e",
+    "slug": "claudia-cardinale",
+    "name": "Claudia Cardinale"
+  },
+  {
+    "id": "fd9f44ff-93ac-5b2e-861e-4f09b5024594",
+    "slug": "cliff-martinez",
+    "name": "Cliff Martinez"
+  },
+  {
+    "id": "0230f36c-3937-5c0e-a656-b44dabee14d1",
+    "slug": "dakota-johnson",
+    "name": "Dakota Johnson"
+  },
+  {
+    "id": "52954974-274c-5a3b-9ca3-ac05b3097c6c",
+    "slug": "daniel-kwan",
+    "name": "Daniel Kwan"
+  },
+  {
+    "id": "d7685fc8-bb89-561e-9439-f7d1bd3eb096",
+    "slug": "daniel-scheinert",
+    "name": "Daniel Scheinert"
+  },
+  {
+    "id": "e73a86c8-eecc-58da-b0b0-93314654dfb4",
+    "slug": "daria-nicolodi",
+    "name": "Daria Nicolodi"
+  },
+  {
+    "id": "bb271458-d93a-5425-b4fb-09142bb90522",
+    "slug": "dario-argento",
+    "name": "Dario Argento"
+  },
+  {
+    "id": "7609a0ab-cc07-5beb-8151-166149326685",
+    "slug": "david-holmes",
+    "name": "David Holmes"
+  },
+  {
+    "id": "5e5aef6d-c057-57e2-a916-e874e4a3606f",
+    "slug": "david-kajganich",
+    "name": "David Kajganich"
+  },
+  {
+    "id": "c31fb57f-a86a-59f5-97b7-fcaff6e9a1b1",
+    "slug": "david-lynch",
+    "name": "David Lynch"
+  },
+  {
+    "id": "1fd4a332-41d2-5577-aaeb-907ee82c2908",
+    "slug": "dean-cundey",
+    "name": "Dean Cundey"
+  },
+  {
+    "id": "cff2dd4b-adcc-54e0-934b-6a309a620214",
+    "slug": "dean-martin",
+    "name": "Dean Martin"
+  },
+  {
+    "id": "b2b361df-e34b-51c0-984e-8c23a304358a",
+    "slug": "dean-stockwell",
+    "name": "Dean Stockwell"
+  },
+  {
+    "id": "045e704b-a298-5743-9f61-f1c9b2d54566",
+    "slug": "denis-villeneuve",
+    "name": "Denis Villeneuve"
+  },
+  {
+    "id": "7f760d55-4a2d-50d8-b7bd-b2238e301feb",
+    "slug": "diego-luna",
+    "name": "Diego Luna"
+  },
+  {
+    "id": "c31d5710-cc31-5eee-b7a2-0a911a54d491",
+    "slug": "dominique-labourier",
+    "name": "Dominique Labourier"
+  },
+  {
+    "id": "242e74d9-986b-5362-8a7a-4f8cdad35d7f",
+    "slug": "donatas-banionis",
+    "name": "Donatas Banionis"
+  },
+  {
+    "id": "f5b1dcc4-6ed8-5d7d-a5e7-f1fcb49af584",
+    "slug": "doug-jones",
+    "name": "Doug Jones"
+  },
+  {
+    "id": "3bc6f295-a528-5b19-8092-cc545499cf79",
+    "slug": "douglas-rain",
+    "name": "Douglas Rain"
+  },
+  {
+    "id": "d85df92a-ac64-5dc9-bbb8-97e362c9e2e0",
+    "slug": "ed-begley",
+    "name": "Ed Begley"
+  },
+  {
+    "id": "5c791a5f-6f0f-5881-ad3d-f713266035b4",
+    "slug": "eduard-artemyev",
+    "name": "Eduard Artemyev"
+  },
+  {
+    "id": "aea3b615-1f61-5bb0-a3da-b11eb2553580",
+    "slug": "eli-wallach",
+    "name": "Eli Wallach"
+  },
+  {
+    "id": "caa91b6f-0dee-53f6-ba3e-ad40a5697680",
+    "slug": "elmer-bernstein",
+    "name": "Elmer Bernstein"
+  },
+  {
+    "id": "bd9e1030-a3dc-5bdc-8c85-3b3cf1bd2e3b",
+    "slug": "emmanuel-lubezki",
+    "name": "Emmanuel Lubezki"
+  },
+  {
+    "id": "09362c8e-5d26-52d9-b3b5-da32f0fae2b4",
+    "slug": "ennio-morricone",
+    "name": "Ennio Morricone"
+  },
+  {
+    "id": "51d3805d-f6cc-597a-8246-d42fe8747c32",
+    "slug": "eric-heisserer",
+    "name": "Eric Heisserer"
+  },
+  {
+    "id": "9a49ee0f-4af4-5951-870e-f20323dfd8ec",
+    "slug": "eric-roth",
+    "name": "Eric Roth"
+  },
+  {
+    "id": "42f5a846-7d98-5101-9dc0-9ee68970c02c",
+    "slug": "eric-tsang",
+    "name": "Eric Tsang"
+  },
+  {
+    "id": "e4d1552a-74e9-5a8f-973a-f5471c2db5e0",
+    "slug": "ethan-coen",
+    "name": "Ethan Coen"
+  },
+  {
+    "id": "c8f7132e-72c0-5acf-b0a3-71c2ff0d6eb6",
+    "slug": "f-w-murnau",
+    "name": "F. W. Murnau"
+  },
+  {
+    "id": "17fb2e70-2cff-5bac-a0b1-4610f1401280",
+    "slug": "faye-wong",
+    "name": "Faye Wong"
+  },
+  {
+    "id": "4ba7a0c5-2d24-5fac-99c0-4fce1a9c172b",
+    "slug": "federico-fellini",
+    "name": "Federico Fellini"
+  },
+  {
+    "id": "dbfaec5a-d5e0-5eb9-ad08-f4f4b10e2b35",
+    "slug": "felix-chong",
+    "name": "Felix Chong"
+  },
+  {
+    "id": "151ddc04-bd68-53b1-ae61-525781951cc7",
+    "slug": "flavio-bucci",
+    "name": "Flavio Bucci"
+  },
+  {
+    "id": "3d5d95b2-d150-5544-ab1b-49bcad4a346d",
+    "slug": "florence-pugh",
+    "name": "Florence Pugh"
+  },
+  {
+    "id": "da084983-81e3-5879-b5b2-aada9efaacfc",
+    "slug": "francesca-annis",
+    "name": "Francesca Annis"
+  },
+  {
+    "id": "81ae1ee3-fc58-567a-8131-852936d44d8d",
+    "slug": "frank-herbert",
+    "name": "Frank Herbert"
+  },
+  {
+    "id": "c9cb6175-98e8-5646-9343-6edba8fb0ef1",
+    "slug": "frank-sinatra",
+    "name": "Frank Sinatra"
+  },
+  {
+    "id": "bb30415c-2a1e-573c-ad58-eaf98d3646c7",
+    "slug": "freddie-francis",
+    "name": "Freddie Francis"
+  },
+  {
+    "id": "38e3d242-0927-5d8b-a687-ec0f1990945a",
+    "slug": "fridrikh-gorenshtein",
+    "name": "Fridrikh Gorenshtein"
+  },
+  {
+    "id": "c046eaaf-2ce6-5792-97c6-8a39345f4ef5",
+    "slug": "fritz-arno-wagner",
+    "name": "Fritz Arno Wagner"
+  },
+  {
+    "id": "189c824a-89d8-5bef-88cc-b7b4af41e018",
+    "slug": "fumio-hayasaka",
+    "name": "Fumio Hayasaka"
+  },
+  {
+    "id": "e93c634a-4304-5900-9464-69c5dce6312c",
+    "slug": "gael-garcia-bernal",
+    "name": "Gael García Bernal"
+  },
+  {
+    "id": "58316cd7-5114-5a0d-8e62-a8f994fc24b3",
+    "slug": "gary-lockwood",
+    "name": "Gary Lockwood"
+  },
+  {
+    "id": "872e6730-5eb3-5054-813d-86107d28307c",
+    "slug": "geoffrey-unsworth",
+    "name": "Geoffrey Unsworth"
+  },
+  {
+    "id": "9d55668b-a673-5d6d-899b-d1f4561f9efd",
+    "slug": "george-c-scott",
+    "name": "George C. Scott"
+  },
+  {
+    "id": "b4a1a50e-d506-5ca6-a0a8-9c015fb02b25",
+    "slug": "george-clooney",
+    "name": "George Clooney"
+  },
+  {
+    "id": "378ef469-e698-5666-9904-5ced1c46e3f1",
+    "slug": "gianni-di-venanzo",
+    "name": "Gianni Di Venanzo"
+  },
+  {
+    "id": "526c5f31-9754-5f7a-b8bb-8b384f3fa43c",
+    "slug": "glen-campbell",
+    "name": "Glen Campbell"
+  },
+  {
+    "id": "27fb54b6-1ee1-5b77-8405-c836c8bb0a56",
+    "slug": "greig-fraser",
+    "name": "Greig Fraser"
+  },
+  {
+    "id": "610b426b-df83-5586-bdc0-6a48a3e93825",
+    "slug": "greta-gerwig",
+    "name": "Greta Gerwig"
+  },
+  {
+    "id": "9ce38505-fee4-51f4-92bb-395079939de7",
+    "slug": "greta-schroder",
+    "name": "Greta Schröder"
+  },
+  {
+    "id": "bd1cf527-c9d1-5613-bbfb-e8751e6650eb",
+    "slug": "guillaume-laurant",
+    "name": "Guillaume Laurant"
+  },
+  {
+    "id": "781c74bc-da9c-56e0-859f-829c9d12dbad",
+    "slug": "guillermo-del-toro",
+    "name": "Guillermo del Toro"
+  },
+  {
+    "id": "31da2c55-340b-5e71-bea6-d6611b4c606f",
+    "slug": "guillermo-navarro",
+    "name": "Guillermo Navarro"
+  },
+  {
+    "id": "087f315c-287e-59ef-9ad6-6f3107cb82b1",
+    "slug": "gunnar-bjornstrand",
+    "name": "Gunnar Björnstrand"
+  },
+  {
+    "id": "d5aa00dc-5cab-539a-8894-5f5a20b43100",
+    "slug": "gunnar-fischer",
+    "name": "Gunnar Fischer"
+  },
+  {
+    "id": "7e93370c-02dd-53aa-9dd4-08f36bbe44d3",
+    "slug": "gustav-von-wangenheim",
+    "name": "Gustav von Wangenheim"
+  },
+  {
+    "id": "6d3d6398-cb2f-5dd1-8fc2-8a9a10c36c2c",
+    "slug": "hailee-steinfeld",
+    "name": "Hailee Steinfeld"
+  },
+  {
+    "id": "080374da-b711-5818-a676-808d0fa9db26",
+    "slug": "han-jin-won",
+    "name": "Han Jin-won"
+  },
+  {
+    "id": "525ad509-4c73-5525-859b-dddbac459087",
+    "slug": "hans-zimmer",
+    "name": "Hans Zimmer"
+  },
+  {
+    "id": "bbcf2d67-6487-5ae3-bb18-36b9eb0f8c96",
+    "slug": "harry-brown",
+    "name": "Harry Brown"
+  },
+  {
+    "id": "70a5852e-099d-583e-ad9f-57f2459e98a6",
+    "slug": "harry-dean-stanton",
+    "name": "Harry Dean Stanton"
+  },
+  {
+    "id": "9f10aa77-d805-551d-97d6-5af2e695e12c",
+    "slug": "hayao-miyazaki",
+    "name": "Hayao Miyazaki"
+  },
+  {
+    "id": "95b61ec2-fb54-5af2-a5dc-c4e76a26b855",
+    "slug": "henrik-galeen",
+    "name": "Henrik Galeen"
+  },
+  {
+    "id": "5710c701-8e4e-55ed-9ce3-f0fe74a36d4e",
+    "slug": "henry-fonda",
+    "name": "Henry Fonda"
+  },
+  {
+    "id": "57295999-2797-5d4c-836f-06c609305ae2",
+    "slug": "henry-hathaway",
+    "name": "Henry Hathaway"
+  },
+  {
+    "id": "dfc6644b-4e58-581d-ab81-4284b1e3a90c",
+    "slug": "hideo-oguni",
+    "name": "Hideo Oguni"
+  },
+  {
+    "id": "9586c051-3bb4-5cca-8952-205729e9f941",
+    "slug": "hong-kyung-pyo",
+    "name": "Hong Kyung-pyo"
+  },
+  {
+    "id": "6523b9da-a79c-5d58-a3e9-009f43e6b003",
+    "slug": "hoyte-van-hoytema",
+    "name": "Hoyte van Hoytema"
+  },
+  {
+    "id": "7351a276-a53e-5b93-a0dd-76cd040347fa",
+    "slug": "hunter-carson",
+    "name": "Hunter Carson"
+  },
+  {
+    "id": "4fd7429a-2a26-587d-a64b-de806d3c69c7",
+    "slug": "ingmar-bergman",
+    "name": "Ingmar Bergman"
+  },
+  {
+    "id": "194e4359-6156-5d6e-9cba-b225ab20f80e",
+    "slug": "isabelle-adjani",
+    "name": "Isabelle Adjani"
+  },
+  {
+    "id": "47d05ad4-fccd-5643-814d-90ff93f0753e",
+    "slug": "ivana-baquero",
+    "name": "Ivana Baquero"
+  },
+  {
+    "id": "a592cc1d-b74b-5285-bcd0-2ce7156dfbb7",
+    "slug": "jack-nicholson",
+    "name": "Jack Nicholson"
+  },
+  {
+    "id": "7bdbab69-646d-5b0c-ac06-f5c156059a71",
+    "slug": "jacques-rivette",
+    "name": "Jacques Rivette"
+  },
+  {
+    "id": "6ec92e13-0440-5a5b-a740-392c8290651a",
+    "slug": "james-hong",
+    "name": "James Hong"
+  },
+  {
+    "id": "59e883c6-3b67-5587-8998-d324c372e45f",
+    "slug": "jamie-lee-curtis",
+    "name": "Jamie Lee Curtis"
+  },
+  {
+    "id": "d377bf97-5e9c-541c-b85e-edb3e4e73b6a",
+    "slug": "jarin-blaschke",
+    "name": "Jarin Blaschke"
+  },
+  {
+    "id": "12f0d144-b1fd-5ad0-a6ac-b189f4f50d2d",
+    "slug": "javier-navarrete",
+    "name": "Javier Navarrete"
+  },
+  {
+    "id": "0df4008f-109c-515d-afd7-625dcaf68087",
+    "slug": "jean-pierre-jeunet",
+    "name": "Jean-Pierre Jeunet"
+  },
+  {
+    "id": "1aa2fddb-7aed-5b57-b670-240c02908a20",
+    "slug": "jeff-bridges",
+    "name": "Jeff Bridges"
+  },
+  {
+    "id": "e2d6c326-4e62-5325-bd78-d90ff6ac4684",
+    "slug": "jeremy-davies",
+    "name": "Jeremy Davies"
+  },
+  {
+    "id": "25c1354c-e223-5f25-b694-af6262461bcf",
+    "slug": "jessica-harper",
+    "name": "Jessica Harper"
+  },
+  {
+    "id": "191200a9-a7e6-51b4-a9cd-f24373bac18e",
+    "slug": "joan-bennett",
+    "name": "Joan Bennett"
+  },
+  {
+    "id": "a41d9d1f-65dc-5e7b-8280-f3e63a8d1794",
+    "slug": "joe-hisaishi",
+    "name": "Joe Hisaishi"
+  },
+  {
+    "id": "7c7ea631-9720-5ba9-ac2f-05feefa565d5",
+    "slug": "joel-coen",
+    "name": "Joel Coen"
+  },
+  {
+    "id": "8e841649-81ad-5a49-90b2-36e6a752eb6d",
+    "slug": "joel-edgerton",
+    "name": "Joel Edgerton"
+  },
+  {
+    "id": "68acd3cd-9daf-586f-82e5-c13bbf39e7c5",
+    "slug": "john-ajvide-lindqvist",
+    "name": "John Ajvide Lindqvist"
+  },
+  {
+    "id": "cec6a9e6-5b43-55b1-b8a0-30289e0c3eed",
+    "slug": "john-carpenter",
+    "name": "John Carpenter"
+  },
+  {
+    "id": "70cde86b-40ad-55d3-b1f9-5b77254e5955",
+    "slug": "john-sturges",
+    "name": "John Sturges"
+  },
+  {
+    "id": "8082e7a9-6975-5d40-82dc-3ee3a4e28fe8",
+    "slug": "john-wayne",
+    "name": "John Wayne"
+  },
+  {
+    "id": "f03d8b6c-71fa-5303-9f9c-640e8b8205cb",
+    "slug": "jon-brion",
+    "name": "Jon Brion"
+  },
+  {
+    "id": "735ed25b-e61e-52e1-9082-ba8dd8d52528",
+    "slug": "jon-spaihts",
+    "name": "Jon Spaihts"
+  },
+  {
+    "id": "a131e254-a93c-5ba9-a5d5-cd713000fb43",
+    "slug": "jorg-schmidt-reitwein",
+    "name": "Jörg Schmidt-Reitwein"
+  },
+  {
+    "id": "15619f92-2605-5a66-b0bb-69635693622a",
+    "slug": "josh-brolin",
+    "name": "Josh Brolin"
+  },
+  {
+    "id": "369d4157-cbf7-5961-80c1-f6cd4c01caa6",
+    "slug": "julia-roberts",
+    "name": "Julia Roberts"
+  },
+  {
+    "id": "c63f1b86-6308-5701-b60a-2977270fad72",
+    "slug": "juliet-berto",
+    "name": "Juliet Berto"
+  },
+  {
+    "id": "7ad757e3-296e-5e3b-aa83-b0f1614922ee",
+    "slug": "jung-jae-il",
+    "name": "Jung Jae-il"
+  },
+  {
+    "id": "9c94b0fc-d9d1-5772-8431-ed84be935922",
+    "slug": "juri-jarvet",
+    "name": "Jüri Järvet"
+  },
+  {
+    "id": "7f6facd6-a0d9-5ada-a9a9-f142240af025",
+    "slug": "justin-theroux",
+    "name": "Justin Theroux"
+  },
+  {
+    "id": "6342e6af-3e02-53c5-beea-9318c7b8f8db",
+    "slug": "kare-hedebrant",
+    "name": "Kåre Hedebrant"
+  },
+  {
+    "id": "76380460-7e0e-5718-8fa7-280ff1e9d0cb",
+    "slug": "ke-huy-quan",
+    "name": "Ke Huy Quan"
+  },
+  {
+    "id": "041d4d74-035d-54e0-b145-481eab6ac9f2",
+    "slug": "keir-dullea",
+    "name": "Keir Dullea"
+  },
+  {
+    "id": "98a6f95a-8f78-53a6-b01c-07317576ad55",
+    "slug": "keith-david",
+    "name": "Keith David"
+  },
+  {
+    "id": "9d037105-fe1f-5ed5-bfbb-304d8e144fff",
+    "slug": "kenneth-mcmillan",
+    "name": "Kenneth McMillan"
+  },
+  {
+    "id": "7dfa8949-87da-524a-bdb1-892ac8e552e6",
+    "slug": "kim-darby",
+    "name": "Kim Darby"
+  },
+  {
+    "id": "2c95bdf4-51a2-5507-b67b-bdd996b8f566",
+    "slug": "klaus-kinski",
+    "name": "Klaus Kinski"
+  },
+  {
+    "id": "a887487c-a189-5d79-b722-676fcebd4bcb",
+    "slug": "kodi-smit-mcphee",
+    "name": "Kodi Smit-McPhee"
+  },
+  {
+    "id": "67401d12-b672-59fd-abf0-8d964548f473",
+    "slug": "kogo-noda",
+    "name": "Kōgo Noda"
+  },
+  {
+    "id": "bcf1b906-65e3-5357-9a45-37a5ad9d5df4",
+    "slug": "kurt-russell",
+    "name": "Kurt Russell"
+  },
+  {
+    "id": "b7516441-a64c-5719-9563-3ce7d8496d96",
+    "slug": "kyle-maclachlan",
+    "name": "Kyle MacLachlan"
+  },
+  {
+    "id": "628aed01-47a0-58d2-babe-b001058eab45",
+    "slug": "larkin-seiple",
+    "name": "Larkin Seiple"
+  },
+  {
+    "id": "7164a329-03f5-59db-ab04-12a9f4c489f8",
+    "slug": "laura-harring",
+    "name": "Laura Harring"
+  },
+  {
+    "id": "c7901029-dcc8-550c-8078-0a3d87369ecd",
+    "slug": "laurie-metcalf",
+    "name": "Laurie Metcalf"
+  },
+  {
+    "id": "d3d88f49-eba7-5fa3-8c9a-54f5d27004c2",
+    "slug": "lee-j-cobb",
+    "name": "Lee J. Cobb"
+  },
+  {
+    "id": "fa3bdd12-8851-5e8b-a7c7-1d2641b581bd",
+    "slug": "lee-sun-kyun",
+    "name": "Lee Sun-kyun"
+  },
+  {
+    "id": "64925d89-d5b5-5f73-9935-a6b1a4830659",
+    "slug": "leonardo-dicaprio",
+    "name": "Leonardo DiCaprio"
+  },
+  {
+    "id": "28329a24-7eb2-5225-841a-0675990efeec",
+    "slug": "lewis-milestone",
+    "name": "Lewis Milestone"
+  },
+  {
+    "id": "9def7cb5-5a2d-522a-8fbb-666260cd0714",
+    "slug": "lily-rose-depp",
+    "name": "Lily-Rose Depp"
+  },
+  {
+    "id": "4edb739f-54a7-5453-a173-641fc2d67a10",
+    "slug": "lina-leandersson",
+    "name": "Lina Leandersson"
+  },
+  {
+    "id": "8c800890-ec2b-53f7-83c9-5048d4a556d7",
+    "slug": "luana-bajrami",
+    "name": "Luàna Bajrami"
+  },
+  {
+    "id": "2f981778-9e09-523b-84e4-cb0cb6c749bf",
+    "slug": "luca-guadagnino",
+    "name": "Luca Guadagnino"
+  },
+  {
+    "id": "427dca73-dbe1-5399-b41c-c97677e25d26",
+    "slug": "lucas-hedges",
+    "name": "Lucas Hedges"
+  },
+  {
+    "id": "bc54711e-bda3-5dfb-94cd-0d0ab59b245e",
+    "slug": "luciano-tovoli",
+    "name": "Luciano Tovoli"
+  },
+  {
+    "id": "b686fa0b-3260-56b6-b9b5-4b0c5eb3fd0a",
+    "slug": "maggie-cheung",
+    "name": "Maggie Cheung"
+  },
+  {
+    "id": "b7bd36f4-e2cc-5970-94f2-eae1c0daa2b5",
+    "slug": "marcello-mastroianni",
+    "name": "Marcello Mastroianni"
+  },
+  {
+    "id": "ee27c9ed-0f72-5b30-b7ed-96191b753cd5",
+    "slug": "marco-beltrami",
+    "name": "Marco Beltrami"
+  },
+  {
+    "id": "3f7857f2-6f72-5d83-8925-d80f7ea54d8c",
+    "slug": "marguerite-roberts",
+    "name": "Marguerite Roberts"
+  },
+  {
+    "id": "1524ba33-bbc1-5b38-8d10-7963912cba88",
+    "slug": "mari-natsuki",
+    "name": "Mari Natsuki"
+  },
+  {
+    "id": "b5701687-0926-5f94-b2e2-f41e12ef0bd6",
+    "slug": "maribel-verdu",
+    "name": "Maribel Verdú"
+  },
+  {
+    "id": "4ec9435b-1a26-5267-8d2c-4f9d2fa4c662",
+    "slug": "marie-france-pisier",
+    "name": "Marie-France Pisier"
+  },
+  {
+    "id": "63972d35-51d3-512c-be3c-3f2407eea94a",
+    "slug": "mark-lee-ping-bin",
+    "name": "Mark Lee Ping-bin"
+  },
+  {
+    "id": "4ae2a256-0a9a-55b1-9863-2ee6dabcb06a",
+    "slug": "mark-wahlberg",
+    "name": "Mark Wahlberg"
+  },
+  {
+    "id": "23106462-d64d-5bcf-8738-aedc2cc1c46e",
+    "slug": "martin-balsam",
+    "name": "Martin Balsam"
+  },
+  {
+    "id": "529b6201-ddf4-5880-9b04-256507adff46",
+    "slug": "martin-scorsese",
+    "name": "Martin Scorsese"
+  },
+  {
+    "id": "a1696f21-be75-567e-8aa2-9d23f0b9f384",
+    "slug": "martin-sheen",
+    "name": "Martin Sheen"
+  },
+  {
+    "id": "096845c2-960c-5db6-9e7f-9f6f7631ce75",
+    "slug": "mary-elizabeth-winstead",
+    "name": "Mary Elizabeth Winstead"
+  },
+  {
+    "id": "5a129f8b-21e5-5db9-bda1-2ae149e1768f",
+    "slug": "mathieu-kassovitz",
+    "name": "Mathieu Kassovitz"
+  },
+  {
+    "id": "f7207741-2246-5427-ad80-6a274562f435",
+    "slug": "matt-damon",
+    "name": "Matt Damon"
+  },
+  {
+    "id": "08d9b4b0-6cee-565c-959e-2a0dd5b64b08",
+    "slug": "matt-reeves",
+    "name": "Matt Reeves"
+  },
+  {
+    "id": "29bd9498-ac30-558b-8b9a-a55e7f268422",
+    "slug": "matthijs-van-heijningen-jr",
+    "name": "Matthijs van Heijningen Jr."
+  },
+  {
+    "id": "5a11c738-e648-521d-ad79-09ad0c7832ab",
+    "slug": "max-schreck",
+    "name": "Max Schreck"
+  },
+  {
+    "id": "04e50200-7a8d-5035-922e-cc12bf5b4f34",
+    "slug": "max-von-sydow",
+    "name": "Max von Sydow"
+  },
+  {
+    "id": "a7aed345-5a53-5207-a191-52da2ac9f735",
+    "slug": "mia-goth",
+    "name": "Mia Goth"
+  },
+  {
+    "id": "5c8e9c14-26b0-5217-8d85-0a030d06aa07",
+    "slug": "michael-ballhaus",
+    "name": "Michael Ballhaus"
+  },
+  {
+    "id": "d2c9f61f-5c5c-51cf-9a30-c163a57b984e",
+    "slug": "michael-giacchino",
+    "name": "Michael Giacchino"
+  },
+  {
+    "id": "deaf3b4a-1b5d-50c9-9274-bfc415855000",
+    "slug": "michelle-yeoh",
+    "name": "Michelle Yeoh"
+  },
+  {
+    "id": "cba79be0-9c59-5e32-801c-20f656b5b686",
+    "slug": "miyu-irino",
+    "name": "Miyu Irino"
+  },
+  {
+    "id": "baf08663-ef25-5ef1-b940-d1f07aa50ac8",
+    "slug": "naomi-watts",
+    "name": "Naomi Watts"
+  },
+  {
+    "id": "021fb78a-18ac-5ba9-9768-1afc20c2be11",
+    "slug": "nastassja-kinski",
+    "name": "Nastassja Kinski"
+  },
+  {
+    "id": "caf779e7-9dfe-5428-b0ed-8c8cf05d0b69",
+    "slug": "natalya-bondarchuk",
+    "name": "Natalya Bondarchuk"
+  },
+  {
+    "id": "2d943f44-8724-5abb-ab07-c21dded225bc",
+    "slug": "natascha-mcelhone",
+    "name": "Natascha McElhone"
+  },
+  {
+    "id": "3bc4c5a7-8616-5d03-bc7f-48c822462004",
+    "slug": "nicholas-hoult",
+    "name": "Nicholas Hoult"
+  },
+  {
+    "id": "4defca22-f6ff-5183-b987-d21fd72cb2b5",
+    "slug": "nikolai-grinko",
+    "name": "Nikolai Grinko"
+  },
+  {
+    "id": "3a6a56e6-10a3-5c2f-8a4e-a56f4d797832",
+    "slug": "nino-rota",
+    "name": "Nino Rota"
+  },
+  {
+    "id": "af73ea3f-ff3d-5432-89d5-4c42d3c3b5f1",
+    "slug": "noemie-merlant",
+    "name": "Noémie Merlant"
+  },
+  {
+    "id": "31a22bda-5684-598f-ae48-14d486c78e0b",
+    "slug": "oscar-isaac",
+    "name": "Oscar Isaac"
+  },
+  {
+    "id": "42285659-b58c-5667-8701-1c303bf6e741",
+    "slug": "park-so-dam",
+    "name": "Park So-dam"
+  },
+  {
+    "id": "bccc642e-2ebe-5779-95ef-c267800a398a",
+    "slug": "peter-deming",
+    "name": "Peter Deming"
+  },
+  {
+    "id": "8d141080-74ae-5f1e-8b80-2f749a1f88c3",
+    "slug": "peter-george",
+    "name": "Peter George"
+  },
+  {
+    "id": "7f8fe339-c153-5daf-b1ed-3eee446e4965",
+    "slug": "peter-lawford",
+    "name": "Peter Lawford"
+  },
+  {
+    "id": "fc4a71ce-712f-5605-a440-05d1ad396123",
+    "slug": "peter-sellers",
+    "name": "Peter Sellers"
+  },
+  {
+    "id": "d11cee8e-37ce-566d-bf60-108fc97eb52d",
+    "slug": "rebecca-ferguson",
+    "name": "Rebecca Ferguson"
+  },
+  {
+    "id": "b895824e-5e24-5451-af9a-5bbc300159c3",
+    "slug": "reginald-rose",
+    "name": "Reginald Rose"
+  },
+  {
+    "id": "d43d3330-74b3-5caa-858c-bb38961304cd",
+    "slug": "richard-jenkins",
+    "name": "Richard Jenkins"
+  },
+  {
+    "id": "f31f13b4-58fd-5294-a0ca-db246c52cc0b",
+    "slug": "robby-muller",
+    "name": "Robby Müller"
+  },
+  {
+    "id": "1e4146a8-97d5-51d5-94f1-3018455f3946",
+    "slug": "robert-eggers",
+    "name": "Robert Eggers"
+  },
+  {
+    "id": "9592ee4d-aadd-52e1-808b-81ca6227fb61",
+    "slug": "robin-carolan",
+    "name": "Robin Carolan"
+  },
+  {
+    "id": "fccbe3a5-7f60-5af3-b1bc-d7c833fe51b0",
+    "slug": "roger-deakins",
+    "name": "Roger Deakins"
+  },
+  {
+    "id": "545e7a2d-ba94-55e8-b38c-0bef41c6b96b",
+    "slug": "roland-topor",
+    "name": "Roland Topor"
+  },
+  {
+    "id": "4318b825-8781-5ef4-9401-c8f99c6a172a",
+    "slug": "rumi-hiiragi",
+    "name": "Rumi Hiiragi"
+  },
+  {
+    "id": "7defd9ec-2d98-550b-8eea-11fe29c5b50d",
+    "slug": "ry-cooder",
+    "name": "Ry Cooder"
+  },
+  {
+    "id": "713bf52e-d8bb-5584-a0f9-6c07d394d3be",
+    "slug": "sam-levy",
+    "name": "Sam Levy"
+  },
+  {
+    "id": "4374ef6c-5fd5-5b60-8270-b3c52d16ee8a",
+    "slug": "sam-shepard",
+    "name": "Sam Shepard"
+  },
+  {
+    "id": "3d65182b-d77f-5b36-8305-612e3d60d67a",
+    "slug": "sammy-davis-jr",
+    "name": "Sammy Davis Jr."
+  },
+  {
+    "id": "b4eacb4d-53f0-5d6c-9fb8-0fdd724d39a3",
+    "slug": "saoirse-ronan",
+    "name": "Saoirse Ronan"
+  },
+  {
+    "id": "d0459136-71f7-5bd0-8707-8306bf2906d8",
+    "slug": "sayombhu-mukdeeprom",
+    "name": "Sayombhu Mukdeeprom"
+  },
+  {
+    "id": "cf338804-dd8a-58f9-835f-288d244d583b",
+    "slug": "sean-young",
+    "name": "Sean Young"
+  },
+  {
+    "id": "c94cbee5-8ce6-50fe-a561-7df03c9d8969",
+    "slug": "sergi-lopez",
+    "name": "Sergi López"
+  },
+  {
+    "id": "79347c0e-71a0-5bec-b483-a66f30184b78",
+    "slug": "setsuko-hara",
+    "name": "Setsuko Hara"
+  },
+  {
+    "id": "c45eb23e-5237-5cfb-bc49-44411a2b5e52",
+    "slug": "shinobu-hashimoto",
+    "name": "Shinobu Hashimoto"
+  },
+  {
+    "id": "b3013bdf-b50d-5546-b280-f621b175b663",
+    "slug": "sidney-lumet",
+    "name": "Sidney Lumet"
+  },
+  {
+    "id": "7491aea6-9df3-5552-960e-4adce2c65472",
+    "slug": "slim-pickens",
+    "name": "Slim Pickens"
+  },
+  {
+    "id": "a560fa38-cfb8-5e20-a5fe-fcf41c2247fa",
+    "slug": "song-kang-ho",
+    "name": "Song Kang-ho"
+  },
+  {
+    "id": "4bb675cc-3cd0-5f69-82a6-b40995642358",
+    "slug": "stanislaw-lem",
+    "name": "Stanisław Lem"
+  },
+  {
+    "id": "bad64c5e-6614-5de9-b0d7-50afa20f447e",
+    "slug": "stanley-kubrick",
+    "name": "Stanley Kubrick"
+  },
+  {
+    "id": "46548053-e4d5-591a-832c-89b362fdda30",
+    "slug": "stefania-casini",
+    "name": "Stefania Casini"
+  },
+  {
+    "id": "63346369-6587-534c-945d-7f99d5c2cbab",
+    "slug": "stellan-skarsgard",
+    "name": "Stellan Skarsgård"
+  },
+  {
+    "id": "03b4183c-3a58-5b35-afc8-ace3e89c81ae",
+    "slug": "stephanie-hsu",
+    "name": "Stephanie Hsu"
+  },
+  {
+    "id": "357720b8-f107-5ea7-b954-f06e5252490c",
+    "slug": "sterling-hayden",
+    "name": "Sterling Hayden"
+  },
+  {
+    "id": "6d49805b-72a8-55d6-849e-b8742ca3df7f",
+    "slug": "steve-mcqueen",
+    "name": "Steve McQueen"
+  },
+  {
+    "id": "00698951-05bd-5c21-a85f-e15f9ea2d84b",
+    "slug": "steven-soderbergh",
+    "name": "Steven Soderbergh"
+  },
+  {
+    "id": "ff850f33-75a8-5cda-9413-456f6ad7eea4",
+    "slug": "sting",
+    "name": "Sting"
+  },
+  {
+    "id": "cc42fb0b-4454-5a49-9226-c10335ce4c22",
+    "slug": "t-k-carter",
+    "name": "T.K. Carter"
+  },
+  {
+    "id": "4dfde982-1498-5c87-8686-8628d19462b8",
+    "slug": "takashi-shimura",
+    "name": "Takashi Shimura"
+  },
+  {
+    "id": "de2521a9-6572-5ae2-9aa2-2027fb8d8813",
+    "slug": "takeshi-kaneshiro",
+    "name": "Takeshi Kaneshiro"
+  },
+  {
+    "id": "3d0a3914-497f-5226-bb2a-f116df2d9ff3",
+    "slug": "ted-griffin",
+    "name": "Ted Griffin"
+  },
+  {
+    "id": "f0dc2835-e2bf-510b-80ae-49362f313e8e",
+    "slug": "terry-southern",
+    "name": "Terry Southern"
+  },
+  {
+    "id": "3e239ed3-394d-5895-b7d7-3f7c2f98eb68",
+    "slug": "thelma-schoonmaker",
+    "name": "Thelma Schoonmaker"
+  },
+  {
+    "id": "3b5abd64-2821-5b66-a666-60fc6f64c226",
+    "slug": "thom-yorke",
+    "name": "Thom Yorke"
+  },
+  {
+    "id": "ca6a563d-4cc9-5c56-9feb-a312afb21388",
+    "slug": "tilda-swinton",
+    "name": "Tilda Swinton"
+  },
+  {
+    "id": "efbe9312-b4d3-5d68-9e8a-9728c28fc30a",
+    "slug": "timothee-chalamet",
+    "name": "Timothée Chalamet"
+  },
+  {
+    "id": "dcb4996a-5391-5d10-ad03-e4c30f841bed",
+    "slug": "tomas-alfredson",
+    "name": "Tomas Alfredson"
+  },
+  {
+    "id": "b73ed428-c5f1-5538-973e-7101513e4839",
+    "slug": "tony-leung-chiu-wai",
+    "name": "Tony Leung Chiu-wai"
+  },
+  {
+    "id": "f0ca1c80-b50d-5a8f-9bf5-3730173a29fb",
+    "slug": "toshio-suzuki",
+    "name": "Toshio Suzuki"
+  },
+  {
+    "id": "b4caa1d1-1cc1-5fea-9388-96da6f5ec758",
+    "slug": "toshiro-mifune",
+    "name": "Toshiro Mifune"
+  },
+  {
+    "id": "32f8851b-ad02-5a7c-8fb7-66d7b51e3680",
+    "slug": "ulrich-thomsen",
+    "name": "Ulrich Thomsen"
+  },
+  {
+    "id": "3cb31fbf-8663-5819-ba4d-f3cc12470c53",
+    "slug": "vadim-yusov",
+    "name": "Vadim Yusov"
+  },
+  {
+    "id": "e3b89d95-2109-51b0-809e-5ccc05e134eb",
+    "slug": "valeria-golino",
+    "name": "Valeria Golino"
+  },
+  {
+    "id": "a496dbfb-24da-55e1-afb5-014afa14fd72",
+    "slug": "viola-davis",
+    "name": "Viola Davis"
+  },
+  {
+    "id": "ae539403-3e0a-5683-acbd-f1fa94ec8e05",
+    "slug": "werner-herzog",
+    "name": "Werner Herzog"
+  },
+  {
+    "id": "6ce3745d-384e-5aab-bbf3-013152062db5",
+    "slug": "wilford-brimley",
+    "name": "Wilford Brimley"
+  },
+  {
+    "id": "c4812591-9bd1-5529-9670-13245a14beaf",
+    "slug": "willem-dafoe",
+    "name": "Willem Dafoe"
+  },
+  {
+    "id": "78121334-a873-5b2f-bac5-db5c9032f038",
+    "slug": "william-monahan",
+    "name": "William Monahan"
+  },
+  {
+    "id": "dc166295-b5b8-5f89-a95f-b3d6d7364775",
+    "slug": "william-roberts",
+    "name": "William Roberts"
+  },
+  {
+    "id": "2b0fbbb1-e995-5aa7-90a5-215b837caa9d",
+    "slug": "wim-wenders",
+    "name": "Wim Wenders"
+  },
+  {
+    "id": "60bca6b1-6564-5f34-8e39-b97cd47de624",
+    "slug": "wong-kar-wai",
+    "name": "Wong Kar-wai"
+  },
+  {
+    "id": "ee2e7ee2-3e87-5f51-b346-931452f9f4e1",
+    "slug": "yann-tiersen",
+    "name": "Yann Tiersen"
+  },
+  {
+    "id": "8b2a083e-25fe-5ea5-89de-dcd51f27c7e0",
+    "slug": "yasujiro-ozu",
+    "name": "Yasujirō Ozu"
+  },
+  {
+    "id": "c47f9053-bb3c-50d9-b6d0-7e23e05f39c8",
+    "slug": "yuharu-atsuta",
+    "name": "Yūharu Atsuta"
+  },
+  {
+    "id": "d226198e-08a9-51f1-82a3-efa1aaa16004",
+    "slug": "yul-brynner",
+    "name": "Yul Brynner"
+  },
+  {
+    "id": "e16013d6-c812-513a-9636-aae765295f9f",
+    "slug": "zendaya",
+    "name": "Zendaya"
+  }
+]

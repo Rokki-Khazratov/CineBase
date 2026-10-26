@@ -1,0 +1,269 @@
+.film {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--space-5);
+  padding-bottom: var(--space-6);
+}
+
+.back {
+  display: inline-flex;
+  align-items: center;
+  justify-self: start;
+  gap: var(--space-1);
+  min-height: 2.75rem;
+  padding: 0 var(--space-3) 0 var(--space-1);
+  border-radius: var(--radius-pill);
+  color: var(--color-accent);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.back:hover {
+  background: var(--color-accent-soft);
+}
+
+.back svg {
+  width: 1.15rem;
+  height: 1.15rem;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 7.5rem minmax(0, 1fr);
+  gap: var(--space-5) var(--space-4);
+  align-items: start;
+}
+
+.posterCol {
+  display: grid;
+  gap: var(--space-2);
+}
+
+.posterNote {
+  display: none;
+  margin: 0;
+  color: var(--color-text-muted);
+  font-size: var(--text-xs);
+}
+
+.header {
+  display: grid;
+  gap: var(--space-2);
+  min-width: 0;
+}
+
+.main {
+  display: grid;
+  grid-column: 1 / -1;
+  gap: var(--space-6);
+  min-width: 0;
+}
+
+@media (min-width: 760px) {
+  .layout {
+    grid-template-columns: 15rem minmax(0, 1fr);
+    gap: var(--space-5) var(--space-7);
+  }
+
+  .posterCol {
+    position: sticky;
+    top: calc(var(--header-height) + var(--space-4));
+    grid-row: span 2;
+  }
+
+  .posterNote {
+    display: block;
+  }
+
+  .main {
+    grid-column: 2;
+  }
+}
+
+@media (min-width: 1100px) {
+  .layout {
+    grid-template-columns: 17.5rem minmax(0, 1fr);
+  }
+}
+
+.badge {
+  justify-self: start;
+  margin: 0;
+  padding: 2px var(--space-2);
+  border-radius: var(--radius-sm);
+  background: var(--color-accent-soft);
+  color: var(--color-accent);
+  font-size: var(--text-xs);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.title {
+  margin: 0;
+  font-size: clamp(1.5rem, 1.1rem + 2vw, 2.5rem);
+  line-height: 1.12;
+  letter-spacing: -0.015em;
+  overflow-wrap: anywhere;
+}
+
+.originalTitle {
+  margin: 0;
+  color: var(--color-text-muted);
+  font-size: var(--text-md);
+  font-style: italic;
+}
+
+.facts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 var(--space-2);
+  margin: 0;
+  font-size: var(--text-sm);
+}
+
+.genres a {
+  color: inherit;
+  text-decoration-color: var(--color-border-strong);
+  text-underline-offset: 3px;
+}
+
+.genres a:hover {
+  color: var(--color-accent);
+}
+
+.directed {
+  margin: 0;
+  font-size: var(--text-sm);
+}
+
+.section {
+  display: grid;
+  gap: var(--space-3);
+  align-content: start;
+  min-width: 0;
+}
+
+.sectionTitle {
+  margin: 0;
+  font-size: var(--text-lg);
+}
+
+.synopsis {
+  max-width: 65ch;
+  margin: 0;
+  font-size: var(--text-md);
+  line-height: 1.6;
+}
+
+.credits {
+  display: grid;
+  gap: var(--space-6);
+}
+
+@media (min-width: 1100px) {
+  .credits {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.creditList {
+  display: grid;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.creditList li {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0 var(--space-3);
+  padding: var(--space-2) 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.person {
+  font-weight: 600;
+}
+
+.role {
+  color: var(--color-text-muted);
+}
+
+.crewList,
+.details {
+  display: grid;
+  margin: 0;
+}
+
+.crewList > div,
+.details > div {
+  display: grid;
+  grid-template-columns: minmax(7rem, 35%) minmax(0, 1fr);
+  gap: var(--space-3);
+  padding: var(--space-2) 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.crewList dt,
+.details dt {
+  color: var(--color-text-muted);
+  font-size: var(--text-sm);
+}
+
+.crewList dd,
+.details dd {
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+
+.akaList {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.muted {
+  margin: 0;
+  color: var(--color-text-muted);
+  font-size: var(--text-sm);
+}
+
+.others {
+  display: grid;
+  gap: var(--space-3);
+  padding-top: var(--space-6);
+  border-top: 1px solid var(--color-border);
+}
+
+.backSkeleton,
+.posterSkeleton,
+.lineSkeleton {
+  border-radius: var(--radius-sm);
+  background: var(--color-surface-sunken);
+}
+
+.backSkeleton {
+  width: 9rem;
+  height: 2.75rem;
+  border-radius: var(--radius-pill);
+}
+
+.posterSkeleton {
+  aspect-ratio: 2 / 3;
+}
+
+.lineSkeleton {
+  height: 1rem;
+}
+
+.titleSkeleton {
+  width: 70%;
+  height: 2.25rem;
+}
+
+.shortSkeleton {
+  width: 40%;
+}

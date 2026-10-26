@@ -1,0 +1,21 @@
+{
+  "description": "Second import of an already known external film. The loader must merge it into the existing movie and keep its UUID.",
+  "imported_at": "2026-10-26T09:00:00Z",
+  "records": [
+    {
+      "external_id": {
+        "provider": "cinebase-fixture",
+        "external_id": "cbf-0035"
+      },
+      "title": "Stalker",
+      "release_year": 1979,
+      "runtime_minutes": 162,
+      "alternate_titles": [
+        {
+          "title": "Stalker (Сталкер)",
+          "locale": null
+        }
+      ]
+    }
+  ]
+}
