@@ -13,10 +13,13 @@ import {
 } from "@/lib/results-url";
 import styles from "./FilterBar.module.css";
 
+/** A change, or a function of the latest query for changes that depend on it (several quick clicks in a row). */
+export type QueryChange = Partial<MovieQuery> | ((latest: MovieQuery) => Partial<MovieQuery>);
+
 type FilterBarProps = {
   query: MovieQuery;
   genres: GenreRef[];
-  onChange: (changes: Partial<MovieQuery>) => void;
+  onChange: (change: QueryChange) => void;
 };
 
 /** Genre chips plus three compact selects. Every control is a native element, so it works with keyboard and screen readers as-is. */
@@ -26,8 +29,9 @@ export function FilterBar({ query, genres, onChange }: FilterBarProps) {
   const sorts: Sort[] = query.q ? ["relevance", "release_desc", "title_asc", "runtime_asc"] : ["release_desc", "title_asc", "runtime_asc"];
 
   const toggleGenre = (slug: string) => {
-    const next = query.genres.includes(slug) ? query.genres.filter((g) => g !== slug) : [...query.genres, slug].sort();
-    onChange({ genres: next });
+    onChange((latest) => ({
+      genres: latest.genres.includes(slug) ? latest.genres.filter((g) => g !== slug) : [...latest.genres, slug].sort(),
+    }));
   };
 
   return (

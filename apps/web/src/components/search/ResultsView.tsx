@@ -11,7 +11,7 @@ import buttons from "@/components/ui/Button.module.css";
 import { markLeftForFilm, saveSnapshot, takeReturnSnapshot } from "@/lib/results-snapshot";
 import { devOptionsFromUrl, hasActiveFilters, queryFromUrl, resultsHref, withChanges, withDevParams } from "@/lib/results-url";
 import { DensityToggle, useDensity } from "./DensityToggle";
-import { FilterBar } from "./FilterBar";
+import { FilterBar, type QueryChange } from "./FilterBar";
 import { ResultsHeader } from "./ResultsHeader";
 import { SearchField } from "./SearchField";
 import styles from "./ResultsView.module.css";
@@ -67,20 +67,32 @@ export function ResultsView({ genres, movieCount }: { genres: GenreRef[]; movieC
     [dev],
   );
 
+  // The address bar changes at once while the rendered `query` catches up a moment later, so every change
+  // starts from the URL as it is now. Otherwise a second quick change would undo the first.
+  const latestQuery = useCallback(
+    () => queryFromUrl(new URLSearchParams(window.location.search), genreSlugs),
+    [genreSlugs],
+  );
+
   useEffect(() => {
     if (input.trim() === query.q) return;
-    const timer = setTimeout(() => navigate(withChanges(query, { q: input })), DEBOUNCE_MS);
+    const timer = setTimeout(() => {
+      const latest = latestQuery();
+      if (input.trim() !== latest.q) navigate(withChanges(latest, { q: input }));
+    }, DEBOUNCE_MS);
     return () => clearTimeout(timer);
-  }, [input, query, navigate]);
+  }, [input, query, navigate, latestQuery]);
 
-  const commit = (changes: Partial<MovieQuery>) => {
-    const base = input.trim() !== query.q ? withChanges(query, { q: input }) : query;
-    navigate(withChanges(base, changes));
+  const commit = (change: QueryChange) => {
+    const latest = latestQuery();
+    const base = input.trim() !== latest.q ? withChanges(latest, { q: input }) : latest;
+    navigate(withChanges(base, typeof change === "function" ? change(base) : change));
   };
 
   const onSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    if (input.trim() !== query.q) navigate(withChanges(query, { q: input }));
+    const latest = latestQuery();
+    if (input.trim() !== latest.q) navigate(withChanges(latest, { q: input }));
     // Close the on-screen keyboard so the results are visible.
     if (window.matchMedia("(pointer: coarse)").matches) (document.activeElement as HTMLElement | null)?.blur();
   };
