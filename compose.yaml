@@ -1,0 +1,21 @@
+# Local PostgreSQL for the CineBase API. Start it with `docker compose up -d db`.
+# The API's default database URL (postgresql+psycopg://localhost/cinebase) needs a user;
+# with this file use the URL from apps/api/.env.example.
+services:
+  db:
+    image: postgres:17
+    environment:
+      POSTGRES_USER: cinebase
+      POSTGRES_PASSWORD: cinebase
+      POSTGRES_DB: cinebase
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U cinebase"]
+      interval: 5s
+      retries: 10
+
+volumes:
+  pgdata:

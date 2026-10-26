@@ -1,16 +1,17 @@
 import type { Metadata } from "next";
 import { Suspense } from "react";
-import { catalogMeta } from "@/catalog";
+import { getCatalogInfo, getGenres } from "@/catalog/server";
 import { ResultsSkeleton } from "@/components/search/ResultsSkeleton";
 import { ResultsView } from "@/components/search/ResultsView";
 
-export const metadata: Metadata = { title: "Find a film" };
+export const metadata: Metadata = { title: "Films" };
 
-export default function MoviesPage() {
+export default async function MoviesPage() {
+  const [info, genres] = await Promise.all([getCatalogInfo(), getGenres()]);
   // The search state lives in the URL, which is only known per request; the shell around it is static.
   return (
-    <Suspense fallback={<ResultsSkeleton movieCount={catalogMeta.movieCount} />}>
-      <ResultsView genres={catalogMeta.genres()} movieCount={catalogMeta.movieCount} />
+    <Suspense fallback={<ResultsSkeleton info={info} />}>
+      <ResultsView genres={genres} info={info} />
     </Suspense>
   );
 }

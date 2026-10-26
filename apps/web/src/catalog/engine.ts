@@ -119,10 +119,12 @@ export class FixtureEngine {
           return { slug: genre.slug, name: genre.name };
         }),
         directors,
+        kind: "feature",
       };
       const detail: MovieDetail = {
         ...summary,
         synopsis: raw.synopsis,
+        description: null,
         backdrop: null,
         original_language: raw.original_language,
         release: { status: raw.status, date: raw.release_date, country: raw.release_country },
@@ -200,6 +202,10 @@ export class FixtureEngine {
     if (q.year_from !== null && (year === null || year < q.year_from)) return false;
     if (q.year_to !== null && (year === null || year > q.year_to)) return false;
     if (q.runtime_max !== null && (r.raw.runtime_minutes === null || r.raw.runtime_minutes > q.runtime_max)) return false;
+    if (q.exclude.includes("short") && r.summary.kind === "short") return false;
+    if (q.exclude.includes("tv") && r.summary.kind === "tv") return false;
+    if (q.exclude.includes("documentary") && r.raw.genres.includes("documentary")) return false;
+    if (q.exclude.includes("unreleased") && r.raw.status === "announced") return false;
     return true;
   }
 
@@ -225,12 +231,20 @@ export class FixtureEngine {
           dirs: [1, 1, 1, -1, 1, -1, 1, 1],
         };
       }
+      case "notable":
+        // Fixtures carry no coverage data, so every film ties on notability and newer films come first.
+        return { key: [0, year === null ? 1 : 0, year ?? 0, r.titleKey, r.raw.id], dirs: [-1, 1, -1, 1, 1] };
       case "title_asc":
         return { key: [r.titleKey, year === null ? 1 : 0, year ?? 0, r.raw.id], dirs: [1, 1, 1, 1] };
       case "release_desc":
-        return { key: [release ? 0 : 1, release, r.titleKey, r.raw.id], dirs: [1, -1, 1, 1] };
+      case "release_asc":
+        return { key: [release ? 0 : 1, release, r.titleKey, r.raw.id], dirs: [1, query.sort === "release_desc" ? -1 : 1, 1, 1] };
       case "runtime_asc":
-        return { key: [runtime === null ? 1 : 0, runtime ?? 0, r.titleKey, r.raw.id], dirs: [1, 1, 1, 1] };
+      case "runtime_desc":
+        return {
+          key: [runtime === null ? 1 : 0, runtime ?? 0, r.titleKey, r.raw.id],
+          dirs: [1, query.sort === "runtime_desc" ? -1 : 1, 1, 1],
+        };
     }
   }
 
@@ -241,7 +255,7 @@ export class FixtureEngine {
     const grams = trigrams(normalized);
     if (query.q && !normalized) {
       // Only punctuation: nothing can match, but it is not an invalid request.
-      return { items: [], next_cursor: null, has_more: false };
+      return { items: [], next_cursor: null, has_more: false, total: query.cursor ? null : 0 };
     }
 
     const rows: { record: MovieRecord; key: SortKey }[] = [];
@@ -271,6 +285,7 @@ export class FixtureEngine {
       items: slice.map((row) => row.record.summary),
       next_cursor: hasMore ? encodeCursor(query, this.version, slice[slice.length - 1].key) : null,
       has_more: hasMore,
+      total: query.cursor ? null : rows.length,
     };
   }
 

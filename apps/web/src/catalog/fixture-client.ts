@@ -3,6 +3,7 @@ import { parseMovieQuery, toSearchParams } from "./query";
 import {
   CatalogError,
   type CatalogClient,
+  type CatalogInfo,
   type Collection,
   type Discover,
   type GenreRef,
@@ -83,6 +84,14 @@ export class FixtureCatalog implements CatalogClient {
     return this.respond(() => this.engine.listGenres(), options, 0);
   }
 
+  getCatalogInfo(options?: RequestOptions): Promise<CatalogInfo> {
+    return this.respond(
+      () => ({ movie_count: this.engine.movieCount, catalog_version: this.engine.version, sources: ["cinebase-fixture"] }),
+      options,
+      0,
+    );
+  }
+
   listCollections(options?: RequestOptions): Promise<Collection[]> {
     return this.respond(() => this.engine.listCollections(), options, 0);
   }
@@ -95,7 +104,7 @@ export class FixtureCatalog implements CatalogClient {
     return this.respond(
       () => ({
         blocks: this.engine.listCollections().map((c) => ({ ...c, items: this.engine.getCollectionMovies(c.slug).items })),
-        catalog: { movie_count: this.engine.movieCount, catalog_version: this.engine.version },
+        catalog: { movie_count: this.engine.movieCount, catalog_version: this.engine.version, sources: ["cinebase-fixture"] },
       }),
       options,
       0,

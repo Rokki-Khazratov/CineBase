@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { catalog, catalogMeta, CatalogError, type Credit, type MovieDetail } from "@/catalog";
+import type { Credit, Media, MovieDetail } from "@/catalog";
+import { getCredits, getMovie, getPrerenderIds } from "@/catalog/server";
 import { BackLink } from "@/components/film/BackLink";
 import { FilmCard } from "@/components/film/FilmCard";
 import { FilmGrid, FilmGridItem } from "@/components/film/FilmGrid";
@@ -10,30 +11,47 @@ import { Poster } from "@/components/film/Poster";
 import styles from "@/components/film/FilmPage.module.css";
 import { otherVersions } from "@/lib/other-versions";
 
-export function generateStaticParams() {
-  return catalogMeta.ids().map((id) => ({ id }));
+export async function generateStaticParams() {
+  return (await getPrerenderIds()).map((id) => ({ id }));
 }
 
 async function loadMovie(id: string): Promise<MovieDetail> {
-  try {
-    return await catalog.getMovie(id);
-  } catch (err) {
-    if (err instanceof CatalogError && err.status === 404) notFound();
-    throw err;
-  }
+  const movie = await getMovie(id);
+  if (!movie) notFound();
+  return movie;
 }
 
 export async function generateMetadata({ params }: PageProps<"/movies/[id]">): Promise<Metadata> {
   const { id } = await params;
-  try {
-    const movie = await catalog.getMovie(id);
-    return {
-      title: movie.year ? `${movie.title} (${movie.year})` : movie.title,
-      description: movie.synopsis ?? undefined,
-    };
-  } catch {
-    return { title: "Film not found" };
+  const movie = await getMovie(id).catch(() => null);
+  if (!movie) return { title: "Film not found" };
+  return {
+    title: movie.year ? `${movie.title} (${movie.year})` : movie.title,
+    description: movie.synopsis ?? movie.description ?? undefined,
+  };
+}
+
+/** Who made the poster and under which licence; generated fixture art says it is not the real artwork. */
+function PosterCredit({ poster }: { poster: Media | null }) {
+  if (!poster) return null;
+  const { source } = poster;
+  if (source.kind === "synthetic") {
+    return <p className={styles.posterNote}>Illustrative poster made for this prototype, not the official artwork.</p>;
   }
+  const parts = [source.license, source.attribution].filter((p): p is string => !!p);
+  return (
+    <p className={styles.posterNote}>
+      Poster:{" "}
+      {source.url ? (
+        <a href={source.url} rel="external noopener" target="_blank">
+          {source.name}
+        </a>
+      ) : (
+        source.name
+      )}
+      {parts.length > 0 ? ` · ${parts.join(" · ")}` : null}
+    </p>
+  );
 }
 
 function groupCrew(crew: Credit[]): { job: string; names: string[] }[] {
@@ -49,7 +67,7 @@ function groupCrew(crew: Credit[]): { job: string; names: string[] }[] {
 export default async function FilmPage({ params }: PageProps<"/movies/[id]">) {
   const { id } = await params;
   const movie = await loadMovie(id);
-  const [credits, others] = await Promise.all([catalog.getCredits(id), otherVersions(movie)]);
+  const [credits, others] = await Promise.all([getCredits(id), otherVersions(movie)]);
   const runtime = runtimeLabel(movie.runtime_minutes);
   const crew = groupCrew(credits.crew);
   const language = languageName(movie.original_language);
@@ -61,7 +79,7 @@ export default async function FilmPage({ params }: PageProps<"/movies/[id]">) {
       <div className={styles.layout}>
         <div className={styles.posterCol}>
           <Poster poster={movie.poster} title={movie.title} priority sizes="detail" />
-          {movie.poster ? <p className={styles.posterNote}>Illustrative poster made for this prototype, not the official artwork.</p> : null}
+          <PosterCredit poster={movie.poster} />
         </div>
 
         <header className={styles.header}>
@@ -93,15 +111,19 @@ export default async function FilmPage({ params }: PageProps<"/movies/[id]">) {
           <p className={styles.directed}>
             Directed by <strong>{directorNames(movie.directors)}</strong>
           </p>
+          {movie.description ? <p className={styles.description}>{movie.description}</p> : null}
         </header>
 
         <div className={styles.main}>
-          <section aria-labelledby="synopsis-heading" className={styles.section}>
-            <h2 id="synopsis-heading" className={styles.sectionTitle}>
-              Synopsis
-            </h2>
-            <p className={styles.synopsis}>{movie.synopsis ?? "No synopsis yet."}</p>
-          </section>
+          {/* Wikidata has no synopses; its one-line description under the title stands in, so an empty section is not shown. */}
+          {movie.synopsis || !movie.description ? (
+            <section aria-labelledby="synopsis-heading" className={styles.section}>
+              <h2 id="synopsis-heading" className={styles.sectionTitle}>
+                Synopsis
+              </h2>
+              <p className={styles.synopsis}>{movie.synopsis ?? "No synopsis yet."}</p>
+            </section>
+          ) : null}
 
           <div className={styles.credits}>
             <section aria-labelledby="cast-heading" className={styles.section}>
@@ -172,7 +194,18 @@ export default async function FilmPage({ params }: PageProps<"/movies/[id]">) {
               <div>
                 <dt>Source</dt>
                 <dd>
-                  {movie.provenance.sources.map((s) => `${s.name} ${s.external_id}`).join(", ")}
+                  {movie.provenance.sources.map((s, i) => (
+                    <span key={`${s.name}-${s.external_id}`}>
+                      {i > 0 ? ", " : null}
+                      {s.url ? (
+                        <a href={s.url} rel="external noopener" target="_blank">
+                          {s.name} {s.external_id}
+                        </a>
+                      ) : (
+                        `${s.name} ${s.external_id}`
+                      )}
+                    </span>
+                  ))}
                   <span className={styles.muted}> · catalog version {movie.provenance.catalog_version}</span>
                 </dd>
               </div>

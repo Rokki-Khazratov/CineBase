@@ -111,3 +111,9 @@
   height: 3.6rem;
   border-radius: var(--radius-sm);
 }
+
+.sources {
+  display: block;
+  margin-top: var(--space-1);
+  font-size: var(--text-xs);
+}

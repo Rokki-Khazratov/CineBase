@@ -7,13 +7,17 @@ export type MediaSource = {
   name: string;
   kind: "synthetic" | "provider" | "local";
   attribution: string | null;
+  /** Licence of a provider image, e.g. "CC BY-SA 4.0" or "Public domain". */
+  license?: string | null;
+  /** Page describing the file, its author and licence (e.g. the Wikimedia Commons file page). */
+  url?: string | null;
 };
 
 export type Media = {
   url: string;
   alt: string;
-  width: number;
-  height: number;
+  width: number | null;
+  height: number | null;
   source: MediaSource;
 };
 
@@ -29,14 +33,20 @@ export type MovieSummary = {
   poster: Media | null;
   genres: GenreRef[];
   directors: PersonRef[];
+  /** feature, short (40 minutes or less, or catalogued as a short) or tv (made-for-TV film). */
+  kind?: MovieKind;
 };
 
-export type ReleaseStatus = "released" | "announced";
+export type MovieKind = "feature" | "short" | "tv";
+
+export type ReleaseStatus = "released" | "announced" | "unknown";
 
 export type AlternateTitle = { title: string; locale: string | null };
 
 export type MovieDetail = MovieSummary & {
   synopsis: string | null;
+  /** Short provider description, e.g. "1979 film by Andrei Tarkovsky". */
+  description?: string | null;
   backdrop: Media | null;
   original_language: string | null;
   release: {
@@ -47,7 +57,7 @@ export type MovieDetail = MovieSummary & {
   };
   alternate_titles: AlternateTitle[];
   provenance: {
-    sources: { name: string; external_id: string }[];
+    sources: { name: string; external_id: string; url?: string | null }[];
     catalog_version: string;
   };
   links: { credits: string };
@@ -71,6 +81,8 @@ export type Page<T> = {
   items: T[];
   next_cursor: string | null;
   has_more: boolean;
+  /** Number of matching films; only computed for the first page. */
+  total?: number | null;
 };
 
 export type Collection = {
@@ -82,13 +94,27 @@ export type Collection = {
 
 export type DiscoverBlock = Collection & { items: MovieSummary[] };
 
+export type CatalogInfo = { movie_count: number; catalog_version: string; sources?: string[] };
+
 export type Discover = {
   blocks: DiscoverBlock[];
-  catalog: { movie_count: number; catalog_version: string };
+  catalog: CatalogInfo;
 };
 
-export const SORTS = ["relevance", "title_asc", "release_desc", "runtime_asc"] as const;
+export const SORTS = [
+  "relevance",
+  "notable",
+  "title_asc",
+  "release_desc",
+  "release_asc",
+  "runtime_asc",
+  "runtime_desc",
+] as const;
 export type Sort = (typeof SORTS)[number];
+
+/** Kinds of film a list can leave out. */
+export const EXCLUSIONS = ["short", "tv", "documentary", "unreleased"] as const;
+export type Exclusion = (typeof EXCLUSIONS)[number];
 
 /** Validated `/movies` parameters. Build them with `parseMovieQuery`. */
 export type MovieQuery = {
@@ -97,6 +123,7 @@ export type MovieQuery = {
   year_from: number | null;
   year_to: number | null;
   runtime_max: number | null;
+  exclude: Exclusion[];
   sort: Sort;
   limit: number;
   cursor: string | null;
@@ -154,6 +181,7 @@ export interface CatalogClient {
   getMovie(id: string, options?: RequestOptions): Promise<MovieDetail>;
   getCredits(id: string, options?: RequestOptions): Promise<MovieCredits>;
   listGenres(options?: RequestOptions): Promise<GenreRef[]>;
+  getCatalogInfo(options?: RequestOptions): Promise<CatalogInfo>;
   getDiscover(options?: RequestOptions): Promise<Discover>;
   listCollections(options?: RequestOptions): Promise<Collection[]>;
   getCollectionMovies(slug: string, options?: RequestOptions): Promise<Page<MovieSummary>>;

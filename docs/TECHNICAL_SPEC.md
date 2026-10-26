@@ -1,6 +1,6 @@
 # CineBase — техническое задание по фазам
 
-Версия 1 • 25 октября 2026 года • Статус: план реализации.
+Версия 1.1 • 26 октября 2026 года • Статус: фазы 0–1 выполнены (кроме CB-106), фазы 2–4 в основном реализованы: API, PostgreSQL и импорт полного каталога из Wikidata. Отметки ниже показывают фактическое состояние.
 
 ## 1. Цель и границы проекта
 
@@ -36,7 +36,7 @@
 | API | Python + FastAPI + Pydantic | Контракты и обработка запросов каталога |
 | Persistence | SQLAlchemy + Alembic + PostgreSQL | Единая схема и миграции |
 | Поиск | Нормализованные названия + PostgreSQL `pg_trgm` | Точное совпадение, префиксы и опечатки |
-| Каталог | FixtureProvider + внешний provider adapter | Локальная разработка без внешней сети и импорт реальных данных |
+| Каталог | FixtureProvider + Wikidata adapter ([DATA_SOURCES.md](DATA_SOURCES.md)) | Локальная разработка без внешней сети и импорт реальных данных |
 | Тесты | pytest + PostgreSQL integration; web E2E | Корректность данных и основных сценариев |
 
 Это рабочий выбор для данного ТЗ. Поддерживаемые версии и lockfiles фиксируются в фазе 2 после проверки совместимости. Redis, отдельная очередь и поисковый кластер добавляются только при измеренной необходимости; начальный импорт выполняется управляемой CLI-командой.
@@ -57,13 +57,13 @@ cinebase/
   README.md
 ```
 
-UI-прототип использует DTO той же формы, что и API. Компоненты получают данные через один адаптер: переключение fixtures/API не требует переписывать экраны.
+UI-прототип использует DTO той же формы, что и API. Компоненты получают данные через один адаптер: переключение fixtures/API не требует переписывать экраны. Источник выбирается при сборке переменной `NEXT_PUBLIC_CATALOG_SOURCE=fixtures|api`; адрес API на сервере — `CINEBASE_API_URL`, браузер обращается к относительному `/api/v1` через rewrite Next.js. Каталог `packages/api-client` пока не создан: TS-клиент (`apps/web/src/catalog/api-client.ts`) написан вручную по OpenAPI.
 
 ## 4. Модель данных
 
 | Сущность | Минимальные поля и ограничения |
 | --- | --- |
-| Movie | UUID, canonical_title, original_title nullable, release_date nullable, release_year nullable, runtime_minutes nullable, synopsis nullable, original_language nullable, status, timestamps |
+| Movie | UUID, canonical_title, original_title nullable, release_date nullable, release_year nullable, release_country nullable, runtime_minutes nullable, synopsis nullable, description nullable (короткое описание источника), original_language nullable, status (`released`/`announced`/`unknown`), kind (`feature`/`short`/`tv`), notability (для сортировки «известные»), timestamps |
 | ExternalId | movie_id, provider, external_id; UNIQUE(provider, external_id) |
 | AlternateTitle | movie_id, title, normalized_title, locale nullable, source |
 | Genre / MovieGenre | Справочник и связь с фильмом |
@@ -97,6 +97,7 @@ UI-прототип использует DTO той же формы, что и A
 | GET | `/api/v1/people/{id}` | Данные человека |
 | GET | `/api/v1/people/{id}/movies` | Фильмография с ролью и пагинацией |
 | GET | `/api/v1/genres` | Справочник для фильтров |
+| GET | `/api/v1/catalog` | Размер каталога, источники и время последнего импорта |
 | GET | `/api/v1/collections` | Доступные подборки |
 | GET | `/api/v1/collections/{slug}` | Описание подборки |
 | GET | `/api/v1/collections/{slug}/movies` | Её упорядоченные фильмы |
@@ -107,12 +108,13 @@ UI-прототип использует DTO той же формы, что и A
 - `genre`: повторяемый slug; между выбранными жанрами OR, между группами фильтров AND.
 - `year_from`, `year_to`: включительные границы; некорректный диапазон даёт 422.
 - `runtime_max`: положительное число минут; фильмы с неизвестной длительностью не подходят под этот фильтр.
-- `sort`: `relevance`, `title_asc`, `release_desc`, `runtime_asc`; `relevance` требует непустой запрос.
+- `exclude`: повторяемый или через запятую: `short`, `tv`, `documentary`, `unreleased` — скрыть такие фильмы.
+- `sort`: `relevance`, `notable`, `release_desc`, `release_asc`, `title_asc`, `runtime_asc`, `runtime_desc`; `relevance` требует непустой запрос. По умолчанию: `relevance` при запросе, иначе `notable` (число sitelinks в Wikidata).
 - `limit`: default 24, диапазон 1–48; `cursor`: opaque continuation token.
 
 Каждая сортировка имеет UUID tie-breaker и явное положение `null`. Cursor связан с сортировкой и фильтрами; при смене запроса/фильтров UI сбрасывает cursor. В курсоре поиска сохраняется полный ключ ранжирования; результаты стабильны в пределах фиксированной версии каталога. Изменение версии может потребовать начать выдачу заново.
 
-Список возвращает `items`, `next_cursor` и `has_more`. Дорогой полный count не обязателен. Ошибки имеют `{error: {code, message, fields?, request_id}}`; неизвестный UUID фильма → 404, неверный cursor → 400, неверные параметры → 422, недоступная БД → 503. В ответах нет traceback или ключей поставщика.
+Список возвращает `items`, `next_cursor`, `has_more` и `total`. `total` считается только для первой страницы (на следующих — `null`), чтобы листание не повторяло дорогой count. Ошибки имеют `{error: {code, message, fields?, request_id}}`; неизвестный UUID фильма → 404, неверный cursor → 400, неверные параметры → 422, недоступная БД → 503. В ответах нет traceback или ключей поставщика.
 
 MovieSummary содержит `id`, `title`, `original_title`, `year`, `runtime_minutes`, `poster`, `genres`, `directors` (список `{id, name}`; карточка показывает название, год и режиссёра, чтобы различать ремейки). MovieDetail добавляет synopsis, backdrop, release details, provenance и ссылки на credits. Media DTO содержит URL, alt/description и source. Детальная схема публикуется в OpenAPI и используется для generated TS client.
 
@@ -162,12 +164,12 @@ MovieSummary содержит `id`, `title`, `original_title`, `year`, `runtime_
 
 **Результат:** web, API и PostgreSQL запускаются локально по проверенным инструкциям.
 
-- [ ] **CB-201** Зафиксировать поддерживаемые runtime/framework версии и lockfiles.
-- [ ] **CB-202** Создать `apps/web`, `apps/api`, локальную Compose-конфигурацию PostgreSQL и `.env.example`.
-- [ ] **CB-203** Настроить конфигурацию, APIRouter, typed errors, request_id и lifecycle ресурсов.
-- [ ] **CB-204** Реализовать миграции схемы каталога, индексы и проверку с чистой БД.
-- [ ] **CB-205** Добавить seed из fixtures и health live/ready.
-- [ ] **CB-206** Настроить локальные lint/typecheck/test/build команды; добавить только реально работающие команды в README.
+- [x] **CB-201** Зафиксировать поддерживаемые runtime/framework версии и lockfiles.
+- [ ] **CB-202** Создать `apps/web`, `apps/api`, локальную Compose-конфигурацию PostgreSQL и `.env.example`. *Частично: `apps/api`, `.env.example` и `compose.yaml` добавлены, но Compose не запускался (проверено на локальном PostgreSQL 14 из Homebrew).*
+- [x] **CB-203** Настроить конфигурацию, APIRouter, typed errors, request_id и lifecycle ресурсов.
+- [x] **CB-204** Реализовать миграции схемы каталога, индексы и проверку с чистой БД.
+- [x] **CB-205** Добавить seed из fixtures и health live/ready.
+- [x] **CB-206** Настроить локальные lint/typecheck/test/build команды; добавить только реально работающие команды в README. *API: ruff, mypy (strict), pytest на PostgreSQL; web: lint, typecheck, vitest, Playwright, build.*
 
 **Приёмка:** чистая БД мигрируется и наполняется fixtures; повторный seed не создаёт дублей; API отвечает с данными; локальный запуск воспроизводим. PostgreSQL используется и в интеграционных тестах, и в локальной среде.
 
@@ -177,12 +179,12 @@ MovieSummary содержит `id`, `title`, `original_title`, `year`, `runtime_
 
 **Результат:** воспроизводимый импорт реального источника при наличии подходящего доступа; fixture mode работает самостоятельно.
 
-- [ ] **CB-301** Выбрать provider и записать разрешённые поля, attribution, media policy, лимиты и способ получения ключа. Если доступ ещё не получен, live-import остаётся незавершённой задачей.
-- [ ] **CB-302** Реализовать общий интерфейс provider и FixtureProvider для локальных тестов.
-- [ ] **CB-303** Реализовать внешний adapter с timeout, ограниченной concurrency, bounded retry/backoff и обработкой 429/Retry-After.
-- [ ] **CB-304** Сделать CLI import/refresh: upsert по внешнему ID, транзакции и отчёт imported/updated/failed.
-- [ ] **CB-305** Подключить aliases, genres, credits и assets с указанием источника.
-- [ ] **CB-306** Проверить повторный импорт, частичную ошибку и возобновление после сбоя.
+- [x] **CB-301** Выбрать provider и записать разрешённые поля, attribution, media policy, лимиты и способ получения ключа. Если доступ ещё не получен, live-import остаётся незавершённой задачей. *Выбран Wikidata (CC0, без ключа); постеры — Wikimedia Commons с лицензией каждого файла. Сравнение источников и план импорта — [DATA_SOURCES.md](DATA_SOURCES.md).*
+- [x] **CB-302** Реализовать общий интерфейс provider и FixtureProvider для локальных тестов.
+- [x] **CB-303** Реализовать внешний adapter с timeout, ограниченной concurrency, bounded retry/backoff и обработкой 429/Retry-After.
+- [x] **CB-304** Сделать CLI import/refresh: upsert по внешнему ID, транзакции и отчёт imported/updated/failed.
+- [x] **CB-305** Подключить aliases, genres, credits и assets с указанием источника.
+- [x] **CB-306** Проверить повторный импорт, частичную ошибку и возобновление после сбоя.
 
 **Приёмка:** десять импортов одного внешнего ID дают один фильм с тем же UUID; ошибка поставщика не повреждает ранее сохранённую запись. Ключи отсутствуют в web bundle и логах. Можно пользоваться локальным каталогом при недоступном provider.
 
@@ -192,12 +194,12 @@ MovieSummary содержит `id`, `title`, `original_title`, `year`, `runtime_
 
 **Результат:** настоящий browse/search flow через PostgreSQL.
 
-- [ ] **CB-401** Реализовать `/movies`, `/genres`, DTO, validation и cursor pagination.
-- [ ] **CB-402** Добавить normalized aliases, exact/prefix/substring/fuzzy ranking и подходящие индексы.
-- [ ] **CB-403** Реализовать комбинируемые фильтры и сортировки с определёнными null/tie semantics.
-- [ ] **CB-404** Сгенерировать TS client из OpenAPI и заменить fixture adapter экрана каталога.
-- [ ] **CB-405** Синхронизировать состояние с URL, debounce поиска и игнорирование устаревших ответов.
-- [ ] **CB-406** Добавить «загрузить ещё», сброс пагинации при изменении фильтров и восстановление выдачи/scroll при Back.
+- [x] **CB-401** Реализовать `/movies`, `/genres`, DTO, validation и cursor pagination.
+- [x] **CB-402** Добавить normalized aliases, exact/prefix/substring/fuzzy ranking и подходящие индексы.
+- [x] **CB-403** Реализовать комбинируемые фильтры и сортировки с определёнными null/tie semantics.
+- [ ] **CB-404** Сгенерировать TS client из OpenAPI и заменить fixture adapter экрана каталога. *Частично: экран каталога работает через API, но TS-клиент написан вручную, без генерации.*
+- [x] **CB-405** Синхронизировать состояние с URL, debounce поиска и игнорирование устаревших ответов.
+- [x] **CB-406** Добавить «загрузить ещё», сброс пагинации при изменении фильтров и восстановление выдачи/scroll при Back.
 
 **Приёмка:** fixtures с ремейками, альтернативными названиями, диакритикой и опечатками проходят ожидаемые результаты. При быстром вводе старый ответ не заменяет новый. Переходы между страницами фиксированной выдачи не повторяют и не пропускают фильмы. Ссылка с фильтрами воспроизводит выдачу в новой вкладке.
 

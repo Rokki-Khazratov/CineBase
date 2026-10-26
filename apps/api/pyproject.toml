@@ -1,0 +1,54 @@
+[project]
+name = "cinebase-api"
+version = "0.1.0"
+description = "CineBase catalog API and import tools"
+requires-python = ">=3.13,<3.14"
+dependencies = [
+  "fastapi",
+  "uvicorn[standard]",
+  "sqlalchemy>=2.0",
+  "alembic",
+  "psycopg[binary]>=3.2",
+  "pydantic>=2",
+  "pydantic-settings",
+  "httpx",
+]
+
+[project.scripts]
+cinebase = "cinebase_api.cli:main"
+
+[dependency-groups]
+dev = ["pytest", "ruff", "mypy"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/cinebase_api"]
+
+[tool.uv]
+# Only releases at least two weeks old at the time the lockfile was made.
+exclude-newer = "2026-10-12T00:00:00Z"
+
+[tool.ruff]
+line-length = 120
+target-version = "py313"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM"]
+
+[tool.mypy]
+python_version = "3.13"
+strict = true
+plugins = ["pydantic.mypy"]
+mypy_path = "src"
+packages = ["cinebase_api"]
+
+[[tool.mypy.overrides]]
+module = ["alembic.*"]
+ignore_missing_imports = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
