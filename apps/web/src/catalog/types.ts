@@ -111,6 +111,14 @@ export type ApiErrorBody = {
   };
 };
 
+let requestCounter = 0;
+
+/** Fixture request IDs are sequential: random values are not allowed during prerendering, and tests stay stable. */
+function nextRequestId(): string {
+  requestCounter += 1;
+  return `req_fixture_${requestCounter.toString(36).padStart(6, "0")}`;
+}
+
 export class CatalogError extends Error {
   readonly status: number;
   readonly code: string;
@@ -123,7 +131,7 @@ export class CatalogError extends Error {
     this.status = status;
     this.code = code;
     this.fields = fields;
-    this.requestId = requestId ?? `req_${Math.random().toString(36).slice(2, 10)}`;
+    this.requestId = requestId ?? nextRequestId();
   }
 
   toJSON(): ApiErrorBody {
