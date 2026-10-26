@@ -14,8 +14,11 @@ export const SORT_LABELS: Record<Sort, string> = {
   runtime_asc: "Shortest first",
 };
 
-/** Development-only switches that never become part of the canonical query. */
-export type DevOptions = { latencyMs: number | undefined; fail: boolean };
+/**
+ * Development-only switches that never become part of the canonical query. `_fail=1` makes every request
+ * fail; `_fail=once` fails until the first "Try again", to show recovery.
+ */
+export type DevOptions = { latencyMs: number | undefined; fail: "always" | "once" | null };
 
 function intParam(params: URLSearchParams, key: string): number | null {
   const raw = params.get(key);
@@ -49,7 +52,7 @@ export function devOptionsFromUrl(params: URLSearchParams): DevOptions {
   const latency = params.get("_latency");
   return {
     latencyMs: latency && /^\d{1,5}$/.test(latency) ? Number(latency) : undefined,
-    fail: params.get("_fail") === "1",
+    fail: params.get("_fail") === "1" ? "always" : params.get("_fail") === "once" ? "once" : null,
   };
 }
 
@@ -101,7 +104,7 @@ export function decadeRange(decade: number): { year_from: number; year_to: numbe
 export function withDevParams(href: string, dev: DevOptions): string {
   const extra = new URLSearchParams();
   if (dev.latencyMs !== undefined) extra.set("_latency", String(dev.latencyMs));
-  if (dev.fail) extra.set("_fail", "1");
+  if (dev.fail) extra.set("_fail", dev.fail === "always" ? "1" : "once");
   const qs = extra.toString();
   if (!qs) return href;
   return href + (href.includes("?") ? "&" : "?") + qs;

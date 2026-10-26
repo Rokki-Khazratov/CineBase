@@ -41,23 +41,26 @@ export function ResultsView({ genres, movieCount }: { genres: GenreRef[]; movieC
   const dev = useMemo(() => devOptionsFromUrl(new URLSearchParams(params.toString())), [params]);
   const key = resultsHref(query);
   const client = useMemo(
-    () => catalog.withOptions({ latencyMs: dev.latencyMs ?? DEFAULT_LATENCY_MS, fail: dev.fail }),
+    () => catalog.withOptions({ latencyMs: dev.latencyMs ?? DEFAULT_LATENCY_MS, fail: dev.fail === "always" }),
     [dev.latencyMs, dev.fail],
   );
   const [density, setDensity] = useDensity();
 
   // The text box leads the URL by up to one debounce interval. When the URL changes from elsewhere
-  // (Back/Forward, the header search), the box follows it.
+  // (Back/Forward, the header search), the box follows it. A value this page wrote itself is never copied
+  // back, so a slow typist's newer keystrokes are not replaced by the older debounced value.
   const [input, setInput] = useState(query.q);
   const [seenQ, setSeenQ] = useState(query.q);
+  const [writtenQ, setWrittenQ] = useState<string | null>(null);
   if (seenQ !== query.q) {
     setSeenQ(query.q);
-    if (input.trim() !== query.q) setInput(query.q);
+    if (query.q !== writtenQ && input.trim() !== query.q) setInput(query.q);
   }
 
   const navigate = useCallback(
     (next: MovieQuery) => {
       const href = withDevParams(resultsHref(next), dev);
+      setWrittenQ(next.q);
       // Shallow URL update: Next.js syncs useSearchParams without a server round trip.
       if (href !== window.location.pathname + window.location.search) window.history.replaceState(null, "", href);
     },
@@ -112,7 +115,8 @@ export function ResultsView({ genres, movieCount }: { genres: GenreRef[]; movieC
       return;
     }
     const controller = new AbortController();
-    client
+    const source = dev.fail === "once" && attempt === 0 ? client.withOptions({ fail: true }) : client;
+    source
       .listMovies({ ...query, limit: DEFAULT_LIMIT, cursor: null }, { signal: controller.signal })
       .then((page) => {
         if (id !== seq.current) return;
@@ -127,7 +131,7 @@ export function ResultsView({ genres, movieCount }: { genres: GenreRef[]; movieC
       controller.abort();
       moreController.current?.abort();
     };
-  }, [key, query, client, attempt]);
+  }, [key, query, client, attempt, dev.fail]);
 
   const current = loaded?.key === key ? loaded : null;
   const error = failure && failure.key === key && failure.attempt === attempt && !current ? failure.error : null;

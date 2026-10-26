@@ -67,8 +67,10 @@
   font-weight: 600;
 }
 
+/* Decorative: aria-pressed already announces the state, so the mark gets empty alternative text. */
 .chip[aria-pressed="true"]::before {
   content: "✓ ";
+  content: "✓ " / "";
 }
 
 .selects {

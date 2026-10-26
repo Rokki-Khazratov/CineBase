@@ -3,7 +3,7 @@ import styles from "./SkeletonGrid.module.css";
 
 export function SkeletonGrid({ count = 12, density = "comfortable" }: { count?: number; density?: Density }) {
   return (
-    <div aria-hidden="true">
+    <div aria-hidden="true" data-loading-placeholder="">
       <FilmGrid density={density}>
         {Array.from({ length: count }, (_, i) => (
           <FilmGridItem key={i}>
