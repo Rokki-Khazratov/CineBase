@@ -430,6 +430,21 @@ def test_failed_batch_is_split_before_giving_up() -> None:
     assert [r.external_id for r in records] == ["Q101"]
 
 
+def test_poster_with_empty_commons_metadata_is_skipped() -> None:
+    provider, _ = make_provider(FakeWikidata())
+    maps = provider.resolve_maps()
+    facts = {
+        "type": [uri("Q11424")],
+        "label": [lit("No licence", "en")],
+        "poster": [{"type": "uri", "value": "http://commons.wikimedia.org/wiki/Special:FilePath/X.jpg"}],
+    }
+    # Commons sends empty extmetadata as a list.
+    posters = {"X.jpg": {"thumburl": "https://upload.wikimedia.org/x-400.jpg", "extmetadata": []}}
+    record = provider.build("Q108", facts, [], [], posters, maps)
+    assert record is not None
+    assert record.assets == []
+
+
 def test_invalid_records_are_counted_not_fatal(clean: Engine) -> None:
     with Session(clean) as session, session.begin():
         report = importer.upsert_movies(

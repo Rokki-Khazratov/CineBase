@@ -440,11 +440,13 @@ class WikidataProvider:
         assets = []
         for v in facts.get("poster", []):
             name = _commons_name(v["value"].rsplit("/", 1)[-1])
-            info = posters.get(name)
-            license_name = ((info or {}).get("extmetadata", {}).get("LicenseShortName") or {}).get("value")
-            if not info or not license_name or not info.get("thumburl"):
+            info = posters.get(name) or {}
+            # Commons sends empty extmetadata as [] rather than {}.
+            meta = info.get("extmetadata") or {}
+            license_name = (meta.get("LicenseShortName") or {}).get("value")
+            if not license_name or not info.get("thumburl"):
                 continue
-            artist = strip_html(((info.get("extmetadata") or {}).get("Artist") or {}).get("value", "")) or None
+            artist = strip_html((meta.get("Artist") or {}).get("value", "")) or None
             assets.append(
                 AssetIn(
                     kind="poster",
